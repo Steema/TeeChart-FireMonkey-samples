@@ -1,0 +1,152 @@
+inherited ChartDataSetDemo: TChartDataSetDemo
+  Caption = 'BaseForm1'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  inherited Panel1: TPanel
+    object Label1: TLabel
+      AutoSize = True
+      Height = 19.500000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 20.000000000000000000
+      Text = 'TChartDataSet component connected to Chart1'
+      Width = 245.500000000000000000
+      WordWrap = False
+    end
+  end
+  object Chart1: TChart
+    Height = 343.000000000000000000
+    Position.Y = 57.000000000000000000
+    Width = 400.000000000000000000
+    Legend.Visible = False
+    Title.Text.Strings = (
+      'Chart1')
+    Zoom.Brush.Kind = bkNone
+    Align = alLeft
+    TabOrder = 1
+    ColorPaletteIndex = 1
+    object Series1: THorizBarSeries
+      BarBrush.Gradient.Direction = gdLeftRight
+      ColorEachPoint = True
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.ShapeStyle = fosRoundRectangle
+      Marks.Visible = True
+      Gradient.Direction = gdLeftRight
+      XValues.Name = 'Bar'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+  object Layout1: TLayout
+    Align = alClient
+    Height = 343.000000000000000000
+    Position.X = 400.000000000000000000
+    Position.Y = 57.000000000000000000
+    Width = 200.000000000000000000
+    object StringGrid1: TStringGrid
+      Touch.InteractiveGestures = [igPan]
+      Align = alClient
+      Height = 318.000000000000000000
+      StyleLookup = 'gridstyle'
+      TabOrder = 0
+      Width = 200.000000000000000000
+      RowCount = 6
+      RowHeight = 21.000000000000000000
+      object TStringColumn
+        Header = 'Color'
+        Height = 293.000000000000000000
+        TabOrder = 0
+        Width = 64.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Bar'
+        Height = 293.000000000000000000
+        Position.X = 64.000000000000000000
+        TabOrder = 1
+        Width = 64.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Y'
+        Height = 293.000000000000000000
+        Position.X = 128.000000000000000000
+        TabOrder = 2
+        Width = 64.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Label'
+        Height = 293.000000000000000000
+        Position.X = 192.000000000000000000
+        TabOrder = 3
+        Width = 64.000000000000000000
+      end
+    end
+    object BindNavigator1: TBindNavigator
+      Align = alBottom
+      Height = 25.000000000000000000
+      Position.Y = 318.000000000000000000
+      Width = 200.000000000000000000
+      DataSource = BindScopeDB1
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+      xRadius = 4.000000000000000000
+      yRadius = 4.000000000000000000
+    end
+  end
+  object StyleBook1: TStyleBook
+    Resource.Strings = (
+      'object TLayout'
+      '  Align = alClient'
+      '  Position.Point = '#39'(0,33)'#39
+      '  Width = 504.000000000000000000'
+      '  Height = 448.000000000000000000'
+      '  object TComboColorBox'
+      '    StyleName = '#39'ColorColumn'#39
+      '    Position.Point = '#39'(222,213)'#39
+      '    Width = 60.000000000000000000'
+      '    Height = 22.000000000000000000'
+      '    StyleLookup = '#39'comboboxstyle'#39
+      '    TabOrder = 0'
+      '    Color = claWhite'
+      '  end'
+      'end')
+    Left = 424
+    Top = 288
+  end
+  object ChartDataSet1: TChartDataSet
+    Active = True
+    Chart = Chart1
+    Left = 344
+    Top = 225
+  end
+  object DataSource1: TDataSource
+    DataSet = ChartDataSet1
+    Left = 520
+    Top = 216
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 68
+    Top = 37
+    object DBLinkStringGrid11: TBindDBGridLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      GridControl = StringGrid1
+      AutoBufferCount = False
+      Columns = <>
+      OnActivated = DBLinkStringGrid11Activated
+    end
+  end
+  object BindScopeDB1: TBindScopeDB
+    DataSource = DataSource1
+    DataSet = ChartDataSet1
+    ScopeMappings = <>
+    Left = 426
+    Top = 218
+  end
+end

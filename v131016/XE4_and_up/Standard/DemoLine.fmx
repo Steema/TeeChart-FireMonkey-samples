@@ -1,0 +1,141 @@
+inherited DemoLine: TDemoLine
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  inherited Panel1: TPanel
+    Height = 67.000000000000000000
+    object CheckBox1: TCheckBox
+      DisableFocusEffect = False
+      Height = 19.000000000000000000
+      Position.X = 280.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Stairs'
+      Width = 65.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object CBSmooth: TCheckBox
+      DisableFocusEffect = False
+      Height = 19.000000000000000000
+      Position.X = 352.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 2
+      Text = 'Smooth'
+      Width = 120.000000000000000000
+      OnChange = CBSmoothChange
+    end
+    object CheckBox3: TCheckBox
+      DisableFocusEffect = False
+      Height = 19.000000000000000000
+      Position.X = 104.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 3
+      Text = 'Marks'
+      Width = 81.000000000000000000
+      OnChange = CheckBox3Change
+    end
+    object CheckBox4: TCheckBox
+      DisableFocusEffect = False
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 104.000000000000000000
+      Position.Y = 40.000000000000000000
+      TabOrder = 4
+      Text = 'Outlines'
+      Width = 81.000000000000000000
+      OnChange = CheckBox4Change
+    end
+    object CheckBox5: TCheckBox
+      DisableFocusEffect = False
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 192.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 5
+      Text = '3D'
+      Width = 73.000000000000000000
+      OnChange = CheckBox5Change
+    end
+    object CheckBox6: TCheckBox
+      DisableFocusEffect = False
+      Height = 19.000000000000000000
+      Position.X = 192.000000000000000000
+      Position.Y = 40.000000000000000000
+      TabOrder = 6
+      Text = 'Stacked'
+      Width = 73.000000000000000000
+      OnChange = CheckBox6Change
+    end
+    object CheckBox7: TCheckBox
+      DisableFocusEffect = False
+      Height = 19.000000000000000000
+      Position.X = 280.000000000000000000
+      Position.Y = 40.000000000000000000
+      TabOrder = 7
+      Text = 'Pointers'
+      Width = 73.000000000000000000
+      OnChange = CheckBox7Change
+    end
+  end
+  object Chart1: TChart
+    Height = 333.000000000000000000
+    Position.Y = 67.000000000000000000
+    Width = 600.000000000000000000
+    Gradient.EndColor = xFFE9E9C5
+    Gradient.Visible = True
+    Title.Text.Strings = (
+      'Line Strip Series with null points')
+    Zoom.Brush.Kind = bkNone
+    Align = alClient
+    TabOrder = 1
+    PrintMargins = (
+      0
+      0
+      0
+      0)
+    ColorPaletteIndex = 13
+    object Series1: TLineSeries
+      HorizAxis = aBothHorizAxis
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.ShapeStyle = fosRoundRectangle
+      Marks.Visible = False
+      Brush.BackColor = x00FFFFFF
+      OutLine.Color = xFFFA8C8C
+      OutLine.Width = 5.111000061035156000
+      OutLine.Visible = True
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series2: TLineSeries
+      HorizAxis = aBothHorizAxis
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.DrawEvery = 3
+      Marks.ShapeStyle = fosRoundRectangle
+      Marks.Visible = False
+      Brush.BackColor = x00FFFFFF
+      OutLine.Color = xFF230F7E
+      OutLine.Style = psDot
+      OutLine.Width = 3.111000061035156000
+      OutLine.Visible = True
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+end

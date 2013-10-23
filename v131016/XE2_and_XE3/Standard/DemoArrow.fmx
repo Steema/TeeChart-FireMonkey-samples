@@ -1,0 +1,51 @@
+inherited ArrowSeriesDemo: TArrowSeriesDemo
+  Caption = 'BaseForm1'
+  OnCreate = FormCreate
+  inherited Panel1: TPanel
+    inherited BEdit: TButton
+      Position.Point = '(16,16)'
+    end
+  end
+  object Chart1: TChart
+    Align = alClient
+    Position.Point = '(0,57)'
+    Width = 600.000000000000000000
+    Height = 343.000000000000000000
+    Legend.Visible = False
+    Title.Text.Strings = (
+      'TChart')
+    Zoom.Brush.Kind = bkNone
+    TabOrder = 2
+    ColorPaletteIndex = 13
+    object Series1: TArrowSeries
+      ColorEachPoint = True
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Frame.Visible = False
+      Marks.Transparent = True
+      Marks.Visible = False
+      ClickableLine = False
+      Pointer.Brush.Gradient.EndColor = xFFF2C05D
+      Pointer.Gradient.EndColor = xFFF2C05D
+      Pointer.HorizSize = 10
+      Pointer.InflateMargins = False
+      Pointer.Style = psRectangle
+      Pointer.VertSize = 10
+      Pointer.Visible = True
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      ArrowPercent = 44
+      EndXValues.Name = 'EndX'
+      EndXValues.Order = loNone
+      EndYValues.Name = 'EndY'
+      EndYValues.Order = loNone
+      StartXValues.Name = 'X'
+      StartXValues.Order = loNone
+      StartYValues.Name = 'Y'
+      StartYValues.Order = loNone
+    end
+  end
+end

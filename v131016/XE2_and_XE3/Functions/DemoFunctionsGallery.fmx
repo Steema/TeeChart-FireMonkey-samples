@@ -1,0 +1,11 @@
+object FunctionsGalleryDemos: TFunctionsGalleryDemos
+  Left = 0
+  Top = 0
+  BiDiMode = bdLeftToRight
+  ClientHeight = 400
+  ClientWidth = 600
+  Transparency = False
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+end

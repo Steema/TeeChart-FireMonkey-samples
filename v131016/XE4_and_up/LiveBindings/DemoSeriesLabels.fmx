@@ -1,0 +1,74 @@
+inherited SeriesLabelsBinding: TSeriesLabelsBinding
+  Caption = 'BaseForm1'
+  inherited Panel1: TPanel
+    inherited BEdit: TButton
+      Position.Point = '(16,16)'
+    end
+  end
+  object Chart1: TChart
+    Align = alClient
+    Position.Point = '(0,57)'
+    Width = 600.000000000000000000
+    Height = 343.000000000000000000
+    Title.Text.Strings = (
+      'Series1 using two FormatExpressions of a TBindList.'
+      'One for values and another for labels.')
+    BottomAxis.LabelsAlternate = True
+    BottomAxis.LabelsSeparation = 0
+    Chart3DPercent = 27
+    LeftAxis.Title.Caption = 'Size'
+    Zoom.Brush.Kind = bkNone
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object Series1: TBarSeries
+      BarBrush.Gradient.Direction = gdLeftRight
+      BarPen.Visible = False
+      ColorEachPoint = True
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Style = smsValue
+      Marks.Visible = True
+      BarRound = brNone
+      BarStyle = bsCilinder
+      Gradient.Direction = gdLeftRight
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = DataModule1.ClientDataSet1
+    Left = 456
+    Top = 8
+  end
+  object BindScopeDB1: TBindScopeDB
+    DataSource = DataSource1
+    Left = 368
+    Top = 8
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    UseAppManager = True
+    Left = 256
+    Top = 8
+    object BindList1: TBindList
+      Category = 'Lists'
+      ControlComponent = Series1
+      SourceComponent = BindScopeDB1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Value'
+          SourceExpression = 'FieldByName('#39'Size'#39').AsString'
+        end
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'FieldByName('#39'Name'#39').AsString'
+        end>
+      FormatControlExpressions = <>
+      ClearControlExpressions = <>
+    end
+  end
+end

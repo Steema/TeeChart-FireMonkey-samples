@@ -1,0 +1,127 @@
+inherited DemoPointSeries: TDemoPointSeries
+  Caption = 'BaseForm2'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  inherited Panel1: TPanel
+    object CheckBox1: TCheckBox
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 120.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = '3D'
+      Width = 120.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object CheckBox2: TCheckBox
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 176.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 2
+      Text = 'Marks'
+      Width = 65.000000000000000000
+      OnChange = CheckBox2Change
+    end
+    object Button1: TButton
+      Height = 22.000000000000000000
+      Position.X = 264.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 3
+      Text = 'Animate'
+      Width = 80.000000000000000000
+      OnClick = Button1Click
+    end
+  end
+  object Chart1: TChart
+    Height = 343.000000000000000000
+    Width = 600.000000000000000000
+    BackWall.Brush.Kind = bkGradient
+    BackWall.Brush.Gradient.EndColor = xFFE2E2B1
+    BackWall.Brush.Gradient.MidColor = x00C79595
+    BackWall.Brush.Gradient.Visible = True
+    BackWall.Color = xFFFDFCC5
+    BackWall.Size = 12
+    BackWall.Transparency = 25
+    BackWall.Transparent = False
+    BottomWall.Size = 12
+    Gradient.Visible = True
+    LeftWall.Color = xFFE0D4F5
+    LeftWall.Size = 12
+    Legend.Alignment = laBottom
+    RightWall.Color = xFFDFF2E8
+    RightWall.Size = 12
+    RightWall.Visible = True
+    Title.Text.Strings = (
+      'Point Series')
+    Chart3DPercent = 34
+    View3DOptions.Elevation = 360
+    View3DOptions.Orthogonal = False
+    View3DOptions.Perspective = 100
+    View3DOptions.Rotation = 360
+    Zoom.Brush.Kind = bkNone
+    OnAfterDraw = Chart1AfterDraw
+    Align = alClient
+    TabOrder = 1
+    OnMouseMove = Chart1MouseMove
+    PrintMargins = (
+      15
+      39
+      15
+      39)
+    ColorPaletteIndex = 13
+    object Series1: TPointSeries
+      ColorEachPoint = True
+      Marks.Arrow.Color = xFF2371E6
+      Marks.Arrow.Width = 2.333333253860474000
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Color = xFF2371E6
+      Marks.Callout.Arrow.Width = 2.333333253860474000
+      Marks.Callout.Arrow.Visible = True
+      Marks.Callout.ArrowHead = ahSolid
+      Marks.Callout.Distance = 14
+      Marks.Callout.Length = 17
+      Marks.ShapeStyle = fosRoundRectangle
+      Marks.Visible = True
+      ClickableLine = False
+      Pointer.Brush.Gradient.EndColor = xFF4466A3
+      Pointer.Gradient.EndColor = xFF4466A3
+      Pointer.HorizSize = 10
+      Pointer.InflateMargins = True
+      Pointer.Style = psCircle
+      Pointer.VertSize = 10
+      Pointer.Visible = True
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series2: TPointSeries
+      ColorEachPoint = True
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Callout.Length = 17
+      Marks.ShapeStyle = fosRoundRectangle
+      Marks.Visible = True
+      ClickableLine = False
+      Pointer.Brush.Gradient.EndColor = xFF4466A3
+      Pointer.Gradient.EndColor = xFF4466A3
+      Pointer.HorizSize = 10
+      Pointer.InflateMargins = True
+      Pointer.Pen.Color = xFF079560
+      Pointer.Style = psHexagon
+      Pointer.VertSize = 10
+      Pointer.Visible = True
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+end

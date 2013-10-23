@@ -1,0 +1,95 @@
+inherited DemoSurface3DSeries: TDemoSurface3DSeries
+  Caption = 'BaseForm1'
+  OnCreate = FormCreate
+  inherited Panel1: TPanel
+    inherited BEdit: TButton
+      Position.Point = '(16,16)'
+    end
+  end
+  object Viewport3D1: TViewport3D
+    Align = alClient
+    Position.Point = '(0,57)'
+    Width = 600.000000000000000000
+    Height = 343.000000000000000000
+    object Chart3D1: TChart3D
+      Position.Point = '(-0.35504138469696,-0.713018417358398,0)'
+      RotationAngle.Point = '(-13.7793426513672,0,0)'
+      Width = 11.580854415893550000
+      Height = 8.085536003112793000
+      Depth = 10.756645202636720000
+      Opacity = 1.000000000000000000
+      Quanternion = '(-0.119957864284515,0,0,0.992778897285461)'
+      object Chart3DChart1: TChart
+        Position.Point = '(88,72)'
+        Width = 400.000000000000000000
+        Height = 250.000000000000000000
+        Visible = False
+        BackWall.Size = 5
+        BackWall.Transparent = False
+        BottomWall.Size = 5
+        LeftWall.Size = 5
+        RightWall.Size = 5
+        Title.Text.Strings = (
+          'TChart')
+        Chart3DPercent = 100
+        View3DOptions.Elevation = -14
+        View3DOptions.HorizOffset = -36
+        View3DOptions.Orthogonal = False
+        View3DOptions.Rotation = 0
+        View3DOptions.VertOffset = -71
+        View3DOptions.Zoom = 0
+        Zoom.Allow = False
+        Zoom.Brush.Kind = bkNone
+        BevelOuter = bvNone
+        Color = claNull
+        TabOrder = 0
+        ColorPaletteIndex = 13
+        object Series1: TSurfaceSeries
+          Marks.Arrow.Visible = True
+          Marks.Callout.Brush.Color = claBlack
+          Marks.Callout.Arrow.Visible = True
+          Marks.Visible = False
+          SideBrush.Kind = bkNone
+          XValues.Name = 'X'
+          XValues.Order = loNone
+          YValues.Name = 'Y'
+          YValues.Order = loNone
+          ZValues.Name = 'Z'
+          ZValues.Order = loNone
+        end
+      end
+    end
+    object Light1: TLight
+      Position.Point = '(0.994266033172607,-6.86591291427612,-15.6092681884766)'
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      Opacity = 1.000000000000000000
+      Ambient = xFF202020
+      Diffuse = xFFA0A0A0
+      ConstantAttenuation = 1.000000000000000000
+      LightType = ltPoint
+      Specular = claWhite
+      SpotCutOff = 180.000000000000000000
+      Quanternion = '(0,0,0,1)'
+    end
+    object Light2: TLight
+      Position.Point = '(-7.65809535980225,-6.89826488494873,0)'
+      RotationAngle.Point = '(242.437316894531,39.9992599487305,-43.1329040527344)'
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      Opacity = 1.000000000000000000
+      Ambient = xFF202020
+      Diffuse = xFFA0A0A0
+      ConstantAttenuation = 1.000000000000000000
+      LightType = ltSpot
+      Specular = claWhite
+      SpotCutOff = 60.000000000000000000
+      SpotExponent = 4.000000000000000000
+      Quanternion = 
+        '(0.802340745925903,0.136122167110443,0.454425841569901,-0.362237' +
+        '900495529)'
+    end
+  end
+end

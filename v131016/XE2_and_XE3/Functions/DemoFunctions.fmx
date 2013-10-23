@@ -1,0 +1,54 @@
+inherited FunctionsDemo: TFunctionsDemo
+  Caption = 'BaseForm1'
+  OnCreate = FormCreate
+  inherited Panel1: TPanel
+    object Button1: TButton [0]
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      Position.X = 136.000000000000000000
+      Position.Y = 16.000000000000000000
+      Text = 'Randomize'
+      Width = 80.000000000000000000
+      OnClick = Button1Click
+    end
+  end
+  object Chart1: TChart
+    Legend.Alignment = laBottom
+    Title.Text.Strings = (
+      'TChart')
+    Zoom.Brush.Kind = bkNone
+    Align = alClient
+    ColorPaletteIndex = 13
+    object Series1: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series2: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = True
+      DataSource = Series1
+      Title = 'Average of Series1'
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      object TeeFunction1: TAverageTeeFunction
+        CalcByValue = False
+      end
+    end
+  end
+end

@@ -1,0 +1,30 @@
+object BaseForm: TBaseForm
+  Left = 0
+  Top = 0
+  ClientHeight = 400
+  ClientWidth = 600
+  FormFactor.Width = 1366
+  FormFactor.Height = 768
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Panel1: TPanel
+    Align = alTop
+    Height = 57.000000000000000000
+    Width = 600.000000000000000000
+    TabOrder = 0
+    object BEdit: TButton
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 0
+      Text = 'Edit...'
+      Width = 80.000000000000000000
+      OnClick = BEditClick
+    end
+  end
+end

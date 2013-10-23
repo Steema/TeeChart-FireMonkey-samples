@@ -1,0 +1,63 @@
+inherited BubbleSeriesDemo: TBubbleSeriesDemo
+  Caption = 'BaseForm1'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  inherited Panel1: TPanel
+    object CheckBox1: TCheckBox
+      DisableFocusEffect = False
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 120.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Marks'
+      Width = 120.000000000000000000
+      OnChange = CheckBox1Change
+    end
+  end
+  object Chart1: TChart
+    Height = 343.000000000000000000
+    Position.Y = 57.000000000000000000
+    Width = 600.000000000000000000
+    Title.Text.Strings = (
+      'TChart')
+    Zoom.Brush.Kind = bkNone
+    Align = alClient
+    TabOrder = 1
+    ColorPaletteIndex = 5
+    object Series1: TBubbleSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Frame.Visible = False
+      Marks.ShapeStyle = fosRoundRectangle
+      Marks.Visible = True
+      ClickableLine = False
+      Pointer.Brush.Kind = bkGradient
+      Pointer.Brush.Gradient.EndColor = claGreen
+      Pointer.Brush.Gradient.Visible = True
+      Pointer.Gradient.EndColor = claGreen
+      Pointer.Gradient.Visible = True
+      Pointer.HorizSize = 41
+      Pointer.InflateMargins = False
+      Pointer.Shadow.HorizSize = 5
+      Pointer.Shadow.VertSize = 5
+      Pointer.Shadow.Visible = True
+      Pointer.Style = psCircle
+      Pointer.Transparency = 21
+      Pointer.VertSize = 41
+      Pointer.Visible = True
+      Transparency = 21
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      RadiusValues.Name = 'Radius'
+      RadiusValues.Order = loNone
+    end
+  end
+end

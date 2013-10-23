@@ -1,0 +1,88 @@
+inherited AnimationSeriesValues: TAnimationSeriesValues
+  Caption = 'BaseForm1'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  inherited Panel1: TPanel
+    object Play: TButton
+      Height = 22.000000000000000000
+      Position.X = 168.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Play'
+      Width = 80.000000000000000000
+      OnClick = PlayClick
+    end
+    object CheckBox1: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 272.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 2
+      Text = 'All Bars'
+      Width = 120.000000000000000000
+      OnChange = CheckBox1Change
+    end
+  end
+  object Chart1: TChart
+    Height = 343.000000000000000000
+    Width = 600.000000000000000000
+    Foot.Font.Brush.Color = claRed
+    SubFoot.Font.Brush.Color = claRed
+    SubTitle.Font.Brush.Color = claBlue
+    Title.Font.Brush.Color = claBlue
+    Title.Text.Strings = (
+      'TChart')
+    BottomAxis.Grid.Fill.Color = claGray
+    BottomAxis.MinorTicks.Fill.Color = claDarkgray
+    BottomAxis.Ticks.Fill.Color = claDarkgray
+    BottomAxis.TicksInner.Fill.Color = claDarkgray
+    DepthAxis.Grid.Fill.Color = claGray
+    DepthAxis.MinorTicks.Fill.Color = claDarkgray
+    DepthAxis.Ticks.Fill.Color = claDarkgray
+    DepthAxis.TicksInner.Fill.Color = claDarkgray
+    DepthTopAxis.Grid.Fill.Color = claGray
+    DepthTopAxis.MinorTicks.Fill.Color = claDarkgray
+    DepthTopAxis.Ticks.Fill.Color = claDarkgray
+    DepthTopAxis.TicksInner.Fill.Color = claDarkgray
+    LeftAxis.Grid.Fill.Color = claGray
+    LeftAxis.MinorTicks.Fill.Color = claDarkgray
+    LeftAxis.Ticks.Fill.Color = claDarkgray
+    LeftAxis.TicksInner.Fill.Color = claDarkgray
+    RightAxis.Grid.Fill.Color = claGray
+    RightAxis.MinorTicks.Fill.Color = claDarkgray
+    RightAxis.Ticks.Fill.Color = claDarkgray
+    RightAxis.TicksInner.Fill.Color = claDarkgray
+    TopAxis.Grid.Fill.Color = claGray
+    TopAxis.MinorTicks.Fill.Color = claDarkgray
+    TopAxis.Ticks.Fill.Color = claDarkgray
+    TopAxis.TicksInner.Fill.Color = claDarkgray
+    Zoom.Brush.Kind = bkNone
+    Zoom.MouseWheel = pmwNormal
+    Zoom.Pen.Width = 3.000000000000000000
+    Zoom.Pen.Fill.Color = claWhite
+    Align = alClient
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object Series1: TBarSeries
+      ColorEachPoint = True
+      Marks.Arrow.Fill.Color = claWhite
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.FullGradient = True
+      Marks.Callout.Arrow.Fill.Color = claWhite
+      Marks.Callout.Arrow.Visible = True
+      Marks.ShapeStyle = fosRoundRectangle
+      Marks.Visible = True
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+      Data = {
+        000600000000000000005E90400000000000F08E400000000000409040000000
+        0000788E400000000000208C400000000000948B40}
+    end
+  end
+end

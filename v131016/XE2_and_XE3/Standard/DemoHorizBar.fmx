@@ -1,0 +1,124 @@
+inherited HorizBarDemo: THorizBarDemo
+  OnCreate = FormCreate
+  inherited Panel1: TPanel
+    TabOrder = 0
+    inherited BEdit: TButton
+      Position.Point = '(16,16)'
+    end
+    object ComboBox1: TComboBox
+      Position.Point = '(136,16)'
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      TabOrder = 2
+      ItemIndex = 1
+      Placement = plBottom
+      OnChange = ComboBox1Change
+      object ListBoxItem1: TListBoxItem
+        Position.Point = '(5000,5000)'
+        Width = 80.000000000000000000
+        Height = 19.000000000000000000
+        HitTest = False
+        TabOrder = 0
+        IsChecked = False
+        IsSelected = False
+        Text = 'Normal'
+      end
+      object ListBoxItem2: TListBoxItem
+        Position.Point = '(0,19)'
+        Width = 75.000000000000000000
+        Height = 18.000000000000000000
+        HitTest = False
+        TabOrder = 1
+        IsChecked = False
+        IsSelected = True
+        Text = 'Side'
+      end
+      object ListBoxItem3: TListBoxItem
+        Position.Point = '(0,38)'
+        Width = 80.000000000000000000
+        Height = 19.000000000000000000
+        HitTest = False
+        TabOrder = 2
+        IsChecked = False
+        IsSelected = False
+        Text = 'Stacked'
+      end
+      object ListBoxItem4: TListBoxItem
+        Position.Point = '(0,57)'
+        Width = 80.000000000000000000
+        Height = 19.000000000000000000
+        HitTest = False
+        TabOrder = 3
+        IsChecked = False
+        IsSelected = False
+        Text = 'Stacked 100%'
+      end
+      object ListBoxItem5: TListBoxItem
+        Position.Point = '(0,76)'
+        Width = 80.000000000000000000
+        Height = 19.000000000000000000
+        HitTest = False
+        TabOrder = 4
+        IsChecked = False
+        IsSelected = False
+        Text = 'Side All'
+      end
+      object ListBoxItem6: TListBoxItem
+        Position.Point = '(0,95)'
+        Width = 80.000000000000000000
+        Height = 19.000000000000000000
+        HitTest = False
+        TabOrder = 5
+        IsChecked = False
+        IsSelected = False
+        Text = 'Self Stack'
+      end
+    end
+  end
+  object Chart1: TChart
+    Align = alClient
+    Position.Point = '(0,57)'
+    Width = 600.000000000000000000
+    Height = 343.000000000000000000
+    Legend.CheckBoxes = True
+    Title.Text.Strings = (
+      'Horizontal Bar Series')
+    Zoom.Brush.Kind = bkNone
+    TabOrder = 2
+    ColorPaletteIndex = 13
+    object Series1: THorizBarSeries
+      BarBrush.Gradient.Direction = gdLeftRight
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = True
+      Gradient.Direction = gdLeftRight
+      XValues.Name = 'Bar'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series2: THorizBarSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = True
+      XValues.Name = 'Bar'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series3: THorizBarSeries
+      BarBrush.Gradient.Direction = gdLeftRight
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = True
+      Gradient.Direction = gdLeftRight
+      XValues.Name = 'Bar'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+end
