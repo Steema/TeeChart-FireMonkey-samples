@@ -1,0 +1,138 @@
+object CodingLangsForm: TCodingLangsForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Chart1: TChart
+    BackWall.Brush.Kind = Gradient
+    BackWall.Brush.Gradient.Direction = gdBottomTop
+    BackWall.Brush.Gradient.EndColor = claWhite
+    BackWall.Brush.Gradient.StartColor = x00EAEAEA
+    BackWall.Brush.Gradient.Visible = True
+    BackWall.Transparent = False
+    BackWall.Visible = False
+    Foot.Alignment = taLeftJustify
+    Foot.Font.Family = 'Verdana'
+    Foot.Font.Color = claGray
+    Foot.Font.Brush.Color = claGray
+    Foot.Text.Strings = (
+      'Data from @codeeval')
+    Gradient.Direction = gdBottomTop
+    Gradient.EndColor = claWhite
+    Gradient.MidColor = claWhite
+    Gradient.StartColor = x00EAEAEA
+    LeftWall.Color = x00E0FFFF
+    Legend.Font.Family = 'Verdana'
+    Legend.Font.Size = 18.891565322875980000
+    Legend.Font.Color = claGray
+    Legend.Font.Brush.Color = claGray
+    Legend.Frame.Color = x4A000000
+    Legend.Frame.Fill.Color = x4A000000
+    Legend.Frame.SmallDots = True
+    Legend.Shadow.Transparency = 74
+    Legend.TextStyle = ltsPlain
+    RightWall.Color = x00E0FFFF
+    Title.Font.Size = 27.000000000000000000
+    Title.Font.Color = claGray
+    Title.Font.Brush.Color = claGray
+    Title.Text.Strings = (
+      'Most popular coding languages of 2014')
+    BottomAxis.Axis.Color = x00404040
+    BottomAxis.Axis.Fill.Color = x00404040
+    BottomAxis.Grid.Color = x00A9A9A9
+    BottomAxis.Grid.Fill.Color = x00A9A9A9
+    BottomAxis.LabelsFormat.Font.Family = 'Verdana'
+    BottomAxis.TicksInner.Color = x00A9A9A9
+    BottomAxis.TicksInner.Fill.Color = x00A9A9A9
+    BottomAxis.Title.Font.Family = 'Verdana'
+    DepthAxis.Axis.Color = x00404040
+    DepthAxis.Axis.Fill.Color = x00404040
+    DepthAxis.Grid.Color = x00A9A9A9
+    DepthAxis.Grid.Fill.Color = x00A9A9A9
+    DepthAxis.LabelsFormat.Font.Family = 'Verdana'
+    DepthAxis.TicksInner.Color = x00A9A9A9
+    DepthAxis.TicksInner.Fill.Color = x00A9A9A9
+    DepthAxis.Title.Font.Family = 'Verdana'
+    DepthTopAxis.Axis.Color = x00404040
+    DepthTopAxis.Axis.Fill.Color = x00404040
+    DepthTopAxis.Grid.Color = x00A9A9A9
+    DepthTopAxis.Grid.Fill.Color = x00A9A9A9
+    DepthTopAxis.LabelsFormat.Font.Family = 'Verdana'
+    DepthTopAxis.TicksInner.Color = x00A9A9A9
+    DepthTopAxis.TicksInner.Fill.Color = x00A9A9A9
+    DepthTopAxis.Title.Font.Family = 'Verdana'
+    LeftAxis.Axis.Color = x00404040
+    LeftAxis.Axis.Fill.Color = x00404040
+    LeftAxis.Grid.Color = x00A9A9A9
+    LeftAxis.Grid.Fill.Color = x00A9A9A9
+    LeftAxis.LabelsFormat.Font.Family = 'Verdana'
+    LeftAxis.TicksInner.Color = x00A9A9A9
+    LeftAxis.TicksInner.Fill.Color = x00A9A9A9
+    LeftAxis.Title.Font.Family = 'Verdana'
+    RightAxis.Axis.Color = x00404040
+    RightAxis.Axis.Fill.Color = x00404040
+    RightAxis.Grid.Color = x00A9A9A9
+    RightAxis.Grid.Fill.Color = x00A9A9A9
+    RightAxis.LabelsFormat.Font.Family = 'Verdana'
+    RightAxis.TicksInner.Color = x00A9A9A9
+    RightAxis.TicksInner.Fill.Color = x00A9A9A9
+    RightAxis.Title.Font.Family = 'Verdana'
+    TopAxis.Axis.Color = x00404040
+    TopAxis.Axis.Fill.Color = x00404040
+    TopAxis.Grid.Color = x00A9A9A9
+    TopAxis.Grid.Fill.Color = x00A9A9A9
+    TopAxis.LabelsFormat.Font.Family = 'Verdana'
+    TopAxis.TicksInner.Color = x00A9A9A9
+    TopAxis.TicksInner.Fill.Color = x00A9A9A9
+    TopAxis.Title.Font.Family = 'Verdana'
+    View3D = False
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Align = Client
+    Color = claWhite
+    TabOrder = 0
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 13
+    object Series1: TBubbleCloudSeries
+      Marks.Font.Size = 7.180555343627930000
+      Marks.Font.Color = claGray
+      Marks.Font.Brush.Color = claGray
+      Marks.Transparent = True
+      Marks.Visible = True
+      Marks.AutoPosition = False
+      Title = 'Languages'
+      Pen.SmallDots = True
+      UseColorRange = False
+      UsePalette = True
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loDescending
+      Rotation = 5
+      Separation = 51
+      SizeRatio = 1.440000000000000000
+      Data = {
+        040A00000000000000005C9240FF06000000507974686F6ECDCCCCCCCC4C3E40
+        0000000000EA9040FF040000004A61766133333333333336400000000000D690
+        40FF03000000432B2B0000000000002A4000000000007C9040FF040000005275
+        6279333333333333254000000000004A9040FF0A0000004A6176615363726970
+        74CDCCCCCCCCCC144000000000002C9040FF0200000043230000000000001440
+        00000000002C9040FF010000004366666666666610400000000000CC8F40FF03
+        0000005048506666666666660A400000000000688F40FF040000005065726C9A
+        9999999999F93F0000000000788E40FF02000000476F000000000000F83F}
+    end
+    object ChartAnimation1: TTeeAnimationTool
+      object TRandomPointsAnimation
+        Chart = Chart1
+      end
+    end
+  end
+end

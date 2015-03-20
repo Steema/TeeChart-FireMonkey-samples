@@ -1,0 +1,182 @@
+object StackedBarsForm: TStackedBarsForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Chart1: TChart
+    BackWall.Brush.Kind = Gradient
+    BackWall.Brush.Gradient.Direction = gdBottomTop
+    BackWall.Brush.Gradient.EndColor = claWhite
+    BackWall.Brush.Gradient.StartColor = x00EAEAEA
+    BackWall.Brush.Gradient.Visible = True
+    BackWall.Transparent = False
+    BackWall.Visible = False
+    Foot.Alignment = taLeftJustify
+    Foot.Font.Color = claBlack
+    Foot.Font.Brush.Color = claBlack
+    Foot.Text.Strings = (
+      
+        'Source : BI Intelligence estimates, Interactive Advertising Bure' +
+        'au')
+    Foot.TextAlignment = taLeftJustify
+    Gradient.Direction = gdBottomTop
+    Gradient.EndColor = claWhite
+    Gradient.MidColor = claWhite
+    Gradient.StartColor = x00EAEAEA
+    Gradient.Visible = True
+    LeftWall.Color = x00E0FFFF
+    Legend.Alignment = laTop
+    Legend.Font.Family = 'Verdana'
+    Legend.Shadow.Transparency = 0
+    Legend.Transparent = True
+    RightWall.Color = x00E0FFFF
+    SubTitle.Font.Color = claGray
+    SubTitle.Font.Brush.Color = claGray
+    SubTitle.Text.Strings = (
+      'Desktop and Mobile')
+    Title.Font.Size = 18.000000000000000000
+    Title.Font.Color = claGray
+    Title.Font.Brush.Color = claGray
+    Title.Text.Strings = (
+      'Native Advertising Revenue (US)')
+    BottomAxis.Axis.Color = x00404040
+    BottomAxis.Axis.Fill.Color = x00404040
+    BottomAxis.Grid.Color = x00A9A9A9
+    BottomAxis.Grid.Fill.Color = x00A9A9A9
+    BottomAxis.LabelsFormat.Font.Family = 'Verdana'
+    BottomAxis.TicksInner.Color = x00A9A9A9
+    BottomAxis.TicksInner.Fill.Color = x00A9A9A9
+    BottomAxis.Title.Font.Family = 'Verdana'
+    DepthAxis.Axis.Color = x00404040
+    DepthAxis.Axis.Fill.Color = x00404040
+    DepthAxis.Grid.Color = x00A9A9A9
+    DepthAxis.Grid.Fill.Color = x00A9A9A9
+    DepthAxis.LabelsFormat.Font.Family = 'Verdana'
+    DepthAxis.TicksInner.Color = x00A9A9A9
+    DepthAxis.TicksInner.Fill.Color = x00A9A9A9
+    DepthAxis.Title.Font.Family = 'Verdana'
+    DepthTopAxis.Axis.Color = x00404040
+    DepthTopAxis.Axis.Fill.Color = x00404040
+    DepthTopAxis.Grid.Color = x00A9A9A9
+    DepthTopAxis.Grid.Fill.Color = x00A9A9A9
+    DepthTopAxis.LabelsFormat.Font.Family = 'Verdana'
+    DepthTopAxis.TicksInner.Color = x00A9A9A9
+    DepthTopAxis.TicksInner.Fill.Color = x00A9A9A9
+    DepthTopAxis.Title.Font.Family = 'Verdana'
+    LeftAxis.Axis.Color = x00404040
+    LeftAxis.Axis.Fill.Color = x00404040
+    LeftAxis.Grid.Color = x00A9A9A9
+    LeftAxis.Grid.Fill.Color = x00A9A9A9
+    LeftAxis.LabelsFormat.Font.Family = 'Verdana'
+    LeftAxis.TicksInner.Color = x00A9A9A9
+    LeftAxis.TicksInner.Fill.Color = x00A9A9A9
+    LeftAxis.Title.Font.Family = 'Verdana'
+    LeftAxis.Visible = False
+    RightAxis.Automatic = False
+    RightAxis.AutomaticMaximum = False
+    RightAxis.AutomaticMinimum = False
+    RightAxis.Axis.Color = x00404040
+    RightAxis.Axis.Width = 1.000000000000000000
+    RightAxis.Axis.Fill.Color = x00404040
+    RightAxis.Grid.Color = x00A9A9A9
+    RightAxis.Grid.Fill.Color = x00A9A9A9
+    RightAxis.Grid.Visible = False
+    RightAxis.Increment = 5.000000000000000000
+    RightAxis.LabelsFormat.Font.Family = 'Verdana'
+    RightAxis.LabelsSeparation = 0
+    RightAxis.Maximum = 21.000000000000000000
+    RightAxis.MinorTicks.Visible = False
+    RightAxis.TicksInner.Color = x00A9A9A9
+    RightAxis.TicksInner.Fill.Color = x00A9A9A9
+    RightAxis.Title.Caption = 'Billions'
+    RightAxis.Title.Font.Family = 'Verdana'
+    TopAxis.Axis.Color = x00404040
+    TopAxis.Axis.Fill.Color = x00404040
+    TopAxis.Grid.Color = x00A9A9A9
+    TopAxis.Grid.Fill.Color = x00A9A9A9
+    TopAxis.LabelsFormat.Font.Family = 'Verdana'
+    TopAxis.TicksInner.Color = x00A9A9A9
+    TopAxis.TicksInner.Fill.Color = x00A9A9A9
+    TopAxis.Title.Font.Family = 'Verdana'
+    View3D = False
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Align = Client
+    Color = claWhite
+    TabOrder = 0
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 13
+    object Series0: TBarSeries
+      BarPen.Visible = False
+      Marks.Transparent = True
+      Marks.Arrow.Visible = False
+      Marks.Callout.Arrow.Visible = False
+      Marks.Callout.ArrowHeadSize = 0
+      Marks.Callout.Length = -14
+      Title = 'Native-Style Display'
+      VertAxis = aRightAxis
+      MultiBar = mbStacked
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+      Data = {
+        0406000000000000000000F03FFF0400000032303133CDCCCCCCCCCCF43FFF04
+        00000032303134666666666666FE3FFF04000000323031359A99999999990540
+        FF04000000323031363333333333330F40FF0400000032303137CDCCCCCCCCCC
+        1640FF0400000032303138}
+    end
+    object Series1: TBarSeries
+      BarPen.Visible = False
+      Marks.Transparent = True
+      Marks.Arrow.Visible = False
+      Marks.Callout.Pen.Visible = False
+      Marks.Callout.Arrow.Visible = False
+      Marks.Callout.ArrowHeadSize = 0
+      Marks.Callout.Length = -14
+      Title = 'Sponsorship'
+      VertAxis = aRightAxis
+      MultiBar = mbStacked
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+      Data = {
+        00060000009A9999999999E93F000000000000F03FCDCCCCCCCCCCF43F000000
+        00000000409A999999999905403333333333330B40}
+    end
+    object Series2: TBarSeries
+      BarPen.Visible = False
+      Marks.Transparent = True
+      Marks.Arrow.SmallDots = True
+      Marks.Arrow.Visible = False
+      Marks.Callout.Arrow.SmallDots = True
+      Marks.Callout.Arrow.Visible = False
+      Marks.Callout.ArrowHeadSize = 0
+      Marks.Callout.Length = -19
+      Title = 'Social'
+      VertAxis = aRightAxis
+      MultiBar = mbStacked
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+      Data = {
+        0006000000333333333333074066666666666616400000000000001E40666666
+        66666622406666666666662540CDCCCCCCCCCC2740}
+    end
+  end
+  object ImportChart1: TImportChart
+    Chart = Chart1
+    Left = 368
+    Top = 200
+  end
+end

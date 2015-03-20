@@ -1,0 +1,346 @@
+object PieChartForm: TPieChartForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 762
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Chart1: TChart
+    BackWall.Brush.Kind = Gradient
+    BackWall.Brush.Gradient.Direction = gdBottomTop
+    BackWall.Brush.Gradient.EndColor = claWhite
+    BackWall.Brush.Gradient.StartColor = x00EAEAEA
+    BackWall.Brush.Gradient.Visible = True
+    BackWall.Pen.Visible = False
+    BackWall.Transparent = False
+    BottomWall.Brush.Kind = Gradient
+    BottomWall.Brush.Gradient.EndColor = claSilver
+    BottomWall.Brush.Gradient.StartColor = claGray
+    BottomWall.Brush.Gradient.Visible = True
+    BottomWall.Pen.Color = claGray
+    BottomWall.Pen.Fill.Color = claGray
+    BottomWall.Transparent = True
+    Foot.Font.Family = 'Verdana'
+    Foot.Font.Color = claBlue
+    Foot.Font.Brush.Color = claBlue
+    Gradient.Direction = gdFromTopLeft
+    Gradient.EndColor = claWhite
+    Gradient.MidColor = x00EAEAEA
+    Gradient.StartColor = claSilver
+    LeftWall.Brush.Kind = Gradient
+    LeftWall.Brush.Gradient.EndColor = claSilver
+    LeftWall.Brush.Gradient.StartColor = claGray
+    LeftWall.Brush.Gradient.Visible = True
+    LeftWall.Color = claWhite
+    LeftWall.Pen.Color = claGray
+    LeftWall.Pen.Fill.Color = claGray
+    LeftWall.Transparent = True
+    Legend.Alignment = laBottom
+    Legend.Font.Size = 14.250000000000000000
+    Legend.Font.Color = claSilver
+    Legend.Font.Brush.Color = claSilver
+    Legend.Frame.Visible = False
+    Legend.Shadow.Transparency = 0
+    Legend.Shadow.Visible = False
+    Legend.Symbol.Pen.Visible = False
+    Legend.Transparent = True
+    MarginRight = 18
+    RightWall.Color = x00E0FFFF
+    RightWall.Transparent = True
+    SubTitle.Font.Size = 14.250000000000000000
+    SubTitle.Font.Color = claSilver
+    SubTitle.Font.Brush.Color = claSilver
+    SubTitle.Font.Shadow.Color = claGray
+    SubTitle.Text.Strings = (
+      'actively using social media')
+    Title.Font.Size = 23.250000000000000000
+    Title.Font.Color = claSilver
+    Title.Font.Brush.Color = claSilver
+    Title.Font.Shadow.Color = x00838383
+    Title.Font.Shadow.HorizSize = 1
+    Title.Font.Shadow.SmoothBlur = 2
+    Title.Font.Shadow.VertSize = 1
+    Title.Text.Strings = (
+      'Percentage of world population')
+    BottomAxis.Axis.Color = x00404040
+    BottomAxis.Axis.Fill.Color = x00404040
+    BottomAxis.Axis.Visible = False
+    BottomAxis.Grid.Color = x00DDDDDD
+    BottomAxis.Grid.Fill.Color = x00DDDDDD
+    BottomAxis.Grid.Visible = False
+    BottomAxis.LabelsFormat.Font.Family = 'Roboto Th'
+    BottomAxis.LabelsFormat.Font.Size = 18.000000000000000000
+    BottomAxis.LabelsFormat.Font.Color = claGray
+    BottomAxis.LabelsFormat.Font.Brush.Color = claGray
+    BottomAxis.MinorTicks.Visible = False
+    BottomAxis.Ticks.Color = claGray
+    BottomAxis.Ticks.Fill.Color = claGray
+    BottomAxis.TicksInner.Color = x00A9A9A9
+    BottomAxis.TicksInner.Fill.Color = x00A9A9A9
+    BottomAxis.TicksInner.Visible = False
+    BottomAxis.Title.Font.Family = 'Roboto Th'
+    BottomAxis.Title.Font.Size = 9.750000000000000000
+    DepthAxis.Axis.Color = x00404040
+    DepthAxis.Axis.Fill.Color = x00404040
+    DepthAxis.Grid.Color = x00A9A9A9
+    DepthAxis.Grid.Fill.Color = x00A9A9A9
+    DepthAxis.LabelsFormat.Font.Family = 'Verdana'
+    DepthAxis.TicksInner.Color = x00A9A9A9
+    DepthAxis.TicksInner.Fill.Color = x00A9A9A9
+    DepthAxis.Title.Font.Family = 'Roboto Th'
+    DepthAxis.Title.Font.Size = 9.750000000000000000
+    DepthTopAxis.Axis.Color = x00404040
+    DepthTopAxis.Axis.Fill.Color = x00404040
+    DepthTopAxis.Grid.Color = x00A9A9A9
+    DepthTopAxis.Grid.Fill.Color = x00A9A9A9
+    DepthTopAxis.LabelsFormat.Font.Family = 'Verdana'
+    DepthTopAxis.TicksInner.Color = x00A9A9A9
+    DepthTopAxis.TicksInner.Fill.Color = x00A9A9A9
+    DepthTopAxis.Title.Font.Family = 'Roboto Th'
+    DepthTopAxis.Title.Font.Size = 9.750000000000000000
+    Frame.Visible = False
+    LeftAxis.Axis.Color = x00404040
+    LeftAxis.Axis.Fill.Color = x00404040
+    LeftAxis.Axis.Visible = False
+    LeftAxis.Grid.Color = x00DDDDDD
+    LeftAxis.Grid.Fill.Color = x00DDDDDD
+    LeftAxis.LabelsFormat.Font.Family = 'Roboto Th'
+    LeftAxis.LabelsFormat.Font.Size = 18.000000000000000000
+    LeftAxis.LabelsFormat.Font.Color = claGray
+    LeftAxis.LabelsFormat.Font.Brush.Color = claGray
+    LeftAxis.MinorTicks.Visible = False
+    LeftAxis.TickLength = 7
+    LeftAxis.Ticks.Color = claGray
+    LeftAxis.Ticks.Fill.Color = claGray
+    LeftAxis.TicksInner.Color = x00A9A9A9
+    LeftAxis.TicksInner.Fill.Color = x00A9A9A9
+    LeftAxis.TicksInner.Visible = False
+    LeftAxis.Title.Font.Family = 'Roboto Th'
+    LeftAxis.Title.Font.Size = 9.750000000000000000
+    RightAxis.Axis.Color = x00404040
+    RightAxis.Axis.Fill.Color = x00404040
+    RightAxis.Grid.Color = x00A9A9A9
+    RightAxis.Grid.Fill.Color = x00A9A9A9
+    RightAxis.Grid.Visible = False
+    RightAxis.LabelsFormat.Font.Family = 'Roboto Th'
+    RightAxis.LabelsFormat.Font.Size = 23.250000000000000000
+    RightAxis.LabelsFormat.Font.Color = claGray
+    RightAxis.LabelsFormat.Font.Brush.Color = claGray
+    RightAxis.MinorTicks.Visible = False
+    RightAxis.Ticks.Visible = False
+    RightAxis.TicksInner.Color = x00A9A9A9
+    RightAxis.TicksInner.Fill.Color = x00A9A9A9
+    RightAxis.Title.Font.Family = 'Roboto Th'
+    RightAxis.Title.Font.Size = 9.750000000000000000
+    TopAxis.Axis.Color = x00404040
+    TopAxis.Axis.Fill.Color = x00404040
+    TopAxis.Grid.Color = x00A9A9A9
+    TopAxis.Grid.Fill.Color = x00A9A9A9
+    TopAxis.LabelsFormat.Font.Family = 'Verdana'
+    TopAxis.TicksInner.Color = x00A9A9A9
+    TopAxis.TicksInner.Fill.Color = x00A9A9A9
+    TopAxis.Title.Font.Family = 'Roboto Th'
+    TopAxis.Title.Font.Size = 9.750000000000000000
+    View3D = False
+    View3DOptions.Elevation = 315
+    View3DOptions.Orthogonal = False
+    View3DOptions.Perspective = 0
+    View3DOptions.Rotation = 360
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Align = Client
+    BevelOuter = bvNone
+    BevelWidth = 2
+    Color = xA20F39D9
+    TabOrder = 2
+    Opacity = 0.000000000000000000
+    Size.Width = 762.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 19
+    object Panel1: TPanel
+      Align = Right
+      Opacity = 0.000000000000000000
+      Position.X = 440.000000000000000000
+      Size.Width = 322.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Chart2: TChart
+        Position.X = 50.000000000000000000
+        Position.Y = 183.000000000000000000
+        Title.Text.Strings = (
+          'TChart')
+        Title.Visible = False
+        Zoom.Brush.Kind = None
+        Zoom.Pen.Fill.Color = claSilver
+        BevelOuter = bvNone
+        TabOrder = 1
+        Size.Width = 261.000000000000000000
+        Size.Height = 104.000000000000000000
+        Size.PlatformDefault = False
+        ColorPaletteIndex = 13
+        object Series1: TNumericGauge
+          Legend.Visible = False
+          ShowInLegend = False
+          XValues.Name = 'X'
+          XValues.Order = loNone
+          YValues.Name = 'Y'
+          YValues.Order = loNone
+          Frame.InnerBrush.Gradient.EndColor = claRed
+          Frame.InnerBrush.BackColor = claRed
+          Frame.MiddleBrush.BackColor = claYellow
+          Frame.OuterBrush.Gradient.EndColor = claGreen
+          Frame.OuterBrush.BackColor = claGreen
+          Value = 82.500000000000000000
+          InternalMarkers = {
+            03000000545046300E544E756D657269634D61726B65720008506F736974696F
+            6E0708707043656E7465720B53686170652E436F6C6F72070978464644424442
+            43381153686170652E466F6E742E46616D696C79060A44532D4469676974616C
+            0F53686170652E466F6E742E53697A6505000000000000009004401053686170
+            652E466F6E742E436F6C6F7207097846463238323832381653686170652E466F
+            6E742E42727573682E436F6C6F7207097846463238323832381353686170652E
+            4672616D652E56697369626C65081453686170652E536861646F772E56697369
+            626C65080A53686170652E54657874060538322C35301353686170652E546578
+            74416C69676E6D656E74070E746152696768744A757374696679115368617065
+            2E5472616E73706172656E74090D54657874416C69676E6D656E74070E746152
+            696768744A7573746966790000545046300E544E756D657269634D61726B6572
+            0008506F736974696F6E070C70704C656674426F74746F6D0B53686170652E43
+            6F6C6F7207097846464442444243381153686170652E466F6E742E46616D696C
+            79060A44532D4469676974616C0F53686170652E466F6E742E53697A65050000
+            00000000009003401053686170652E466F6E742E436F6C6F7207097846463238
+            323832381653686170652E466F6E742E42727573682E436F6C6F720709784646
+            3238323832381353686170652E4672616D652E56697369626C65081453686170
+            652E536861646F772E56697369626C65080A53686170652E5465787406034D48
+            7A1153686170652E5472616E73706172656E74090000545046300E544E756D65
+            7269634D61726B6572000B53686170652E436F6C6F7207097846463238323832
+            381153686170652E466F6E742E46616D696C79060A44532D4469676974616C0F
+            53686170652E466F6E742E53697A650500000000000000B00240105368617065
+            2E466F6E742E436F6C6F7207097846464442444243381653686170652E466F6E
+            742E42727573682E436F6C6F7207097846464442444243381353686170652E46
+            72616D652E56697369626C65081453686170652E536861646F772E5669736962
+            6C65080A53686170652E546578740604465245510000}
+        end
+      end
+      object Chart3: TChart
+        Position.X = 50.000000000000000000
+        Position.Y = 297.000000000000000000
+        Title.Text.Strings = (
+          'TChart')
+        Title.Visible = False
+        Zoom.Brush.Kind = None
+        Zoom.Pen.Fill.Color = claSilver
+        BevelOuter = bvNone
+        TabOrder = 0
+        Size.Width = 262.000000000000000000
+        Size.Height = 104.000000000000000000
+        Size.PlatformDefault = False
+        ColorPaletteIndex = 13
+        object NumericGauge1: TNumericGauge
+          Legend.Visible = False
+          ShowInLegend = False
+          XValues.Name = 'X'
+          XValues.Order = loNone
+          YValues.Name = 'Y'
+          YValues.Order = loNone
+          Frame.InnerBrush.Gradient.EndColor = claRed
+          Frame.InnerBrush.BackColor = claRed
+          Frame.MiddleBrush.BackColor = claYellow
+          Frame.OuterBrush.Gradient.EndColor = claGreen
+          Frame.OuterBrush.BackColor = claGreen
+          Value = 847.500000000000000000
+          InternalMarkers = {
+            03000000545046300E544E756D657269634D61726B65720008506F736974696F
+            6E0708707043656E7465720B53686170652E436F6C6F72070978464644424442
+            43381153686170652E466F6E742E46616D696C79060A44532D4469676974616C
+            0F53686170652E466F6E742E53697A6505000000000000009004401053686170
+            652E466F6E742E436F6C6F7207097846463238323832381653686170652E466F
+            6E742E42727573682E436F6C6F7207097846463238323832381353686170652E
+            4672616D652E56697369626C65081453686170652E536861646F772E56697369
+            626C65080A53686170652E5465787406063834372C35301353686170652E5465
+            7874416C69676E6D656E74070E746152696768744A7573746966791153686170
+            652E5472616E73706172656E74090D54657874416C69676E6D656E74070E7461
+            52696768744A7573746966790000545046300E544E756D657269634D61726B65
+            720008506F736974696F6E070C70704C656674426F74746F6D0B53686170652E
+            436F6C6F7207097846464442444243381153686170652E466F6E742E46616D69
+            6C79060A44532D4469676974616C0F53686170652E466F6E742E53697A650500
+            0000000000009003401053686170652E466F6E742E436F6C6F72070978464632
+            38323832381653686170652E466F6E742E42727573682E436F6C6F7207097846
+            463238323832381353686170652E4672616D652E56697369626C650814536861
+            70652E536861646F772E56697369626C65080A53686170652E5465787406034D
+            487A1153686170652E5472616E73706172656E74090000545046300E544E756D
+            657269634D61726B6572000B53686170652E436F6C6F72070978464632383238
+            32381153686170652E466F6E742E46616D696C79060A44532D4469676974616C
+            0F53686170652E466F6E742E53697A650500000000000000B002401053686170
+            652E466F6E742E436F6C6F7207097846464442444243381653686170652E466F
+            6E742E42727573682E436F6C6F7207097846464442444243381353686170652E
+            4672616D652E56697369626C65081453686170652E536861646F772E56697369
+            626C65080A53686170652E546578740604465245510000}
+        end
+      end
+    end
+    object SeriesPie: TPieSeries
+      Marks.Font.Family = 'Roboto Th'
+      Marks.Font.Style = [fsBold]
+      Marks.Font.Color = claWhite
+      Marks.Font.Brush.Color = claWhite
+      Marks.Frame.Visible = False
+      Marks.RoundSize = 18
+      Marks.Shadow.Visible = False
+      Marks.Transparency = 48
+      Marks.Arrow.Color = x67C0C0C0
+      Marks.Arrow.Width = 2.000000000000000000
+      Marks.Arrow.Fill.Color = x67C0C0C0
+      Marks.BackColor = claNavy
+      Marks.Callout.Arrow.Color = x67C0C0C0
+      Marks.Callout.Arrow.Width = 2.000000000000000000
+      Marks.Callout.Arrow.Fill.Color = x67C0C0C0
+      Marks.Callout.ArrowHeadSize = 7
+      Marks.Callout.Distance = 9
+      Marks.Callout.Length = 30
+      Marks.TextAlign = taLeftJustify
+      Marks.Color = claNavy
+      SeriesColor = x006699FF
+      XValues.Order = loNone
+      YValues.Name = 'Pie'
+      YValues.Order = loNone
+      Frame.InnerBrush.Kind = Gradient
+      Frame.InnerBrush.Gradient.EndColor = claGray
+      Frame.InnerBrush.Gradient.MidColor = claWhite
+      Frame.InnerBrush.Gradient.StartColor = x00404040
+      Frame.InnerBrush.Gradient.Visible = True
+      Frame.InnerBrush.BackColor = claRed
+      Frame.MiddleBrush.Kind = Gradient
+      Frame.MiddleBrush.Gradient.EndColor = x00828282
+      Frame.MiddleBrush.Gradient.MidColor = claWhite
+      Frame.MiddleBrush.Gradient.StartColor = claGray
+      Frame.MiddleBrush.Gradient.Visible = True
+      Frame.MiddleBrush.BackColor = claYellow
+      Frame.OuterBrush.Kind = Gradient
+      Frame.OuterBrush.Gradient.EndColor = x00404040
+      Frame.OuterBrush.Gradient.MidColor = claWhite
+      Frame.OuterBrush.Gradient.StartColor = claSilver
+      Frame.OuterBrush.Gradient.Visible = True
+      Frame.OuterBrush.BackColor = claGreen
+      Frame.Width = 4
+      Shadow.Visible = False
+      EdgeStyle = edFlat
+      OtherSlice.Legend.Visible = False
+      PieMarks.LegSize = 30
+      PieMarks.VertCenter = True
+      PiePen.Color = claGray
+      PiePen.Fill.Color = claGray
+      PiePen.Visible = False
+      Data = {
+        04080000000000000000804B40FF04000000436172730000000000C07640FF06
+        00000050686F6E65730000000000006640FF060000005461626C657300000000
+        00C06440FF080000004D6F6E69746F72730000000000A88A40FF050000004C61
+        6D70730000000000388540FF090000004B6579626F6172647300000000009082
+        40FF0500000042696B65730000000000007D40FF06000000436861697273}
+    end
+  end
+end

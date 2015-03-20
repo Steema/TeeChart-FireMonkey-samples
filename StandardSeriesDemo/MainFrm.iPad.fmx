@@ -1,0 +1,24 @@
+inherited MainForm_iPad: TMainForm_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 2
+  inherited DetailPanel: TPanel
+    Size.Width = 518.000000000000000000
+    Size.Height = 1004.000000000000000000
+    inherited ToolBar1: TToolBar
+      Size.Width = 518.000000000000000000
+      inherited Label2: TLabel
+        Size.Width = 518.000000000000000000
+      end
+    end
+  end
+  inherited MultiView1: TMultiView
+    Size.Height = 1004.000000000000000000
+    inherited ToolBar2: TToolBar
+      inherited Image1: TImage
+        MultiResBitmap.Height = 44
+        MultiResBitmap.Width = 190
+      end
+    end
+  end
+end

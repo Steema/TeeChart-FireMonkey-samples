@@ -1,0 +1,487 @@
+object ServerStatusForm: TServerStatusForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = Chart1
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = Chart2
+        Row = 0
+      end
+      item
+        Column = 0
+        ColumnSpan = 2
+        Control = Chart3
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+      end>
+    object Chart1: TChart
+      BackWall.Brush.Kind = Gradient
+      BackWall.Brush.Gradient.Direction = gdBottomTop
+      BackWall.Brush.Gradient.EndColor = claWhite
+      BackWall.Brush.Gradient.StartColor = x00EAEAEA
+      BackWall.Brush.Gradient.Visible = True
+      BackWall.Transparent = False
+      BackWall.Visible = False
+      Foot.Font.Family = 'Verdana'
+      Foot.Font.Color = claBlue
+      Foot.Font.Brush.Color = claBlue
+      Gradient.Direction = gdBottomTop
+      Gradient.EndColor = claWhite
+      Gradient.MidColor = claWhite
+      Gradient.StartColor = x00EAEAEA
+      Gradient.Visible = True
+      LeftWall.Color = x00E0FFFF
+      Legend.Font.Family = 'Verdana'
+      Legend.Shadow.Transparency = 0
+      Legend.Visible = False
+      RightWall.Color = x00E0FFFF
+      Title.AutoSize = False
+      Title.Font.Size = 18.750000000000000000
+      Title.Font.Color = claGray
+      Title.Font.Brush.Color = claGray
+      Title.Frame.Color = x08808080
+      Title.Frame.Fill.Color = x08808080
+      Title.Frame.SmallDots = True
+      Title.Margins.Top = 0
+      Title.Margins.Bottom = 0
+      Title.Shadow.Visible = False
+      Title.Text.Strings = (
+        'Server Status')
+      Title.Transparent = False
+      Title.AdjustFrame = False
+      BottomAxis.Axis.Color = x00404040
+      BottomAxis.Axis.Fill.Color = x00404040
+      BottomAxis.Grid.Color = x00A9A9A9
+      BottomAxis.Grid.Fill.Color = x00A9A9A9
+      BottomAxis.Grid.Visible = False
+      BottomAxis.LabelsFormat.Font.Family = 'Verdana'
+      BottomAxis.TicksInner.Color = x00A9A9A9
+      BottomAxis.TicksInner.Fill.Color = x00A9A9A9
+      BottomAxis.Title.Font.Family = 'Verdana'
+      BottomAxis.Visible = False
+      DepthAxis.Axis.Color = x00404040
+      DepthAxis.Axis.Fill.Color = x00404040
+      DepthAxis.Grid.Color = x00A9A9A9
+      DepthAxis.Grid.Fill.Color = x00A9A9A9
+      DepthAxis.LabelsFormat.Font.Family = 'Verdana'
+      DepthAxis.TicksInner.Color = x00A9A9A9
+      DepthAxis.TicksInner.Fill.Color = x00A9A9A9
+      DepthAxis.Title.Font.Family = 'Verdana'
+      DepthTopAxis.Axis.Color = x00404040
+      DepthTopAxis.Axis.Fill.Color = x00404040
+      DepthTopAxis.Grid.Color = x00A9A9A9
+      DepthTopAxis.Grid.Fill.Color = x00A9A9A9
+      DepthTopAxis.LabelsFormat.Font.Family = 'Verdana'
+      DepthTopAxis.TicksInner.Color = x00A9A9A9
+      DepthTopAxis.TicksInner.Fill.Color = x00A9A9A9
+      DepthTopAxis.Title.Font.Family = 'Verdana'
+      CustomAxes = <
+        item
+          Horizontal = False
+          OtherSide = False
+        end>
+      LeftAxis.Axis.Color = x00404040
+      LeftAxis.Axis.Fill.Color = x00404040
+      LeftAxis.Grid.Color = x00A9A9A9
+      LeftAxis.Grid.Fill.Color = x00A9A9A9
+      LeftAxis.Grid.Visible = False
+      LeftAxis.LabelsFormat.Font.Family = 'Verdana'
+      LeftAxis.MaximumOffset = 7
+      LeftAxis.TicksInner.Color = x00A9A9A9
+      LeftAxis.TicksInner.Fill.Color = x00A9A9A9
+      LeftAxis.Title.Font.Family = 'Verdana'
+      LeftAxis.Visible = False
+      RightAxis.Axis.Color = x00404040
+      RightAxis.Axis.Fill.Color = x00404040
+      RightAxis.Grid.Color = x00A9A9A9
+      RightAxis.Grid.Fill.Color = x00A9A9A9
+      RightAxis.LabelsFormat.Font.Family = 'Verdana'
+      RightAxis.TicksInner.Color = x00A9A9A9
+      RightAxis.TicksInner.Fill.Color = x00A9A9A9
+      RightAxis.Title.Font.Family = 'Verdana'
+      TopAxis.Axis.Color = x00404040
+      TopAxis.Axis.Fill.Color = x00404040
+      TopAxis.Grid.Color = x00A9A9A9
+      TopAxis.Grid.Fill.Color = x00A9A9A9
+      TopAxis.LabelsFormat.Font.Family = 'Verdana'
+      TopAxis.TicksInner.Color = x00A9A9A9
+      TopAxis.TicksInner.Fill.Color = x00A9A9A9
+      TopAxis.Title.Font.Family = 'Verdana'
+      View3D = False
+      Zoom.Brush.Kind = None
+      Zoom.Pen.Fill.Color = claSilver
+      Align = Client
+      BevelOuter = bvNone
+      Color = claWhite
+      TabOrder = 0
+      Size.Width = 320.000000000000000000
+      Size.Height = 240.000000000000000000
+      Size.PlatformDefault = False
+      Left = 3
+      Top = 3
+      ColorPaletteIndex = 13
+      object SeriesHorizBar1: THorizBarSeries
+        BarBrush.Gradient.Direction = gdLeftRight
+        BarPen.Color = x7D000000
+        BarPen.Fill.Color = x7D000000
+        BarPen.Fill.Kind = Gradient
+        BarPen.Fill.Gradient.EndColor = claGray
+        BarPen.Fill.Gradient.StartColor = x00DFDFDF
+        BarPen.Fill.Gradient.Visible = True
+        BarPen.SmallDots = True
+        Marks.Visible = False
+        SeriesColor = claWhite
+        BarWidthPercent = 50
+        Gradient.Direction = gdLeftRight
+        MultiBar = mbNone
+        XValues.Name = 'Bar'
+        XValues.Order = loNone
+        YValues.Name = 'Y'
+        YValues.Order = loAscending
+        Data = {
+          0005000000000000000000594000000000000059400000000000005940000000
+          00000059400000000000005940}
+      end
+      object SeriesHorizBar2: THorizBarSeries
+        BarBrush.Gradient.Direction = gdLeftRight
+        BarPen.Visible = False
+        ColorEachPoint = True
+        Marks.Font.Style = [fsBold]
+        Marks.Font.Color = claWhite
+        Marks.Font.Brush.Color = claWhite
+        Marks.Transparent = True
+        Marks.TextAlignment = taRightJustify
+        Marks.Style = smsPercent
+        Marks.Arrow.Visible = False
+        Marks.Callout.Arrow.Visible = False
+        Marks.Callout.Length = -57
+        Marks.TextAlign = taRightJustify
+        BarWidthPercent = 44
+        Gradient.Direction = gdLeftRight
+        MultiBar = mbNone
+        XValues.Name = 'Bar'
+        XValues.Order = loNone
+        YValues.Name = 'Y'
+        YValues.Order = loAscending
+        Data = {
+          04050000000000000000004E40FF0900000042616E6477696474680000000000
+          405540FF0E0000004170707320696E7374616C6C65640000000000004440FF0D
+          00000053746F726167652073706163650000000000804B40FF09000000435055
+          2055736167650000000000004940FF0C0000004D656D6F7279205573616765}
+      end
+    end
+    object Chart2: TChart
+      BackWall.Brush.Kind = Gradient
+      BackWall.Brush.Gradient.Direction = gdBottomTop
+      BackWall.Brush.Gradient.EndColor = claWhite
+      BackWall.Brush.Gradient.StartColor = x00EAEAEA
+      BackWall.Brush.Gradient.Visible = True
+      BackWall.Transparent = False
+      Foot.Font.Family = 'Verdana'
+      Foot.Font.Color = claBlue
+      Foot.Font.Brush.Color = claBlue
+      Gradient.Direction = gdBottomTop
+      Gradient.EndColor = claWhite
+      Gradient.MidColor = claWhite
+      Gradient.StartColor = x00EAEAEA
+      Gradient.Visible = True
+      LeftWall.Color = x00E0FFFF
+      Legend.Font.Family = 'Verdana'
+      Legend.Shadow.Transparency = 0
+      Legend.Visible = False
+      RightWall.Color = x00E0FFFF
+      Title.Font.Family = 'Verdana'
+      Title.Text.Strings = (
+        'TeeChart')
+      Title.Visible = False
+      BottomAxis.Axis.Color = x00404040
+      BottomAxis.Axis.Fill.Color = x00404040
+      BottomAxis.Grid.Color = x00A9A9A9
+      BottomAxis.Grid.Fill.Color = x00A9A9A9
+      BottomAxis.LabelsFormat.Font.Family = 'Verdana'
+      BottomAxis.TicksInner.Color = x00A9A9A9
+      BottomAxis.TicksInner.Fill.Color = x00A9A9A9
+      BottomAxis.Title.Font.Family = 'Verdana'
+      DepthAxis.Axis.Color = x00404040
+      DepthAxis.Axis.Fill.Color = x00404040
+      DepthAxis.Grid.Color = x00A9A9A9
+      DepthAxis.Grid.Fill.Color = x00A9A9A9
+      DepthAxis.LabelsFormat.Font.Family = 'Verdana'
+      DepthAxis.TicksInner.Color = x00A9A9A9
+      DepthAxis.TicksInner.Fill.Color = x00A9A9A9
+      DepthAxis.Title.Font.Family = 'Verdana'
+      DepthTopAxis.Axis.Color = x00404040
+      DepthTopAxis.Axis.Fill.Color = x00404040
+      DepthTopAxis.Grid.Color = x00A9A9A9
+      DepthTopAxis.Grid.Fill.Color = x00A9A9A9
+      DepthTopAxis.LabelsFormat.Font.Family = 'Verdana'
+      DepthTopAxis.TicksInner.Color = x00A9A9A9
+      DepthTopAxis.TicksInner.Fill.Color = x00A9A9A9
+      DepthTopAxis.Title.Font.Family = 'Verdana'
+      LeftAxis.Axis.Color = x00404040
+      LeftAxis.Axis.Fill.Color = x00404040
+      LeftAxis.Grid.Color = x00A9A9A9
+      LeftAxis.Grid.Fill.Color = x00A9A9A9
+      LeftAxis.LabelsFormat.Font.Family = 'Verdana'
+      LeftAxis.TicksInner.Color = x00A9A9A9
+      LeftAxis.TicksInner.Fill.Color = x00A9A9A9
+      LeftAxis.Title.Font.Family = 'Verdana'
+      RightAxis.Axis.Color = x00404040
+      RightAxis.Axis.Fill.Color = x00404040
+      RightAxis.Grid.Color = x00A9A9A9
+      RightAxis.Grid.Fill.Color = x00A9A9A9
+      RightAxis.LabelsFormat.Font.Family = 'Verdana'
+      RightAxis.TicksInner.Color = x00A9A9A9
+      RightAxis.TicksInner.Fill.Color = x00A9A9A9
+      RightAxis.Title.Font.Family = 'Verdana'
+      TopAxis.Axis.Color = x00404040
+      TopAxis.Axis.Fill.Color = x00404040
+      TopAxis.Grid.Color = x00A9A9A9
+      TopAxis.Grid.Fill.Color = x00A9A9A9
+      TopAxis.LabelsFormat.Font.Family = 'Verdana'
+      TopAxis.TicksInner.Color = x00A9A9A9
+      TopAxis.TicksInner.Fill.Color = x00A9A9A9
+      TopAxis.Title.Font.Family = 'Verdana'
+      Zoom.Brush.Kind = None
+      Zoom.Pen.Fill.Color = claSilver
+      Align = Client
+      BevelOuter = bvNone
+      Color = claWhite
+      TabOrder = 1
+      Size.Width = 320.000000000000000000
+      Size.Height = 240.000000000000000000
+      Size.PlatformDefault = False
+      Left = 409
+      Top = 3
+      ColorPaletteIndex = 13
+      object TSpeedButton
+        Position.X = 30.000000000000000000
+        Position.Y = 6.000000000000000000
+        Text = '>'
+      end
+      object TSpeedButton
+        Position.X = 6.000000000000000000
+        Position.Y = 6.000000000000000000
+        Text = '<'
+      end
+      object TSpeedButton
+        Position.X = 30.000000000000000000
+        Position.Y = 6.000000000000000000
+        Text = '>'
+      end
+      object TSpeedButton
+        Position.X = 6.000000000000000000
+        Position.Y = 6.000000000000000000
+        Text = '<'
+      end
+      object Series3: TCalendarSeries
+        Legend.Visible = False
+        ShowInLegend = False
+        Date = 42080.000000000000000000
+        Days.Transparent = True
+        Months.Transparent = True
+        Months.Format = 'mmmm, yyyy'
+        Sunday.Color = xFF4466A3
+        Sunday.Font.Color = claWhite
+        Sunday.Font.Brush.Color = claWhite
+        Sunday.Shadow.HorizSize = 0
+        Sunday.Shadow.VertSize = 0
+        Sunday.Transparent = False
+        Today.Color = xFF4E97A8
+        Today.Font.Color = claWhite
+        Today.Font.Brush.Color = claWhite
+        Today.Shadow.HorizSize = 0
+        Today.Shadow.VertSize = 0
+        Today.Transparent = False
+        Trailing.Font.Color = claDarkgray
+        Trailing.Font.Brush.Color = claDarkgray
+        Trailing.Transparent = True
+        WeekDays.Transparent = False
+        WeekDays.Pen.Visible = False
+        WeekDays.Format = 'ddd'
+        OnChange = Series3Change
+      end
+    end
+    object Chart3: TChart
+      BackWall.Brush.Kind = Gradient
+      BackWall.Brush.Gradient.Direction = gdBottomTop
+      BackWall.Brush.Gradient.EndColor = claWhite
+      BackWall.Brush.Gradient.StartColor = x00EAEAEA
+      BackWall.Brush.Gradient.Visible = True
+      BackWall.Transparent = False
+      BackWall.Visible = False
+      Foot.Font.Family = 'Verdana'
+      Foot.Font.Color = claBlue
+      Foot.Font.Brush.Color = claBlue
+      Gradient.Direction = gdBottomTop
+      Gradient.EndColor = claWhite
+      Gradient.MidColor = claWhite
+      Gradient.StartColor = x00EAEAEA
+      Gradient.Visible = True
+      LeftWall.Color = x00E0FFFF
+      Legend.Alignment = laBottom
+      Legend.Font.Family = 'Verdana'
+      Legend.Shadow.Transparency = 0
+      Legend.Transparent = True
+      MarginBottom = 1
+      MarginLeft = 2
+      MarginRight = 2
+      MarginTop = 2
+      RightWall.Color = x00E0FFFF
+      Title.Alignment = taLeftJustify
+      Title.Font.Color = claGray
+      Title.Font.Brush.Color = claGray
+      Title.Text.Strings = (
+        'Active Servers')
+      BottomAxis.Axis.Color = x00404040
+      BottomAxis.Axis.Width = 1.000000000000000000
+      BottomAxis.Axis.Fill.Color = x00404040
+      BottomAxis.Grid.Color = x00A9A9A9
+      BottomAxis.Grid.Fill.Color = x00A9A9A9
+      BottomAxis.LabelsFormat.Font.Color = claGray
+      BottomAxis.LabelsFormat.Font.Brush.Color = claGray
+      BottomAxis.TicksInner.Color = x00A9A9A9
+      BottomAxis.TicksInner.Fill.Color = x00A9A9A9
+      BottomAxis.Title.Font.Family = 'Verdana'
+      DepthAxis.Axis.Color = x00404040
+      DepthAxis.Axis.Fill.Color = x00404040
+      DepthAxis.Grid.Color = x00A9A9A9
+      DepthAxis.Grid.Fill.Color = x00A9A9A9
+      DepthAxis.LabelsFormat.Font.Family = 'Verdana'
+      DepthAxis.TicksInner.Color = x00A9A9A9
+      DepthAxis.TicksInner.Fill.Color = x00A9A9A9
+      DepthAxis.Title.Font.Family = 'Verdana'
+      DepthTopAxis.Axis.Color = x00404040
+      DepthTopAxis.Axis.Fill.Color = x00404040
+      DepthTopAxis.Grid.Color = x00A9A9A9
+      DepthTopAxis.Grid.Fill.Color = x00A9A9A9
+      DepthTopAxis.LabelsFormat.Font.Family = 'Verdana'
+      DepthTopAxis.TicksInner.Color = x00A9A9A9
+      DepthTopAxis.TicksInner.Fill.Color = x00A9A9A9
+      DepthTopAxis.Title.Font.Family = 'Verdana'
+      LeftAxis.Axis.Color = x00404040
+      LeftAxis.Axis.Fill.Color = x00404040
+      LeftAxis.Axis.Visible = False
+      LeftAxis.Grid.Color = x00A9A9A9
+      LeftAxis.Grid.Fill.Color = x00A9A9A9
+      LeftAxis.Grid.Visible = False
+      LeftAxis.LabelsFormat.Font.Color = claGray
+      LeftAxis.LabelsFormat.Font.Brush.Color = claGray
+      LeftAxis.MinorTicks.Visible = False
+      LeftAxis.Ticks.Color = claGray
+      LeftAxis.Ticks.Fill.Color = claGray
+      LeftAxis.TicksInner.Color = x00A9A9A9
+      LeftAxis.TicksInner.Fill.Color = x00A9A9A9
+      LeftAxis.Title.Font.Family = 'Verdana'
+      RightAxis.Axis.Color = x00404040
+      RightAxis.Axis.Fill.Color = x00404040
+      RightAxis.Grid.Color = x00A9A9A9
+      RightAxis.Grid.Fill.Color = x00A9A9A9
+      RightAxis.LabelsFormat.Font.Family = 'Verdana'
+      RightAxis.TicksInner.Color = x00A9A9A9
+      RightAxis.TicksInner.Fill.Color = x00A9A9A9
+      RightAxis.Title.Font.Family = 'Verdana'
+      TopAxis.Axis.Color = x00404040
+      TopAxis.Axis.Fill.Color = x00404040
+      TopAxis.Grid.Color = x00A9A9A9
+      TopAxis.Grid.Fill.Color = x00A9A9A9
+      TopAxis.LabelsFormat.Font.Family = 'Verdana'
+      TopAxis.TicksInner.Color = x00A9A9A9
+      TopAxis.TicksInner.Fill.Color = x00A9A9A9
+      TopAxis.Title.Font.Family = 'Verdana'
+      View3D = False
+      Zoom.Brush.Kind = None
+      Zoom.Pen.Fill.Color = claSilver
+      Align = Client
+      BevelOuter = bvNone
+      Color = claWhite
+      TabOrder = 2
+      Size.Width = 640.000000000000000000
+      Size.Height = 240.000000000000000000
+      Size.PlatformDefault = False
+      ColorPaletteIndex = 13
+      object Series0: THorizBarSeries
+        BarBrush.Gradient.Direction = gdLeftRight
+        BarPen.Visible = False
+        Marks.Visible = False
+        Title = 'Server 1'
+        Gradient.Direction = gdLeftRight
+        XValues.Name = 'Bar'
+        XValues.Order = loNone
+        YValues.Name = 'Y'
+        YValues.Order = loAscending
+        Data = {
+          00060000000000000000DC844000000000000C82400000000000508440000000
+          00005C824000000000003C84400000000000148440}
+      end
+      object Series1: THorizBarSeries
+        BarBrush.Gradient.Direction = gdLeftRight
+        BarPen.Visible = False
+        Marks.Visible = False
+        Title = 'Server 2'
+        Gradient.Direction = gdLeftRight
+        XValues.Name = 'Bar'
+        XValues.Order = loNone
+        YValues.Name = 'Y'
+        YValues.Order = loAscending
+        Data = {
+          00060000009A99999999DD5940CDCCCCCCCC3063406666666666326840989999
+          9999D2684032333333339D684032333333337C6540}
+      end
+      object Series2: THorizBarSeries
+        BarBrush.Gradient.Direction = gdLeftRight
+        BarPen.Visible = False
+        Marks.Visible = False
+        Title = 'Server 3'
+        Gradient.Direction = gdLeftRight
+        XValues.Name = 'Bar'
+        XValues.Order = loNone
+        YValues.Name = 'Y'
+        YValues.Order = loAscending
+        Data = {
+          000600000068666666665E4C40D0CCCCCCCC884B401000000000B02040D0CCCC
+          CCCC884B4034333333339D58406766666666066440}
+      end
+    end
+  end
+  object ImportChart1: TImportChart
+    Chart = Chart3
+    Left = 136
+    Top = 88
+  end
+end

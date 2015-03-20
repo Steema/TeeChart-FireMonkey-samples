@@ -1,0 +1,99 @@
+object ScrollerChartForm: TScrollerChartForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 669
+  ClientWidth = 947
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Chart1: TChart
+    BackWall.Visible = False
+    Legend.Visible = False
+    Title.Font.Size = 20.084337234497070000
+    Title.Font.Color = xFF969699
+    Title.Font.Brush.Color = xFF969699
+    Title.Text.Strings = (
+      'US Dollar against the Euro')
+    BottomAxis.Axis.Color = xFF716F6F
+    BottomAxis.Axis.Fill.Color = xFF716F6F
+    LeftAxis.Axis.Color = xFFD1CECE
+    LeftAxis.Axis.Width = 1.162790656089783000
+    LeftAxis.Axis.Fill.Color = xFFD1CECE
+    View3D = False
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Align = Client
+    Color = claWhite
+    TabOrder = 0
+    Size.Width = 947.000000000000000000
+    Size.Height = 669.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 13
+    object Series1: TLineSeries
+      Brush.BackColor = x00FFFFFF
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object ChartTool1: TAnnotationTool
+      Shape.Text = 'ChartTool1'
+    end
+    object ChartTool2: TAnnotationTool
+      Shape.Text = 'ChartTool2'
+    end
+    object ChartTool3: TMarksTipTool
+      Format.CustomPosition = True
+      Format.Left = 0
+      Format.TextAlignment = taCenter
+      Format.Top = 0
+      Format.Visible = False
+      MouseDelay = 0
+    end
+    object ChartTool4: TScrollPagerTool
+      DivisionRatio = 3.000000000000000000
+      NoLimitDrag = False
+    end
+    object TSubChartTool
+      Tag = 1
+      ShowInEditor = False
+      Charts = <
+        item
+          Height = 669
+          Left = 631
+          Top = 0
+          Width = 316
+          InnerChart = {
+            545046300B54496E6E65724368617274000A506F736974696F6E2E5805000000
+            000000C09D08400C416C6C6F7750616E6E696E670706706D4E6F6E650C4D6172
+            67696E426F74746F6D02040A4D617267696E4C65667402030B4D617267696E52
+            696768740203094D617267696E546F700204125469746C652E546578742E5374
+            72696E677301060B54496E6E657243686172740006566965773344080A5A6F6F
+            6D2E416C6C6F77080F5A6F6F6D2E42727573682E4B696E6407044E6F6E65135A
+            6F6F6D2E50656E2E46696C6C2E436F6C6F720709636C6153696C7665720A5369
+            7A652E576964746805000000000000009E07400B53697A652E48656967687405
+            00000000000040A708401453697A652E506C6174666F726D44656661756C7408
+            11436F6C6F7250616C65747465496E646578020D000E54436F6C6F7242616E64
+            546F6F6C0003546167020106437572736F72070B637248616E64506F696E740A
+            44726177426568696E64080B4E6F4C696D697444726167080B50656E2E566973
+            69626C650809526573697A65456E64090B526573697A655374617274090C5472
+            616E73706172656E63790232064178697349440200000E54436F6C6F724C696E
+            65546F6F6C000B4472616752657061696E7409064178697349440200000F5441
+            6E6E6F746174696F6E546F6F6C000F53686170652E416C69676E6D656E740708
+            746143656E7465721453686170652E536861646F772E56697369626C65081353
+            686170652E54657874416C69676E6D656E740708746143656E7465720D546578
+            74416C69676E6D656E740708746143656E7465720000000E54436F6C6F724C69
+            6E65546F6F6C000B4472616752657061696E7409064178697349440200000F54
+            416E6E6F746174696F6E546F6F6C000F53686170652E416C69676E6D656E7407
+            08746143656E7465721453686170652E536861646F772E56697369626C650813
+            53686170652E54657874416C69676E6D656E740708746143656E7465720D5465
+            7874416C69676E6D656E740708746143656E7465720000000000}
+        end>
+    end
+  end
+end

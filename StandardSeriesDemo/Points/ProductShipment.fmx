@@ -1,0 +1,270 @@
+object ProductShipmentForm: TProductShipmentForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 618
+  ClientWidth = 967
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Chart1: TChart
+    BackWall.Brush.Kind = Gradient
+    BackWall.Brush.Gradient.Direction = gdBottomTop
+    BackWall.Brush.Gradient.EndColor = claWhite
+    BackWall.Brush.Gradient.StartColor = x00EAEAEA
+    BackWall.Brush.Gradient.Visible = True
+    BackWall.Pen.Visible = False
+    BackWall.Transparent = False
+    BottomWall.Brush.Kind = Gradient
+    BottomWall.Brush.Gradient.EndColor = claSilver
+    BottomWall.Brush.Gradient.StartColor = claGray
+    BottomWall.Brush.Gradient.Visible = True
+    BottomWall.Pen.Color = claGray
+    BottomWall.Pen.Fill.Color = claGray
+    BottomWall.Transparent = True
+    Foot.Font.Family = 'Verdana'
+    Foot.Font.Color = claBlue
+    Foot.Font.Brush.Color = claBlue
+    Gradient.Direction = gdBottomTop
+    Gradient.EndColor = claWhite
+    Gradient.MidColor = x00EAEAEA
+    Gradient.StartColor = x00EAEAEA
+    Gradient.Visible = True
+    LeftWall.Brush.Kind = Gradient
+    LeftWall.Brush.Gradient.EndColor = claSilver
+    LeftWall.Brush.Gradient.StartColor = claGray
+    LeftWall.Brush.Gradient.Visible = True
+    LeftWall.Color = x00E0FFFF
+    LeftWall.Pen.Color = claGray
+    LeftWall.Pen.Fill.Color = claGray
+    LeftWall.Transparent = True
+    Legend.Font.Family = 'Verdana'
+    Legend.Font.Size = 14.250000000000000000
+    Legend.Frame.Visible = False
+    Legend.Shadow.Transparency = 0
+    Legend.Shadow.Visible = False
+    Legend.Symbol.Pen.Visible = False
+    RightWall.Color = x00E0FFFF
+    RightWall.Transparent = True
+    SubTitle.Margins.Bottom = 10
+    SubTitle.Text.Strings = (
+      'Tons fortnightly, all freighted sources')
+    Title.Alignment = taLeftJustify
+    Title.Font.Family = 'Verdana'
+    Title.Font.Size = 24.750000000000000000
+    Title.Font.Color = claGray
+    Title.Font.Brush.Color = claGray
+    Title.Font.Shadow.Color = claGray
+    Title.Font.Shadow.HorizSize = 1
+    Title.Font.Shadow.SmoothBlur = 2
+    Title.Font.Shadow.VertSize = 1
+    Title.Text.Strings = (
+      'Product shipments')
+    Title.VertMargin = 12
+    BottomAxis.Axis.Color = x00404040
+    BottomAxis.Axis.Fill.Color = x00404040
+    BottomAxis.Axis.Visible = False
+    BottomAxis.Grid.Color = x00A9A9A9
+    BottomAxis.Grid.Fill.Color = x00A9A9A9
+    BottomAxis.Grid.Visible = False
+    BottomAxis.LabelsFormat.Font.Family = 'Verdana'
+    BottomAxis.LabelsFormat.Font.Size = 18.000000000000000000
+    BottomAxis.LabelsFormat.Font.Color = claGray
+    BottomAxis.LabelsFormat.Font.Brush.Color = claGray
+    BottomAxis.MinorTicks.Visible = False
+    BottomAxis.Ticks.Color = claGray
+    BottomAxis.Ticks.Fill.Color = claGray
+    BottomAxis.TicksInner.Color = x00A9A9A9
+    BottomAxis.TicksInner.Fill.Color = x00A9A9A9
+    BottomAxis.TicksInner.Visible = False
+    BottomAxis.Title.Font.Family = 'Verdana'
+    BottomAxis.Title.Font.Size = 9.750000000000000000
+    DepthAxis.Axis.Color = x00404040
+    DepthAxis.Axis.Fill.Color = x00404040
+    DepthAxis.Grid.Color = x00A9A9A9
+    DepthAxis.Grid.Fill.Color = x00A9A9A9
+    DepthAxis.LabelsFormat.Font.Family = 'Verdana'
+    DepthAxis.TicksInner.Color = x00A9A9A9
+    DepthAxis.TicksInner.Fill.Color = x00A9A9A9
+    DepthAxis.Title.Font.Family = 'Verdana'
+    DepthAxis.Title.Font.Size = 9.750000000000000000
+    DepthTopAxis.Axis.Color = x00404040
+    DepthTopAxis.Axis.Fill.Color = x00404040
+    DepthTopAxis.Grid.Color = x00A9A9A9
+    DepthTopAxis.Grid.Fill.Color = x00A9A9A9
+    DepthTopAxis.LabelsFormat.Font.Family = 'Verdana'
+    DepthTopAxis.TicksInner.Color = x00A9A9A9
+    DepthTopAxis.TicksInner.Fill.Color = x00A9A9A9
+    DepthTopAxis.Title.Font.Family = 'Verdana'
+    DepthTopAxis.Title.Font.Size = 9.750000000000000000
+    Frame.Visible = False
+    LeftAxis.Axis.Color = x00404040
+    LeftAxis.Axis.Fill.Color = x00404040
+    LeftAxis.Axis.Visible = False
+    LeftAxis.Grid.Color = x00A9A9A9
+    LeftAxis.Grid.Fill.Color = x00A9A9A9
+    LeftAxis.LabelsFormat.Font.Family = 'Verdana'
+    LeftAxis.LabelsFormat.Font.Size = 18.000000000000000000
+    LeftAxis.LabelsFormat.Font.Color = claGray
+    LeftAxis.LabelsFormat.Font.Brush.Color = claGray
+    LeftAxis.MaximumOffset = 7
+    LeftAxis.MinimumOffset = 10
+    LeftAxis.MinorTicks.Visible = False
+    LeftAxis.TickLength = 7
+    LeftAxis.Ticks.Color = claGray
+    LeftAxis.Ticks.Fill.Color = claGray
+    LeftAxis.TicksInner.Color = x00A9A9A9
+    LeftAxis.TicksInner.Fill.Color = x00A9A9A9
+    LeftAxis.TicksInner.Visible = False
+    LeftAxis.Title.Font.Family = 'Verdana'
+    LeftAxis.Title.Font.Size = 9.750000000000000000
+    RightAxis.Axis.Color = x00404040
+    RightAxis.Axis.Fill.Color = x00404040
+    RightAxis.Grid.Color = x00A9A9A9
+    RightAxis.Grid.Fill.Color = x00A9A9A9
+    RightAxis.Grid.Visible = False
+    RightAxis.LabelsFormat.Font.Family = 'Verdana'
+    RightAxis.LabelsFormat.Font.Size = 23.250000000000000000
+    RightAxis.LabelsFormat.Font.Color = claGray
+    RightAxis.LabelsFormat.Font.Brush.Color = claGray
+    RightAxis.MinorTicks.Visible = False
+    RightAxis.Ticks.Visible = False
+    RightAxis.TicksInner.Color = x00A9A9A9
+    RightAxis.TicksInner.Fill.Color = x00A9A9A9
+    RightAxis.Title.Font.Family = 'Verdana'
+    RightAxis.Title.Font.Size = 9.750000000000000000
+    TopAxis.Axis.Color = x00404040
+    TopAxis.Axis.Fill.Color = x00404040
+    TopAxis.Grid.Color = x00A9A9A9
+    TopAxis.Grid.Fill.Color = x00A9A9A9
+    TopAxis.LabelsFormat.Font.Family = 'Verdana'
+    TopAxis.TicksInner.Color = x00A9A9A9
+    TopAxis.TicksInner.Fill.Color = x00A9A9A9
+    TopAxis.Title.Font.Family = 'Verdana'
+    TopAxis.Title.Font.Size = 9.750000000000000000
+    View3D = False
+    View3DOptions.Elevation = 350
+    View3DOptions.Perspective = 55
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Align = Client
+    BevelOuter = bvNone
+    BevelWidth = 2
+    Color = claWhite
+    TabOrder = 0
+    Size.Width = 967.000000000000000000
+    Size.Height = 618.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 13
+    object Series0: TPointSeries
+      Marks.Font.Family = 'Roboto Th'
+      Marks.Font.Size = 18.000000000000000000
+      Marks.Transparent = True
+      Marks.Arrow.Visible = False
+      Marks.Callout.Arrow.Visible = False
+      Marks.Callout.ArrowHead = ahLine
+      Marks.Callout.Distance = 8
+      SeriesColor = x006699FF
+      ClickableLine = False
+      Pointer.Brush.Gradient.EndColor = x006699FF
+      Pointer.Gradient.EndColor = x006699FF
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Data = {
+        00190000000000000000003E4000000000002052400000000000004440000000
+        00009060400000000000805B400000000000C042400000000000C04240000000
+        00000044400000000000005E400000000000004E400000000000D06640000000
+        00007067400000000000B068400000000000A054400000000000404540000000
+        00002057400000000000003E400000000000D061400000000000E06F40000000
+        0000D071400000000000406F4000000000007067400000000000605340000000
+        0000C062400000000000E06540}
+    end
+    object Series1: TPointSeries
+      Marks.Font.Family = 'Roboto Th'
+      Marks.Font.Size = 18.000000000000000000
+      Marks.Transparent = True
+      Marks.Arrow.Visible = False
+      Marks.Callout.Arrow.Visible = False
+      Marks.Callout.ArrowHead = ahLine
+      Marks.Callout.Distance = 8
+      SeriesColor = x006699FF
+      ClickableLine = False
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Data = {
+        00190000009999999999CF62409999999999CF6240CCCCCCCCCCA46440999999
+        99993563403233333333735E40FEFFFFFFFF9F5A4064666666667E5D40323333
+        3333236140CCCCCCCCCC40624099999999996B60400000000000186240000000
+        00004A6340CCCCCCCCCC905F406666666666E65B409A99999999255A409A9999
+        9999BD5B406866666666E25F409A999999993761403433333333435B40CECCCC
+        CCCC64584001000000000C55409B99999999955040D0CCCCCCCCB44C40020000
+        00004450409E99999999194440}
+    end
+    object Series2: TFastLineSeries
+      Selected.Hover.Visible = True
+      Marks.Font.Family = 'Roboto Th'
+      Marks.Font.Size = 18.000000000000000000
+      Marks.Transparent = True
+      Marks.Arrow.Visible = False
+      Marks.Callout.Arrow.Visible = False
+      Marks.Callout.ArrowHead = ahLine
+      Marks.Callout.Distance = 8
+      Marks.Callout.Length = 0
+      SeriesColor = x006699FF
+      LinePen.Color = x00144CF1
+      LinePen.Fill.Color = x00144CF1
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      DataSources = (
+        'Series0'
+        'Series1')
+      object TeeFunction0: TAverageTeeFunction
+        CalcByValue = False
+      end
+    end
+    object Series3: TLineSeries
+      Marks.Font.Family = 'Roboto Th'
+      Marks.Font.Size = 18.000000000000000000
+      Marks.Transparent = True
+      Marks.Arrow.Visible = False
+      Marks.Callout.Arrow.Visible = False
+      Marks.Callout.ArrowHead = ahLine
+      Marks.Callout.Distance = 8
+      Marks.Callout.Length = 0
+      Title = 'Average'
+      Brush.BackColor = x00FFFFFF
+      LinePen.Width = 2.000000000000000000
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Data = {
+        00190000009A99999999C157409A99999999555D400000000000385C40000000
+        00003C58406666666666EE53403333333333E750406666666666225340CCCCCC
+        CCCCE44F4099999999999154409899999999794A40CCCCCCCCCCEC4740989999
+        9999B1454064666666669E4E40FFFFFFFFFFA752409899999999F55640656666
+        666622534032333333334757409899999999BD5B406566666666865540989999
+        9999F55640FEFFFFFFFFA75240FCFFFFFFFF574D403033333333934F40323333
+        3333E750409899999999F95240}
+    end
+    object ChartAnimation1: TTeeAnimationTool
+      object TLineAnimation
+        Chart = Chart1
+      end
+    end
+  end
+end

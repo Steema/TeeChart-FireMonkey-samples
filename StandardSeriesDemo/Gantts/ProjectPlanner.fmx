@@ -1,0 +1,167 @@
+object ProjectPlannerForm: TProjectPlannerForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Chart1: TChart
+    BackWall.Brush.Kind = Gradient
+    BackWall.Brush.Gradient.Direction = gdBottomTop
+    BackWall.Brush.Gradient.EndColor = claWhite
+    BackWall.Brush.Gradient.StartColor = x00EAEAEA
+    BackWall.Brush.Gradient.Visible = True
+    BackWall.Transparent = False
+    BackWall.Visible = False
+    Foot.Font.Family = 'Verdana'
+    Foot.Font.Color = claBlue
+    Foot.Font.Brush.Color = claBlue
+    Gradient.Direction = gdBottomTop
+    Gradient.EndColor = claWhite
+    Gradient.MidColor = claWhite
+    Gradient.StartColor = x00EAEAEA
+    Gradient.Visible = True
+    LeftWall.Color = x00E0FFFF
+    Legend.Font.Family = 'Verdana'
+    Legend.Shadow.Transparency = 0
+    Legend.Visible = False
+    RightWall.Color = x00E0FFFF
+    Title.Font.Size = 15.750000000000000000
+    Title.Font.Color = claGray
+    Title.Font.Brush.Color = claGray
+    Title.Text.Strings = (
+      'Project Planner')
+    BottomAxis.Axis.Color = x00404040
+    BottomAxis.Axis.Fill.Color = x00404040
+    BottomAxis.Grid.Color = x00A9A9A9
+    BottomAxis.Grid.Fill.Color = x00A9A9A9
+    BottomAxis.Increment = 30.000000000000000000
+    BottomAxis.LabelsFormat.Font.Family = 'Verdana'
+    BottomAxis.LabelsFormat.Font.Color = claGray
+    BottomAxis.LabelsFormat.Font.Brush.Color = claGray
+    BottomAxis.TicksInner.Color = x00A9A9A9
+    BottomAxis.TicksInner.Fill.Color = x00A9A9A9
+    BottomAxis.Title.Caption = 'Time'
+    BottomAxis.Title.Font.Size = 21.000000000000000000
+    BottomAxis.Title.Font.Color = claGray
+    BottomAxis.Title.Font.Brush.Color = claGray
+    DepthAxis.Axis.Color = x00404040
+    DepthAxis.Axis.Fill.Color = x00404040
+    DepthAxis.Grid.Color = x00A9A9A9
+    DepthAxis.Grid.Fill.Color = x00A9A9A9
+    DepthAxis.LabelsFormat.Font.Family = 'Verdana'
+    DepthAxis.TicksInner.Color = x00A9A9A9
+    DepthAxis.TicksInner.Fill.Color = x00A9A9A9
+    DepthAxis.Title.Font.Family = 'Verdana'
+    DepthTopAxis.Axis.Color = x00404040
+    DepthTopAxis.Axis.Fill.Color = x00404040
+    DepthTopAxis.Grid.Color = x00A9A9A9
+    DepthTopAxis.Grid.Fill.Color = x00A9A9A9
+    DepthTopAxis.LabelsFormat.Font.Family = 'Verdana'
+    DepthTopAxis.TicksInner.Color = x00A9A9A9
+    DepthTopAxis.TicksInner.Fill.Color = x00A9A9A9
+    DepthTopAxis.Title.Font.Family = 'Verdana'
+    LeftAxis.Axis.Color = x00404040
+    LeftAxis.Axis.Fill.Color = x00404040
+    LeftAxis.Axis.Visible = False
+    LeftAxis.Grid.Color = x00A9A9A9
+    LeftAxis.Grid.Fill.Color = x00A9A9A9
+    LeftAxis.LabelsFormat.Font.Family = 'Verdana'
+    LeftAxis.LabelsFormat.Font.Size = 9.750000000000000000
+    LeftAxis.LabelsFormat.Font.Color = claGray
+    LeftAxis.LabelsFormat.Font.Brush.Color = claGray
+    LeftAxis.MinorTicks.Visible = False
+    LeftAxis.TicksInner.Color = x00A9A9A9
+    LeftAxis.TicksInner.Fill.Color = x00A9A9A9
+    LeftAxis.Title.Caption = 'Task'
+    LeftAxis.Title.Font.Size = 18.000000000000000000
+    LeftAxis.Title.Font.Color = claGray
+    LeftAxis.Title.Font.Brush.Color = claGray
+    RightAxis.Axis.Color = x00404040
+    RightAxis.Axis.Fill.Color = x00404040
+    RightAxis.Grid.Color = x00A9A9A9
+    RightAxis.Grid.Fill.Color = x00A9A9A9
+    RightAxis.LabelsFormat.Font.Family = 'Verdana'
+    RightAxis.TicksInner.Color = x00A9A9A9
+    RightAxis.TicksInner.Fill.Color = x00A9A9A9
+    RightAxis.Title.Font.Family = 'Verdana'
+    TopAxis.Axis.Color = x00404040
+    TopAxis.Axis.Fill.Color = x00404040
+    TopAxis.Grid.Color = x00A9A9A9
+    TopAxis.Grid.Fill.Color = x00A9A9A9
+    TopAxis.LabelsFormat.Font.Family = 'Verdana'
+    TopAxis.TicksInner.Color = x00A9A9A9
+    TopAxis.TicksInner.Fill.Color = x00A9A9A9
+    TopAxis.Title.Font.Family = 'Verdana'
+    View3D = False
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Align = Client
+    Color = claWhite
+    TabOrder = 0
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 10
+    object Series0: TGanttSeries
+      Cursor = crDrag
+      Marks.Font.Color = claWhite
+      Marks.Font.Brush.Color = claWhite
+      Marks.Transparent = True
+      Marks.Visible = True
+      OnGetMarkText = Series0GetMarkText
+      ClickableLine = False
+      Pointer.InflateMargins = True
+      Pointer.Pen.Visible = False
+      Pointer.Shadow.Visible = True
+      Pointer.Style = psRectangle
+      XValues.Name = 'Start'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Callout.Style = psRightTriangle
+      Callout.Arrow.Visible = False
+      StartValues.Name = 'Start'
+      StartValues.Order = loNone
+      EndValues.Name = 'End'
+      EndValues.Order = loNone
+      NextTask.Name = 'NextTask'
+      NextTask.Order = loNone
+      Data = {
+        041200000000000000A08CE440FF0600000044657369676E00000000A08FE440
+        000000000000F0BF00000000E08CE440FF0B00000050726F746F747970696E67
+        00000000008FE440000000000000F0BF00000000408DE440FF0500000053616C
+        6573000000002090E440000000000000F0BF00000000608DE440FF0B00000044
+        6576656C6F706D656E7400000000A08FE440000000000000F0BF00000000C08D
+        E440FF090000004D61726B6574696E6700000000C08FE440000000000000F0BF
+        00000000208EE440FF0700000054657374696E6700000000E08FE44000000000
+        0000F0BF00000000808EE440FF080000004D616E756661632E00000000E090E4
+        40000000000000F0BF00000000E08EE440FF09000000446562756767696E6700
+        0000006090E440000000000000F0BF00000000608FE440FF0B0000004E657720
+        56657273696F6E00000000C091E440000000000000F0BF000000000090E440FF
+        0700000042616E6B696E67000000006091E440000000000000F0BF0000000040
+        90E440FF0600000044657369676E000000004093E440000000000000F0BF0000
+        00008090E440FF0B00000050726F746F747970696E6700000000A091E4400000
+        00000000F0BF000000000091E440FF0B000000446576656C6F706D656E740000
+        00006092E440000000000000F0BF000000006091E440FF0500000053616C6573
+        00000000E093E440000000000000F0BF000000008091E440FF090000004D6172
+        6B6574696E6700000000E092E440000000000000F0BF00000000C091E440FF07
+        00000054657374696E67000000002094E440000000000000F0BF00000000A092
+        E440FF080000004D616E756661632E000000008094E440000000000000F0BF00
+        000000A092E440FF09000000446562756767696E67000000000095E440000000
+        000000F0BF}
+    end
+    object ChartTool1: TGanttTool
+      Series = Series0
+    end
+  end
+  object ImportChart1: TImportChart
+    Chart = Chart1
+    Left = 304
+    Top = 224
+  end
+end
