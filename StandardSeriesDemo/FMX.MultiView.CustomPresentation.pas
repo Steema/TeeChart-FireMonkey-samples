@@ -46,7 +46,7 @@ begin
   // Detail overlay layer for catching mouse events
   FDetailOverlay := TShadowedOverlayLayout.Create(nil);
   FDetailOverlay.Stored := False;
-  FDetailOverlay.Mode := TCustomOverlayLayout.TOverlayMode.AllLocalArea;
+  FDetailOverlay.Mode := FMX.MultiView.Types.TOverlayMode.AllLocalArea;
   FDetailOverlay.EnabledShadow := MultiView.ShadowOptions.Enabled;
   FDetailOverlay.Color := MultiView.ShadowOptions.Color;
   FDetailOverlay.Opacity := 0;
