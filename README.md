@@ -7,6 +7,11 @@ TeeChart for FireMonkey offers a wide range of common and specialized chart type
 
 One of the many advantages is that TeeChart will scale and fit to any screen size. If you're building dashboards you can place multiple, resizeable charts on each dashboard panel, and FireMonkey will handle most of the variations for the different platforms.
 
+ ![screenshot](https://www.steema.com/uploads/products/TeeChartIOS_iPad2.png?raw=true "iOS - iPad Dashboard")
+
 ### Requirements
 
 You'll need TeeChart VCL/FMX evaluation or registered version to run the example on this repository. Fully functional evaluation version can be obtained at https://www.steema.com/downloads/vcl 
+
+
+https://www.steema.com/uploads/products/TeeChartIOS_iPad2.png
