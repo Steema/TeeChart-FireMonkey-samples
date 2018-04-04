@@ -1,9 +1,0 @@
-inherited DemoTools: TDemoTools
-  Caption = 'BaseForm1'
-  OnCreate = FormCreate
-  inherited Panel1: TPanel
-    inherited BEdit: TButton
-      Position.Point = '(16,16)'
-    end
-  end
-end

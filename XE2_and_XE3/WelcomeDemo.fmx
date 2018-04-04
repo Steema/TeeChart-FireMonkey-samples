@@ -1,0 +1,134 @@
+object WelcomeForm: TWelcomeForm
+  BiDiMode = bdLeftToRight
+  Caption = 'Form1'
+  ClientHeight = 400
+  ClientWidth = 600
+  Left = 0
+  Top = 0
+  Transparency = False
+  Visible = False
+  OnCreate = FormCreate
+  Color = xFFCFB08F
+  OnRender = Form3DRender
+  object Chart3D1: TChart3D
+    Position.Point = '(-0.25236314535141,-0.732038915157318,-1)'
+    RotationAngle.Point = '(-16.9782867431641,0,0)'
+    Width = 20.607603073120120000
+    Height = 13.741946220397950000
+    Depth = 2.000001907348633000
+    Opacity = 1.000000000000000000
+    OnDblClick = Chart3D1DblClick
+    OnCreateChart = Chart3D1CreateChart
+    Quanternion = '(-0.147622019052505,0,0,0.989043891429901)'
+    object Chart3DChart1: TChart
+      Position.Point = '(8,8)'
+      Width = 400.000000000000000000
+      Height = 250.000000000000000000
+      Visible = False
+      BackWall.Brush.Kind = bkGradient
+      BackWall.Brush.Gradient.Visible = True
+      BackWall.Color = xFFE4E7FA
+      BackWall.Size = 3
+      BackWall.Transparent = False
+      BottomWall.Size = 3
+      LeftWall.Size = 3
+      RightWall.Size = 3
+      Title.Font.Family = 'Courier New'
+      Title.Font.Size = 20.000000000000000000
+      Title.Font.Style = [fsBold]
+      Title.Text.Strings = (
+        'Welcome to TeeChart')
+      BottomAxis.LabelsFont.Style = [fsBold]
+      BottomAxis.LabelsFont.Shadow.HorizSize = 1
+      BottomAxis.LabelsFont.Shadow.VertSize = 1
+      Chart3DPercent = 100
+      View3DOptions.Elevation = -17
+      View3DOptions.HorizOffset = -25
+      View3DOptions.Orthogonal = False
+      View3DOptions.Rotation = 0
+      View3DOptions.VertOffset = -73
+      View3DOptions.Zoom = 10
+      Zoom.Allow = False
+      Zoom.Brush.Kind = bkNone
+      BevelOuter = bvNone
+      Color = claNull
+      TabOrder = 0
+      ColorPaletteIndex = 7
+      object Series1: TBarSeries
+        Marks.Arrow.Visible = True
+        Marks.Callout.Brush.Color = claBlack
+        Marks.Callout.Arrow.Visible = True
+        Marks.BackColor = claWhite
+        Marks.Color = claWhite
+        Marks.Font.Style = [fsBold, fsItalic]
+        Marks.Visible = True
+        ValueFormat = '#,##0'
+        MultiBar = mbNone
+        XValues.Name = 'X'
+        XValues.Order = loNone
+        YValues.Name = 'Bar'
+        YValues.Order = loNone
+      end
+      object Series2: TBarSeries
+        Marks.Arrow.Visible = True
+        Marks.Callout.Brush.Color = claBlack
+        Marks.Callout.Arrow.Visible = True
+        Marks.Visible = False
+        ValueFormat = '#,##0.#'
+        MultiBar = mbNone
+        XValues.Name = 'X'
+        XValues.Order = loNone
+        YValues.Name = 'Bar'
+        YValues.Order = loNone
+      end
+    end
+    object FloatAnimation1: TFloatAnimation
+      Enabled = True
+      Delay = 5.000000000000000000
+      Duration = 20.000000000000000000
+      Interpolation = itElastic
+      Loop = True
+      StopValue = 360.000000000000000000
+      PropertyName = 'RotationAngle.Y'
+    end
+    object FloatAnimation2: TFloatAnimation
+      AutoReverse = True
+      Enabled = True
+      Duration = 10.000000000000000000
+      Loop = True
+      StartValue = -3.000000000000000000
+      StopValue = 7.000000000000000000
+      PropertyName = 'Position.Z'
+    end
+  end
+  object Light1: TLight
+    Position.Point = '(-6.24379920959473,-6.69361209869385,-4.2964916229248)'
+    RotationAngle.Point = '(-35,-0.253153681755066,0)'
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    Opacity = 1.000000000000000000
+    LightType = ltSpot
+    Quanternion = 
+      '(-0.300704807043076,-0.0019597290083766,0.00102004420477897,0.95' +
+      '3713953495026)'
+  end
+  object Light2: TLight
+    Position.Point = '(2.70758867263794,1.22632086277008,-5.1973991394043)'
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    Opacity = 1.000000000000000000
+    LightType = ltPoint
+    Quanternion = '(0,0,0,1)'
+  end
+  object Light3: TLight
+    Position.Point = '(9.81942558288574,-4.17744255065918,-2.03313541412354)'
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    Opacity = 1.000000000000000000
+    LightType = ltPoint
+    Quanternion = '(0,0,0,1)'
+  end
+end

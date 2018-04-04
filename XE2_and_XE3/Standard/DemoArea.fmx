@@ -1,0 +1,130 @@
+inherited DemoAreaSeries: TDemoAreaSeries
+  Caption = 'Area'
+  OnCreate = FormCreate
+  inherited Panel1: TPanel
+    inherited BEdit: TButton
+      Position.Point = '(16,16)'
+    end
+    object ComboBox1: TComboBox
+      Position.Point = '(136,16)'
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      TabOrder = 1
+      ItemIndex = 0
+      Placement = plBottom
+      OnChange = ComboBox1Change
+      object ListBoxItem1: TListBoxItem
+        Position.Point = '(5000,5000)'
+        Width = 75.000000000000000000
+        Height = 18.000000000000000000
+        HitTest = False
+        TabOrder = 0
+        IsChecked = False
+        IsSelected = True
+        Text = 'Normal'
+      end
+      object ListBoxItem2: TListBoxItem
+        Position.Point = '(0,19)'
+        Width = 80.000000000000000000
+        Height = 19.000000000000000000
+        HitTest = False
+        TabOrder = 1
+        IsChecked = False
+        IsSelected = False
+        Text = 'Stack'
+      end
+      object ListBoxItem3: TListBoxItem
+        Position.Point = '(0,38)'
+        Width = 80.000000000000000000
+        Height = 19.000000000000000000
+        HitTest = False
+        TabOrder = 2
+        IsChecked = False
+        IsSelected = False
+        Text = 'Stack 100%'
+      end
+    end
+    object CheckBox1: TCheckBox
+      Position.Point = '(256,16)'
+      Width = 65.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 2
+      IsChecked = False
+      Text = 'Stairs'
+      OnChange = CheckBox1Change
+    end
+    object CheckBox2: TCheckBox
+      Position.Point = '(320,16)'
+      Width = 57.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 3
+      IsChecked = True
+      Text = '3D'
+      OnChange = CheckBox2Change
+    end
+    object AlphaTrackBar1: TAlphaTrackBar
+      Position.Point = '(384,16)'
+      Width = 100.000000000000000000
+      Height = 15.000000000000000000
+      StyleLookup = 'trackbarstyle'
+      TabOrder = 4
+      Max = 1.000000000000000000
+      Orientation = orHorizontal
+      Tracking = True
+      OnChange = AlphaTrackBar1Change
+    end
+  end
+  object Chart1: TChart
+    Align = alClient
+    Position.Point = '(0,57)'
+    Width = 600.000000000000000000
+    Height = 343.000000000000000000
+    Title.Text.Strings = (
+      'Area Series')
+    Zoom.Brush.Kind = bkNone
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object Series1: TAreaSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      DrawArea = True
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series2: TAreaSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      DrawArea = True
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series3: TAreaSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      DrawArea = True
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+end

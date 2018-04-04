@@ -1,0 +1,128 @@
+inherited DemoLine: TDemoLine
+  OnCreate = FormCreate
+  inherited Panel1: TPanel
+    Height = 67.000000000000000000
+    inherited BEdit: TButton
+      Position.Point = '(16,16)'
+    end
+    object CheckBox1: TCheckBox
+      Position.Point = '(280,16)'
+      Width = 65.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 1
+      IsChecked = False
+      Text = 'Stairs'
+      OnChange = CheckBox1Change
+    end
+    object CBSmooth: TCheckBox
+      Position.Point = '(352,16)'
+      Width = 120.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 2
+      IsChecked = False
+      Text = 'Smooth'
+      OnChange = CBSmoothChange
+    end
+    object CheckBox3: TCheckBox
+      Position.Point = '(104,16)'
+      Width = 81.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 3
+      IsChecked = False
+      Text = 'Marks'
+      OnChange = CheckBox3Change
+    end
+    object CheckBox4: TCheckBox
+      Position.Point = '(104,40)'
+      Width = 81.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 4
+      IsChecked = True
+      Text = 'Outlines'
+      OnChange = CheckBox4Change
+    end
+    object CheckBox5: TCheckBox
+      Position.Point = '(192,16)'
+      Width = 73.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 5
+      IsChecked = True
+      Text = '3D'
+      OnChange = CheckBox5Change
+    end
+    object CheckBox6: TCheckBox
+      Position.Point = '(192,40)'
+      Width = 73.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 6
+      IsChecked = False
+      Text = 'Stacked'
+      OnChange = CheckBox6Change
+    end
+    object CheckBox7: TCheckBox
+      Position.Point = '(280,40)'
+      Width = 73.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 7
+      IsChecked = False
+      Text = 'Pointers'
+      OnChange = CheckBox7Change
+    end
+  end
+  object Chart1: TChart
+    Align = alClient
+    Position.Point = '(0,67)'
+    Width = 600.000000000000000000
+    Height = 333.000000000000000000
+    Gradient.EndColor = xFFE9E9C5
+    Gradient.Visible = True
+    Title.Text.Strings = (
+      'Line Strip Series with null points')
+    Zoom.Brush.Kind = bkNone
+    TabOrder = 1
+    PrintMargins = (
+      0
+      0
+      0
+      0)
+    ColorPaletteIndex = 13
+    object Series1: TLineSeries
+      HorizAxis = aBothHorizAxis
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      SeriesColor = xFF4466A3
+      OutLine.Color = xFFFA8C8C
+      OutLine.Width = 5.111000061035156000
+      OutLine.Visible = True
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series2: TLineSeries
+      HorizAxis = aBothHorizAxis
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.DrawEvery = 3
+      Marks.Visible = False
+      SeriesColor = xFFF39C35
+      OutLine.Color = xFF230F7E
+      OutLine.Style = psDot
+      OutLine.Width = 3.111000061035156000
+      OutLine.Visible = True
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+end

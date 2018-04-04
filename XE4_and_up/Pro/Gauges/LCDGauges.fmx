@@ -1,0 +1,350 @@
+inherited LCDGauges: TLCDGauges
+  Caption = 'LCD Gauge Series'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Chart1: TChart
+    Height = 343.000000000000000000
+    Width = 600.000000000000000000
+    Foot.Font.Brush.Color = claRed
+    Legend.Visible = False
+    SubFoot.Font.Brush.Color = claRed
+    SubTitle.Font.Brush.Color = claBlue
+    Title.Font.Brush.Color = claBlue
+    Title.Text.Strings = (
+      'LCD and Linear Gauges')
+    BottomAxis.Grid.Fill.Color = claSilver
+    BottomAxis.Increment = 10.000000000000000000
+    BottomAxis.LabelsFormat.Font.Size = 10.000000000000000000
+    BottomAxis.LabelsFormat.Font.Style = [fsBold]
+    BottomAxis.LabelsFormat.Font.Color = xFF646464
+    BottomAxis.LabelsFormat.Font.Brush.Color = xFF646464
+    BottomAxis.LabelsFormat.TextAlignment = taCenter
+    BottomAxis.MinorTickLength = 1
+    BottomAxis.MinorTicks.Color = xFF646464
+    BottomAxis.MinorTicks.Fill.Color = xFF646464
+    BottomAxis.TickLength = 10
+    BottomAxis.Ticks.Color = xFF646464
+    BottomAxis.Ticks.Fill.Color = xFF646464
+    BottomAxis.TicksInner.Fill.Color = claDarkgray
+    BottomAxis.Title.Caption = 'Axis Title %'
+    BottomAxis.Title.Font.Color = xFF646464
+    BottomAxis.Title.Font.Brush.Color = xFF646464
+    Chart3DPercent = 7
+    DepthAxis.Grid.Fill.Color = claSilver
+    DepthAxis.LabelsFormat.TextAlignment = taCenter
+    DepthAxis.MinorTicks.Fill.Color = claDarkgray
+    DepthAxis.Ticks.Fill.Color = claDarkgray
+    DepthAxis.TicksInner.Fill.Color = claDarkgray
+    DepthTopAxis.Grid.Fill.Color = claSilver
+    DepthTopAxis.LabelsFormat.TextAlignment = taCenter
+    DepthTopAxis.MinorTicks.Fill.Color = claDarkgray
+    DepthTopAxis.Ticks.Fill.Color = claDarkgray
+    DepthTopAxis.TicksInner.Fill.Color = claDarkgray
+    LeftAxis.Grid.Fill.Color = claSilver
+    LeftAxis.LabelsFormat.TextAlignment = taCenter
+    LeftAxis.MinorTicks.Fill.Color = claDarkgray
+    LeftAxis.Ticks.Fill.Color = claDarkgray
+    LeftAxis.TicksInner.Fill.Color = claDarkgray
+    RightAxis.Grid.Fill.Color = claSilver
+    RightAxis.LabelsFormat.TextAlignment = taCenter
+    RightAxis.MinorTicks.Fill.Color = claDarkgray
+    RightAxis.Ticks.Fill.Color = claDarkgray
+    RightAxis.TicksInner.Fill.Color = claDarkgray
+    TopAxis.Grid.Fill.Color = claSilver
+    TopAxis.LabelsFormat.TextAlignment = taCenter
+    TopAxis.MinorTicks.Fill.Color = claDarkgray
+    TopAxis.Ticks.Fill.Color = claDarkgray
+    TopAxis.TicksInner.Fill.Color = claDarkgray
+    Zoom.Brush.Kind = bkNone
+    Zoom.Pen.Mode = pmNotXor
+    Zoom.Pen.Width = 3.000000000000000000
+    Zoom.Pen.Fill.Color = claWhite
+    Align = alClient
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object Series1: TNumericGauge
+      ShowInLegend = False
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Face.Visible = True
+      Frame.InnerBrush.Gradient.EndColor = claRed
+      Frame.InnerBrush.BackColor = claRed
+      Frame.MiddleBrush.BackColor = claYellow
+      Frame.OuterBrush.Gradient.EndColor = claGreen
+      Frame.OuterBrush.BackColor = claGreen
+      Value = 270.000000000000000000
+      Data = {00010000000000000000E07040}
+      InternalMarkers = {
+        03000000545046300E544E756D657269634D61726B6572001843616C6C6F7574
+        2E4172726F772E46696C6C2E436F6C6F720708636C61576869746508506F7369
+        74696F6E0708707043656E7465720B53686170652E436F6C6F72070978464643
+        38444244421153686170652E466F6E742E46616D696C79060A44532D44696769
+        74616C0F53686170652E466F6E742E53697A6505000000000000009004401053
+        686170652E466F6E742E436F6C6F720709784646323832383238165368617065
+        2E466F6E742E42727573682E436F6C6F72070978464632383238323813536861
+        70652E4672616D652E56697369626C65081453686170652E536861646F772E56
+        697369626C65080A53686170652E5465787406063237302E3030135368617065
+        2E54657874416C69676E6D656E74070E746152696768744A7573746966791153
+        686170652E5472616E73706172656E74090D54657874416C69676E6D656E7407
+        0E746152696768744A7573746966790000545046300E544E756D657269634D61
+        726B6572001843616C6C6F75742E4172726F772E46696C6C2E436F6C6F720708
+        636C61576869746508506F736974696F6E070C70704C656674426F74746F6D0B
+        53686170652E436F6C6F7207097846464338444244421153686170652E466F6E
+        742E46616D696C79060A44532D4469676974616C0F53686170652E466F6E742E
+        53697A6505000000000000009003401053686170652E466F6E742E436F6C6F72
+        07097846463238323832381653686170652E466F6E742E42727573682E436F6C
+        6F7207097846463238323832381353686170652E4672616D652E56697369626C
+        65081453686170652E536861646F772E56697369626C65080A53686170652E54
+        65787406034D487A1153686170652E5472616E73706172656E74090000545046
+        300E544E756D657269634D61726B6572001843616C6C6F75742E4172726F772E
+        46696C6C2E436F6C6F720708636C6157686974650B53686170652E436F6C6F72
+        07097846463238323832381153686170652E466F6E742E46616D696C79060A44
+        532D4469676974616C1053686170652E466F6E742E436F6C6F72070978464643
+        38444244421653686170652E466F6E742E42727573682E436F6C6F7207097846
+        464338444244421353686170652E4672616D652E56697369626C650814536861
+        70652E536861646F772E56697369626C65080A53686170652E54657874060446
+        5245510000}
+    end
+    object Series2: TNumericGauge
+      ShowInLegend = False
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Face.Visible = True
+      Frame.InnerBrush.Gradient.EndColor = claRed
+      Frame.InnerBrush.BackColor = claRed
+      Frame.MiddleBrush.BackColor = claYellow
+      Frame.OuterBrush.Gradient.EndColor = claGreen
+      Frame.OuterBrush.BackColor = claGreen
+      Value = 469.125000000000000000
+      Data = {00010000000000000000527D40}
+      InternalMarkers = {
+        03000000545046300E544E756D657269634D61726B6572001843616C6C6F7574
+        2E4172726F772E46696C6C2E436F6C6F720708636C61576869746508506F7369
+        74696F6E0708707043656E7465720B53686170652E436F6C6F72070978464643
+        38444244421153686170652E466F6E742E46616D696C79060A44532D44696769
+        74616C0F53686170652E466F6E742E53697A6505000000000000009004401053
+        686170652E466F6E742E436F6C6F720709784646323832383238165368617065
+        2E466F6E742E42727573682E436F6C6F72070978464632383238323813536861
+        70652E4672616D652E56697369626C65081453686170652E536861646F772E56
+        697369626C65080A53686170652E5465787406073436392E3132351353686170
+        652E54657874416C69676E6D656E74070E746152696768744A75737469667911
+        53686170652E5472616E73706172656E74090D54657874416C69676E6D656E74
+        070E746152696768744A7573746966790000545046300E544E756D657269634D
+        61726B6572001843616C6C6F75742E4172726F772E46696C6C2E436F6C6F7207
+        08636C61576869746508506F736974696F6E070C70704C656674426F74746F6D
+        0B53686170652E436F6C6F7207097846464338444244421153686170652E466F
+        6E742E46616D696C79060A44532D4469676974616C0F53686170652E466F6E74
+        2E53697A6505000000000000009003401053686170652E466F6E742E436F6C6F
+        7207097846463238323832381653686170652E466F6E742E42727573682E436F
+        6C6F7207097846463238323832381353686170652E4672616D652E5669736962
+        6C65081453686170652E536861646F772E56697369626C65080A53686170652E
+        5465787406034D487A1153686170652E5472616E73706172656E740900005450
+        46300E544E756D657269634D61726B6572001843616C6C6F75742E4172726F77
+        2E46696C6C2E436F6C6F720708636C6157686974650B53686170652E436F6C6F
+        7207097846463238323832381153686170652E466F6E742E46616D696C79060A
+        44532D4469676974616C1053686170652E466F6E742E436F6C6F720709784646
+        4338444244421653686170652E466F6E742E42727573682E436F6C6F72070978
+        46464338444244421353686170652E4672616D652E56697369626C6508145368
+        6170652E536861646F772E56697369626C65080A53686170652E546578740604
+        465245510000}
+    end
+    object Series3: TLinearGauge
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Face.Visible = True
+      Frame.InnerBrush.Gradient.EndColor = claRed
+      Frame.InnerBrush.BackColor = claRed
+      Frame.MiddleBrush.BackColor = claYellow
+      Frame.OuterBrush.Gradient.EndColor = claGreen
+      Frame.OuterBrush.BackColor = claGreen
+      GreenLine.Brush.Color = xFF1EC81E
+      GreenLine.Brush.Kind = bkGradient
+      GreenLine.Brush.Gradient.Direction = gdBottomTop
+      GreenLine.Brush.Gradient.EndColor = xFF1EC81E
+      GreenLine.Brush.Gradient.MidColor = claBlack
+      GreenLine.Brush.Gradient.StartColor = xFF646464
+      GreenLine.Brush.Gradient.Visible = True
+      GreenLine.Gradient.Direction = gdBottomTop
+      GreenLine.Gradient.EndColor = xFF1EC81E
+      GreenLine.Gradient.MidColor = claBlack
+      GreenLine.Gradient.StartColor = xFF646464
+      GreenLine.Gradient.Visible = True
+      GreenLine.InflateMargins = True
+      GreenLine.Style = psRectangle
+      GreenLine.VertSize = 5
+      GreenLine.Visible = True
+      GreenLine.GaugeStyle = gpColorLine
+      GreenLine.EndValue = 40.000000000000000000
+      Hand.Brush.Color = claRed
+      Hand.Brush.Gradient.EndColor = claRed
+      Hand.Draw3D = False
+      Hand.Gradient.EndColor = claRed
+      Hand.HorizSize = 201
+      Hand.InflateMargins = True
+      Hand.Pen.Color = xFF3C73C8
+      Hand.Pen.Fill.Color = xFF3C73C8
+      Hand.Style = psRectangle
+      Hand.Transparency = 70
+      Hand.VertSize = 5
+      Hand.Visible = True
+      Hand.GaugeStyle = gpHand
+      Maximum = 100.000000000000000000
+      MaxValueIndicator.Brush.Color = claRed
+      MaxValueIndicator.Brush.Gradient.EndColor = claRed
+      MaxValueIndicator.Draw3D = False
+      MaxValueIndicator.Gradient.EndColor = claRed
+      MaxValueIndicator.InflateMargins = True
+      MaxValueIndicator.Style = psTriangle
+      MaxValueIndicator.VertSize = 5
+      MaxValueIndicator.Visible = True
+      MaxValueIndicator.GaugeStyle = gpHand
+      MinorTicks.Brush.Color = claNull
+      MinorTicks.Brush.Gradient.EndColor = claNull
+      MinorTicks.Gradient.EndColor = claNull
+      MinorTicks.HorizSize = 1
+      MinorTicks.InflateMargins = True
+      MinorTicks.Pen.Color = xFF646464
+      MinorTicks.Pen.Fill.Color = xFF646464
+      MinorTicks.Style = psRectangle
+      MinorTicks.VertSize = 1
+      MinorTicks.Visible = True
+      MinorTicks.GaugeStyle = gpMinorTick
+      RedLine.Brush.Color = xFF646464
+      RedLine.Brush.Kind = bkGradient
+      RedLine.Brush.Gradient.Direction = gdBottomTop
+      RedLine.Brush.Gradient.EndColor = xFF646464
+      RedLine.Brush.Gradient.MidColor = claBlack
+      RedLine.Brush.Gradient.StartColor = xFF282864
+      RedLine.Brush.Gradient.Visible = True
+      RedLine.Gradient.Direction = gdBottomTop
+      RedLine.Gradient.EndColor = xFF646464
+      RedLine.Gradient.MidColor = claBlack
+      RedLine.Gradient.StartColor = xFF282864
+      RedLine.Gradient.Visible = True
+      RedLine.InflateMargins = True
+      RedLine.Style = psRectangle
+      RedLine.VertSize = 5
+      RedLine.Visible = True
+      RedLine.GaugeStyle = gpColorLine
+      RedLine.EndValue = 100.000000000000000000
+      RedLine.StartValue = 80.000000000000000000
+      Ticks.Brush.Kind = bkNone
+      Ticks.InflateMargins = True
+      Ticks.Pen.Color = xFF646464
+      Ticks.Pen.Fill.Color = xFF646464
+      Ticks.Style = psRectangle
+      Ticks.VertSize = 10
+      Ticks.Visible = True
+      Ticks.GaugeStyle = gpTick
+      Value = 94.000000000000000000
+      ValueArea.Transparent = True
+      ValueArea.Visible = True
+      Data = {00010000000000000000805740}
+    end
+    object Series4: TLinearGauge
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Face.Visible = True
+      Frame.InnerBrush.Gradient.EndColor = claRed
+      Frame.InnerBrush.BackColor = claRed
+      Frame.MiddleBrush.BackColor = claYellow
+      Frame.OuterBrush.Gradient.EndColor = claGreen
+      Frame.OuterBrush.BackColor = claGreen
+      GreenLine.Brush.Color = xFF1EC81E
+      GreenLine.Brush.Kind = bkGradient
+      GreenLine.Brush.Gradient.Direction = gdBottomTop
+      GreenLine.Brush.Gradient.EndColor = xFF1EC81E
+      GreenLine.Brush.Gradient.MidColor = claBlack
+      GreenLine.Brush.Gradient.StartColor = xFF646464
+      GreenLine.Brush.Gradient.Visible = True
+      GreenLine.Gradient.Direction = gdBottomTop
+      GreenLine.Gradient.EndColor = xFF1EC81E
+      GreenLine.Gradient.MidColor = claBlack
+      GreenLine.Gradient.StartColor = xFF646464
+      GreenLine.Gradient.Visible = True
+      GreenLine.InflateMargins = True
+      GreenLine.Style = psRectangle
+      GreenLine.VertSize = 5
+      GreenLine.Visible = True
+      GreenLine.GaugeStyle = gpColorLine
+      GreenLine.EndValue = 40.000000000000000000
+      Hand.Brush.Color = claRed
+      Hand.Brush.Gradient.EndColor = claRed
+      Hand.Draw3D = False
+      Hand.Gradient.EndColor = claRed
+      Hand.HorizSize = 130
+      Hand.InflateMargins = True
+      Hand.Pen.Color = xFF3C73C8
+      Hand.Pen.Fill.Color = xFF3C73C8
+      Hand.Style = psRectangle
+      Hand.Transparency = 70
+      Hand.VertSize = 5
+      Hand.Visible = True
+      Hand.GaugeStyle = gpHand
+      Maximum = 100.000000000000000000
+      MaxValueIndicator.Brush.Color = claRed
+      MaxValueIndicator.Brush.Gradient.EndColor = claRed
+      MaxValueIndicator.Draw3D = False
+      MaxValueIndicator.Gradient.EndColor = claRed
+      MaxValueIndicator.InflateMargins = True
+      MaxValueIndicator.Style = psTriangle
+      MaxValueIndicator.VertSize = 5
+      MaxValueIndicator.Visible = True
+      MaxValueIndicator.GaugeStyle = gpHand
+      MinorTicks.Brush.Color = claNull
+      MinorTicks.Brush.Gradient.EndColor = claNull
+      MinorTicks.Gradient.EndColor = claNull
+      MinorTicks.HorizSize = 1
+      MinorTicks.InflateMargins = True
+      MinorTicks.Pen.Color = xFF646464
+      MinorTicks.Pen.Fill.Color = xFF646464
+      MinorTicks.Style = psRectangle
+      MinorTicks.VertSize = 1
+      MinorTicks.Visible = True
+      MinorTicks.GaugeStyle = gpMinorTick
+      RedLine.Brush.Color = xFF646464
+      RedLine.Brush.Kind = bkGradient
+      RedLine.Brush.Gradient.Direction = gdBottomTop
+      RedLine.Brush.Gradient.EndColor = xFF646464
+      RedLine.Brush.Gradient.MidColor = claBlack
+      RedLine.Brush.Gradient.StartColor = xFF282864
+      RedLine.Brush.Gradient.Visible = True
+      RedLine.Gradient.Direction = gdBottomTop
+      RedLine.Gradient.EndColor = xFF646464
+      RedLine.Gradient.MidColor = claBlack
+      RedLine.Gradient.StartColor = xFF282864
+      RedLine.Gradient.Visible = True
+      RedLine.InflateMargins = True
+      RedLine.Style = psRectangle
+      RedLine.VertSize = 5
+      RedLine.Visible = True
+      RedLine.GaugeStyle = gpColorLine
+      RedLine.EndValue = 100.000000000000000000
+      RedLine.StartValue = 80.000000000000000000
+      Ticks.Brush.Kind = bkNone
+      Ticks.InflateMargins = True
+      Ticks.Pen.Color = xFF646464
+      Ticks.Pen.Fill.Color = xFF646464
+      Ticks.Style = psRectangle
+      Ticks.VertSize = 10
+      Ticks.Visible = True
+      Ticks.GaugeStyle = gpTick
+      Value = 61.000000000000000000
+      ValueArea.Transparent = True
+      ValueArea.Visible = True
+      Data = {00010000000000000000804E40}
+    end
+  end
+end
