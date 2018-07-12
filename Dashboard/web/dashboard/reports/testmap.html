@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+
+<script src="../assets/js/teechart/lib/teechart.js" type="text/javascript"></script>
+
+
+<script src="../assets/js/teechart/lib/teechart-maps.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+var MapChart;
+var map;
+
+window.addEventListener('resize', resizeMapChart); 
+
+var MapChartHeight;
+var WorldMap;
+
+      function fillMap(year) {
+        //Years.selected = year;  // select a specific Year
+
+        // Query by States
+        //var values = Engine.query(States, Degree), v = values[0].values;
+
+        // Clear map values
+        WorldMap.values = {}
+		
+		//WorldMap.fillSampleValues();
+
+        // Set each State result value
+        //for (var t = 0; t < v.length; t++)
+        //  USAMap.values[v[t].id] = v[t].value;
+
+        // Tell the map to colorize according to values:
+        //var palette = USAMap.applyPalette([ "#F0F0F0", "#C0C0C0", "#A0A0A0", "#808080", "#606060", "#404040" ]);
+        //var palette = USAMap.applyPalette([ "#FF9999", "#663399", "#CCFFFF", "#FFFFCC", "#660066", "#8080FF" ]);
+        //var palette = USAMap.applyPalette([ "#6EC5B8","#C7BAA7","#978B7D","#DC5C05","#FFAC00","#E8D0A9" ]);
+        var palette = WorldMap.applyPalette(["#313695", "#4575B4", "#74ADD1", "#ABD9EA", "#E0F3F9", "#FFFFBF", "#FEE090", "#FDAE61", "#F46D43", "#D73027", "#A50026"]);
+
+        // Use the color palette to fill a <table> with mouse over:
+        //Legend = new Engine.MapLegend(palette, document.getElementById("legend"));
+      }
+
+function drawMap() {
+  // Create chart:
+  MapChart=new Tee.Chart("canvas_map");
+
+  var map = new Tee.Map();
+  MapChart.addSeries(map);
+  
+  map.format.stroke.fill="";
+  map.title = "World";
+
+  map.setMap(new Tee.WorldMap());
+  map.svg.values={ SE:1234, GB:600, CL:3822, IN:2102, US:1600, ES:3000, BR:1300, TD: 2700, KZ:3300, AU:1510, HU:100 }
+  
+  map.svg.values={};
+  
+  for (var t=0; t<map.items.length; t++)
+     map.svg.values[ map.items[t].item.id ] = Math.random()*1000;
+
+  map.applyPalette();
+  
+  
+  //applyPalette(MapChart);
+  //MapChart.applyTheme("minimal");
+  
+  //applyPalette(MapChart);
+  
+  resizeMapChart();
+}
+
+function resizeMapChart(){
+	
+	var w;
+	var h;
+	var canvas = document.getElementById("canvas_map");
+	canvas.left=0;
+	w = canvas.offsetParent.offsetWidth-(canvas.offsetLeft*2);
+	if (MapChartHeight==undefined)
+		MapChartHeight = canvas.offsetParent.clientHeight;
+	h = MapChartHeight;
+	canvas.offsetLeft=0;
+	canvas.style.width = w + "px";
+	canvas.style.height = h + "px";
+	
+	MapChart.canvas.width=w;
+	MapChart.canvas.height=h;
+	MapChart.bounds.width=w;
+	MapChart.bounds.height=h;
+	
+	MapChart.draw();
+}
+</script>
+</head>
+
+<body onload="drawMap();resizeMapChart()" onresize="resizeMapChart()">
+
+
+
+ <left>
+  <canvas id="canvas_map" width="800" height="500"></canvas>
+ </left>
+
+<span id='time'></span>
+</body>
+</html>

@@ -1,0 +1,66 @@
+import &#123; Component, ElementRef, OnInit, ViewChild, asNativeElements &#125; from '@angular/core';
+import &#123; WeatherService &#125; from './weather.service';
+import &#123; Tee &#125; from 'node_modules/TeeChart/lib/teechart';
+
+@Component(&#123;
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+&#125;)
+export class AppComponent &#123;
+
+  @ViewChild('canvas1') canvas1;
+  @ViewChild('canvas2') canvas2;
+
+  tChart1 : Tee.Chart;
+  
+  constructor(private _weather: WeatherService) &#123;&#125;
+
+  ngAfterViewInit() &#123;
+
+    this.tChart1 = new Tee.Chart("canvas1");
+
+    /* example gantt
+    var aGantt = new Tee.Gantt();
+    aGantt.addRandom(5,10,true);
+    aGantt.addNextTask(1,4);
+    this.tChart1.addSeries(aGantt);*/
+
+    //var aLine = new Tee.Line([5,3,2,6,7,1]); //load with sample data
+    var aLine = new Tee.Line();
+    this.tChart1.addSeries(aLine);
+
+    this.tChart1.applyTheme("minimal");
+
+    this.tChart1.legend.visible = false;
+
+    this.tChart1.axes.bottom.labels.rotation = 90;
+   
+    this.tChart1.series.items[0].title="Apples";
+    this.tChart1.series.items[0].format.stroke.size=3;
+    aLine.smooth = 0.25;
+  
+    this.tChart1.title.text="TeeChart for Angular";
+
+    this._weather.dailyForecast()
+      .subscribe(res => &#123;
+        
+        let temp_max = res['list'].map(res => res.main.temp_max)
+        let temp_min = res['list'].map(res => res.main.temp_min)
+        let alldates = res['list'].map(res => res.dt)
+
+        let weatherDates = []
+        alldates.forEach((res) => &#123;
+          let jsdate = new Date(res * 1000)
+          weatherDates.push(jsdate.toLocaleTimeString('en', &#123; year: 'numeric', month: 'short', day: 'numeric'&#125;))
+        &#125;)
+
+        //connect to weather data
+        aLine.data.values = temp_max;
+        aLine.data.labels = weatherDates;
+ 
+        this.tChart1.draw();
+      &#125;)
+      
+  &#125;
+&#125;
