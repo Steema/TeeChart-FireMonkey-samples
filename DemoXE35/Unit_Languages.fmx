@@ -1,0 +1,92 @@
+object LanguagesForm: TLanguagesForm
+  Left = 0
+  Top = 0
+  Caption = 'Languages'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Layout1: TLayout
+    Align = alLeft
+    Height = 480.000000000000000000
+    Width = 161.000000000000000000
+  end
+  object ChartEditorPanel1: TChartEditorPanel
+    Height = 480.000000000000000000
+    Width = 471.000000000000000000
+    Align = alClient
+    Chart = Chart1
+    TabOrder = 2
+  end
+  object Chart1: TChart
+    Height = 345.000000000000000000
+    Position.X = 312.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 297.000000000000000000
+    Foot.Font.Family = 'Segoe UI'
+    Legend.Font.Family = 'Segoe UI'
+    Legend.Title.Font.Family = 'Segoe UI'
+    SubFoot.Font.Family = 'Segoe UI'
+    SubTitle.Font.Family = 'Segoe UI'
+    Title.Font.Family = 'Segoe UI'
+    Title.Text.Strings = (
+      'TChart')
+    BottomAxis.LabelsFormat.Font.Family = 'Segoe UI'
+    BottomAxis.Shape.Font.Family = 'Segoe UI'
+    BottomAxis.Title.Font.Family = 'Segoe UI'
+    DepthAxis.LabelsFormat.Font.Family = 'Segoe UI'
+    DepthAxis.Shape.Font.Family = 'Segoe UI'
+    DepthAxis.Title.Font.Family = 'Segoe UI'
+    DepthTopAxis.LabelsFormat.Font.Family = 'Segoe UI'
+    DepthTopAxis.Shape.Font.Family = 'Segoe UI'
+    DepthTopAxis.Title.Font.Family = 'Segoe UI'
+    LeftAxis.LabelsFormat.Font.Family = 'Segoe UI'
+    LeftAxis.Shape.Font.Family = 'Segoe UI'
+    LeftAxis.Title.Font.Family = 'Segoe UI'
+    RightAxis.LabelsFormat.Font.Family = 'Segoe UI'
+    RightAxis.Shape.Font.Family = 'Segoe UI'
+    RightAxis.Title.Font.Family = 'Segoe UI'
+    TopAxis.LabelsFormat.Font.Family = 'Segoe UI'
+    TopAxis.Shape.Font.Family = 'Segoe UI'
+    TopAxis.Title.Font.Family = 'Segoe UI'
+    Zoom.Brush.Kind = bkNone
+    Zoom.Pen.Fill.Color = claSilver
+    TabOrder = 1
+    Visible = False
+    ColorPaletteIndex = 13
+    object Series1: THorizLineSeries
+      ColorEachPoint = True
+      Marks.Font.Family = 'Segoe UI'
+      Brush.BackColor = x00FFFFFF
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Data = {
+        001900000000000000003C8E400000000000788E400000000000C88E40000000
+        000086904000000000005292400000000000CA92400000000000989240000000
+        000052924000000000005C924000000000006692400000000000EC9340000000
+        0000989240000000000092934000000000005094400000000000F09440000000
+        00004A95400000000000E095400000000000FA94400000000000B89540000000
+        0000229540000000000056934000000000007691400000000000DE9240000000
+        00005C92400000000000DE9240}
+    end
+  end
+  object Splitter1: TSplitter
+    Align = alLeft
+    Cursor = crHSplit
+    Height = 480.000000000000000000
+    MinSize = 20.000000000000000000
+    Position.X = 161.000000000000000000
+    Width = 8.000000000000000000
+  end
+end

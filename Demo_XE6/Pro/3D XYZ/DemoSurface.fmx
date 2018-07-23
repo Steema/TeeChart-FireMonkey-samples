@@ -1,0 +1,63 @@
+inherited DemoSurfaceSeries: TDemoSurfaceSeries
+  Caption = 'Surface'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  inherited Panel1: TPanel
+    Height = 33.000000000000000000
+    inherited BEdit: TButton
+      Position.X = 488.000000000000000000
+      Position.Y = 8.000000000000000000
+      Visible = False
+    end
+    object TeeCommander1: TTeeCommander
+      Height = 33.000000000000000000
+      Width = 600.000000000000000000
+      Panel = Chart1
+      Align = alTop
+      TabOrder = 1
+    end
+  end
+  object Chart1: TChart
+    Height = 367.000000000000000000
+    Position.Y = 33.000000000000000000
+    Width = 600.000000000000000000
+    BackWall.Size = 10
+    BackWall.Transparent = False
+    BottomWall.Size = 10
+    LeftWall.Size = 10
+    Legend.Brush.Kind = bkGradient
+    Legend.Brush.Gradient.StartColor = xFF134795
+    Legend.Brush.Gradient.Visible = True
+    RightWall.Size = 10
+    Title.Text.Strings = (
+      'XYZ 3D Surface Series')
+    Chart3DPercent = 100
+    DepthAxis.Visible = True
+    View3DOptions.Orthogonal = False
+    View3DOptions.Perspective = 64
+    View3DOptions.Zoom = 65
+    Zoom.Brush.Kind = bkNone
+    Align = alClient
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object Series1: TSurfaceSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.ShapeStyle = fosRoundRectangle
+      Marks.Visible = False
+      PaletteStyle = psRainbow
+      SideBrush.Kind = bkNone
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      ZValues.Name = 'Z'
+      ZValues.Order = loNone
+    end
+  end
+end

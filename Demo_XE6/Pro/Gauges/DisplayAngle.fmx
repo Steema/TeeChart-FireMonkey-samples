@@ -1,0 +1,280 @@
+inherited DisplayAngleForm: TDisplayAngleForm
+  Caption = 'DisplayAngleForm'
+  OnShow = FormShow
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  inherited Panel1: TPanel
+    Height = 73.000000000000000000
+    object UDDisplayTotalAngle: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Cursor = crIBeam
+      Min = -360.000000000000000000
+      Max = 360.000000000000000000
+      Value = 200.000000000000000000
+      Position.X = 242.000000000000000000
+      Position.Y = 12.000000000000000000
+      Width = 73.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = UDDisplayTotalAngleChange
+    end
+    object Label1: TLabel
+      Height = 25.000000000000000000
+      Position.X = 125.000000000000000000
+      Position.Y = 10.000000000000000000
+      Text = '&Display Total Angle:'
+      Width = 116.000000000000000000
+    end
+    object UDDisplayRotationAngle: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Cursor = crIBeam
+      Min = -360.000000000000000000
+      Max = 360.000000000000000000
+      Value = -100.000000000000000000
+      Position.X = 483.000000000000000000
+      Position.Y = 12.000000000000000000
+      Width = 86.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = UDDisplayRotationAngleChange
+    end
+    object Label3: TLabel
+      Height = 25.000000000000000000
+      Position.X = 352.000000000000000000
+      Position.Y = 10.000000000000000000
+      Text = 'Di&splay Rotation Angle:'
+      Width = 130.000000000000000000
+    end
+    object Label4: TLabel
+      Height = 25.000000000000000000
+      Position.X = 125.000000000000000000
+      Position.Y = 39.000000000000000000
+      Text = '&Total Angle:'
+      Width = 113.000000000000000000
+    end
+    object UDTotalAngle: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Cursor = crIBeam
+      Min = -360.000000000000000000
+      Max = 360.000000000000000000
+      Value = 178.000000000000000000
+      Position.X = 243.000000000000000000
+      Position.Y = 41.000000000000000000
+      Width = 73.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = UDTotalAngleChange
+    end
+    object Label5: TLabel
+      Height = 25.000000000000000000
+      Position.X = 352.000000000000000000
+      Position.Y = 39.000000000000000000
+      Text = '&Rotation Angle'
+      Width = 129.000000000000000000
+    end
+    object UDRotationAngle: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 8
+      Cursor = crIBeam
+      Min = -360.000000000000000000
+      Max = 360.000000000000000000
+      Value = 90.000000000000000000
+      Position.X = 483.000000000000000000
+      Position.Y = 41.000000000000000000
+      Width = 86.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = UDRotationAngleChange
+    end
+  end
+  object Chart1: TChart
+    Height = 327.000000000000000000
+    Width = 600.000000000000000000
+    Gradient.EndColor = xFFC4C4C4
+    Gradient.Visible = True
+    Legend.Visible = False
+    Title.Alignment = taLeftJustify
+    Title.CustomPosition = True
+    Title.Font.Color = xA0000000
+    Title.Font.Brush.Color = xA0000000
+    Title.Left = 13
+    Title.Margins.Units = maPercentSize
+    Title.Text.Strings = (
+      'Circular Gauge')
+    Title.Top = 15
+    Title.AdjustFrame = False
+    Title.VertMargin = 10
+    BottomAxis.Increment = 10.000000000000000000
+    BottomAxis.LabelsFormat.Font.Style = [fsBold]
+    BottomAxis.LabelsFormat.Font.Color = claSilver
+    BottomAxis.LabelsFormat.Font.Brush.Color = claSilver
+    BottomAxis.MinorTickLength = 1
+    BottomAxis.MinorTicks.Color = xFF646464
+    BottomAxis.MinorTicks.Fill.Color = xFF646464
+    BottomAxis.TickLength = 10
+    BottomAxis.Ticks.Color = xFF646464
+    BottomAxis.Ticks.Fill.Color = xFF646464
+    BottomAxis.Title.Font.Color = xFF646464
+    BottomAxis.Title.Font.Brush.Color = xFF646464
+    Chart3DPercent = 7
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Color = claWhite
+    Zoom.Pen.Mode = pmNotXor
+    Zoom.Pen.Fill.Color = claWhite
+    Align = Client
+    Color = claWhite
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object Series1: TCircularGauge
+      Legend.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Center.Brush.Kind = Gradient
+      Center.Brush.Gradient.Angle = 222
+      Center.Brush.Gradient.EndColor = x00FFFFFF
+      Center.Brush.Gradient.Visible = True
+      Center.Gradient.Angle = 222
+      Center.Gradient.EndColor = x00FFFFFF
+      Center.Gradient.Visible = True
+      Center.HorizSize = 16
+      Center.InflateMargins = True
+      Center.Pen.Visible = False
+      Center.Shadow.HorizSize = 2
+      Center.Shadow.VertSize = 2
+      Center.Shadow.Visible = True
+      Center.Style = psCircle
+      Center.VertSize = 16
+      Center.GaugeStyle = gpCenter
+      DisplayTotalAngle = 360
+      DisplayRotationAngle = 0
+      EndPoint.Brush.Color = claWhite
+      EndPoint.Brush.Gradient.EndColor = claWhite
+      EndPoint.Gradient.EndColor = claWhite
+      EndPoint.InflateMargins = True
+      EndPoint.Style = psCircle
+      Face.ShapeStyle = fosEllipse
+      Frame.InnerBrush.Kind = Gradient
+      Frame.InnerBrush.Gradient.EndColor = claGray
+      Frame.InnerBrush.Gradient.MidColor = claWhite
+      Frame.InnerBrush.Gradient.StartColor = xFF404040
+      Frame.InnerBrush.Gradient.Visible = True
+      Frame.InnerBrush.BackColor = claRed
+      Frame.MiddleBrush.Kind = Gradient
+      Frame.MiddleBrush.Gradient.EndColor = xFF828282
+      Frame.MiddleBrush.Gradient.MidColor = claWhite
+      Frame.MiddleBrush.Gradient.StartColor = claGray
+      Frame.MiddleBrush.Gradient.Visible = True
+      Frame.MiddleBrush.BackColor = claYellow
+      Frame.OuterBrush.Kind = Gradient
+      Frame.OuterBrush.Gradient.EndColor = xFF404040
+      Frame.OuterBrush.Gradient.MidColor = claWhite
+      Frame.OuterBrush.Gradient.StartColor = claSilver
+      Frame.OuterBrush.Gradient.Visible = True
+      Frame.OuterBrush.BackColor = claGreen
+      Frame.Width = 6
+      HandOffset = 0
+      Hands = <
+        item
+          Format.Brush.Color = claBlack
+          Format.Brush.Kind = Gradient
+          Format.Brush.Gradient.EndColor = claRed
+          Format.Brush.Gradient.MidColor = xFF3C73C8
+          Format.Brush.Gradient.StartColor = xFF0A3296
+          Format.Gradient.EndColor = claRed
+          Format.Gradient.MidColor = xFF3C73C8
+          Format.Gradient.StartColor = xFF0A3296
+          Format.HorizSize = 9
+          Format.InflateMargins = True
+          Format.Pen.Color = xFF3C73C8
+          Format.Pen.Fill.Color = xFF3C73C8
+          Format.Pen.Visible = False
+          Format.Style = psRectangle
+          Format.Transparency = 70
+          Format.VertSize = 120
+          Format.GaugeStyle = gpHand
+          Format.Distance = 67
+          Format.Offset = 0
+          Format.Value = 34.000000000000000000
+          Value = 34.000000000000000000
+        end>
+      Maximum = 100.000000000000000000
+      MinorTicks.Brush.Color = claNull
+      MinorTicks.Brush.Gradient.EndColor = claNull
+      MinorTicks.Gradient.EndColor = claNull
+      MinorTicks.HorizSize = 1
+      MinorTicks.InflateMargins = True
+      MinorTicks.Pen.Color = xFF646464
+      MinorTicks.Pen.Fill.Color = xFF646464
+      MinorTicks.Style = psRectangle
+      MinorTicks.VertSize = 1
+      MinorTicks.GaugeStyle = gpMinorTick
+      Ranges = <
+        item
+          Format.Brush.Color = xFF1EC81E
+          Format.Brush.Kind = Gradient
+          Format.Brush.Gradient.Angle = -60
+          Format.Brush.Gradient.Direction = gdBottomTop
+          Format.Brush.Gradient.EndColor = xFF1EC81E
+          Format.Brush.Gradient.MidColor = claBlack
+          Format.Brush.Gradient.StartColor = xFF646464
+          Format.Brush.Gradient.Visible = True
+          Format.Gradient.Angle = -60
+          Format.Gradient.Direction = gdBottomTop
+          Format.Gradient.EndColor = xFF1EC81E
+          Format.Gradient.MidColor = claBlack
+          Format.Gradient.StartColor = xFF646464
+          Format.Gradient.Visible = True
+          Format.InflateMargins = True
+          Format.Pen.Visible = False
+          Format.Style = psRectangle
+          Format.VertSize = 5
+          Format.GaugeStyle = gpColorLine
+          Format.EndValue = 70.000000000000000000
+        end
+        item
+          Format.Brush.Color = xFF646464
+          Format.Brush.Kind = Gradient
+          Format.Brush.Gradient.Angle = 180
+          Format.Brush.Gradient.Direction = gdBottomTop
+          Format.Brush.Gradient.EndColor = xFF646464
+          Format.Brush.Gradient.MidColor = claBlack
+          Format.Brush.Gradient.StartColor = xFF282864
+          Format.Brush.Gradient.Visible = True
+          Format.Gradient.Angle = 180
+          Format.Gradient.Direction = gdBottomTop
+          Format.Gradient.EndColor = xFF646464
+          Format.Gradient.MidColor = claBlack
+          Format.Gradient.StartColor = xFF282864
+          Format.Gradient.Visible = True
+          Format.InflateMargins = True
+          Format.Pen.Visible = False
+          Format.Style = psRectangle
+          Format.VertSize = 5
+          Format.GaugeStyle = gpColorLine
+          Format.EndValue = 100.000000000000000000
+          Format.StartValue = 80.000000000000000000
+        end>
+      Ticks.Brush.Kind = None
+      Ticks.InflateMargins = True
+      Ticks.Pen.Color = xFF646464
+      Ticks.Pen.Fill.Color = xFF646464
+      Ticks.Style = psRectangle
+      Ticks.VertSize = 10
+      Ticks.GaugeStyle = gpTick
+      TotalAngle = 300.000000000000000000
+      Value = 34.000000000000000000
+      Data = {00010000000000000000004140}
+    end
+  end
+  object Timer1: TTimer
+    Interval = 10
+    OnTimer = Timer1Timer
+    Left = 24
+    Top = 112
+  end
+end

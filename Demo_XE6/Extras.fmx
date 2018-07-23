@@ -1,0 +1,68 @@
+object FmxExtras: TFmxExtras
+  Left = 0
+  Top = 0
+  ClientHeight = 400
+  ClientWidth = 600
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Client
+    Height = 400.000000000000000000
+    TabOrder = 0
+    Width = 600.000000000000000000
+    Lines.Strings = (
+      
+        'TeeChart includes several components that can be used standalone' +
+        ' in your FireMonkey applications:'
+      ''
+      '-2D Controls'
+      ''
+      'TRadioGroup, group box with RadioButton children elements.'
+      ''
+      '-3D Controls'
+      ''
+      'TPolygon3D draws an Array of Point xy.'
+      'TLine3D draws a simple line from StartPoint xyz to EndPoint xyz.'
+      'TMouse3D enables mouse rotation and panning of a 3D Control.'
+      ''
+      '-3D Editor'
+      ''
+      'Generic dialog to edit 3D Control properties.'
+      ''
+      '-Animations'
+      ''
+      'TIntegerAnimation'
+      '  Like a TFloatAnimation, but for Integer properties.'
+      ''
+      'TPosition3DAnimation'
+      
+        '  Animates any Position3D property (like Position, Scale, Rotati' +
+        'on, etc),'
+      '  from Start XYZ to Stop XYZ values.'
+      ''
+      'TChildrenAnimation'
+      
+        '  Replicates an animation to animate all of its sibling Fmx obje' +
+        'cts at once.'
+      ''
+      'TSequenceAnimation'
+      '  Children animations are linearly executed, one by one.'
+      ''
+      ''
+      '-Forms'
+      ''
+      'Inserts a Form inside any Parent control:'
+      ''
+      
+        'function EmbeddForm(AForm:TCommonCustomForm; AParent:TFmxObject)' +
+        ':TCommonCustomForm;')
+  end
+end

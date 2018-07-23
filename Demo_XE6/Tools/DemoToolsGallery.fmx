@@ -1,0 +1,10 @@
+inherited DemoTools: TDemoTools
+  Caption = 'BaseForm1'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+end

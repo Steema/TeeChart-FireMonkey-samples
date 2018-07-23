@@ -1,0 +1,529 @@
+object ClusteringDemo: TClusteringDemo
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 472
+  ClientWidth = 725
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+  object Splitter1: TSplitter
+    Align = alRight
+    Cursor = crHSplit
+    Position.Point = '(568,154)'
+    Width = 5.000000000000000000
+    Height = 299.000000000000000000
+    TabOrder = 0
+    MinSize = 20.000000000000000000
+    Left = 515
+    Top = 154
+  end
+  object Chart1: TChart
+    Align = alClient
+    Position.Point = '(0,154)'
+    Width = 568.000000000000000000
+    Height = 299.000000000000000000
+    OnEnter = Chart1Enter
+    OnExit = Chart1Exit
+    OnMouseDown = Chart1MouseDown
+    OnMouseWheel = Chart1MouseWheel
+    Foot.Font.Brush.Color = claRed
+    LeftWall.AutoHide = True
+    Legend.Visible = False
+    RightWall.AutoHide = True
+    RightWall.Visible = True
+    SubFoot.Font.Brush.Color = claRed
+    SubTitle.Font.Brush.Color = claBlue
+    Title.Font.Brush.Color = claBlue
+    Title.Text.Strings = (
+      'Clustering')
+    Chart3DPercent = 55
+    DepthAxis.Visible = True
+    View3D = False
+    View3DOptions.Orthogonal = False
+    View3DOptions.Zoom = 70
+    Zoom.Brush.Kind = bkNone
+    Zoom.Pen.Width = 3.000000000000000000
+    Zoom.Pen.EndStyle = esFlat
+    Zoom.Pen.Fill.Color = claSilver
+    OnAfterDraw = Chart1AfterDraw
+    TabOrder = 1
+    Top = 154
+    PrintMargins = (
+      0
+      0
+      0
+      0)
+    ColorPaletteIndex = 4
+    object Series1: TPointSeries
+      Title = 'Series 2D'
+      ClickableLine = False
+      Pointer.Brush.Gradient.EndColor = claBlue
+      Pointer.Gradient.EndColor = claBlue
+      Pointer.HorizSize = 3
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.VertSize = 3
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Data = {
+        000C0000000000000000F089400000000000BC8B400000000000B48E40000000
+        0000AC8C400000000000B88A4000000000009887400000000000908540000000
+        0000F8864000000000007483400000000000F084400000000000748340000000
+        00000C8740}
+    end
+    object Series2: TPoint3DSeries
+      Active = False
+      Title = 'Series 3D'
+      LinePen.Visible = False
+      Pointer.Brush.Gradient.EndColor = claRed
+      Pointer.Gradient.EndColor = claRed
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      ZValues.Name = 'Z'
+      ZValues.Order = loNone
+    end
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Width = 725.000000000000000000
+    Height = 121.000000000000000000
+    TabOrder = 2
+    object GroupBox1: TGroupBox
+      Position.Point = '(8,8)'
+      Width = 193.000000000000000000
+      Height = 105.000000000000000000
+      TabOrder = 0
+      Text = 'Data:'
+      Left = 8
+      Top = 8
+      object LRandom: TLabel
+        Enabled = False
+        Position.Point = '(10,66)'
+        Width = 37.241695404052730000
+        Height = 18.630859375000000000
+        TabOrder = 0
+        AutoSize = True
+        Text = 'Points:'
+        WordWrap = False
+        Left = 12
+        Top = 61
+      end
+      object BRandom: TButton
+        Enabled = False
+        Position.Point = '(104,64)'
+        Width = 75.000000000000000000
+        Height = 25.000000000000000000
+        OnClick = BRandomClick
+        TabOrder = 1
+        Text = 'Randomize'
+        Left = 100
+        Top = 55
+      end
+      object ERandom: TEdit
+        Enabled = False
+        Position.Point = '(52,64)'
+        Width = 41.000000000000000000
+        Height = 21.000000000000000000
+        TabOrder = 2
+        KeyboardType = vktDefault
+        Password = False
+        Text = '400'
+        Left = 48
+        Top = 58
+      end
+      object CB3D: TCheckBox
+        Position.Point = '(144,24)'
+        Width = 36.000000000000000000
+        Height = 17.000000000000000000
+        TabOrder = 3
+        Text = '3D'
+        OnChange = CB3DChange
+        Left = 130
+        Top = 17
+      end
+      object CBData: TComboBox
+        Position.Point = '(16,24)'
+        Width = 113.000000000000000000
+        Height = 22.000000000000000000
+        TabOrder = 4
+        ItemIndex = 0
+        OnChange = CBDataChange
+        object ListBoxItem1: TListBoxItem
+          Position.Point = '(5000,5000)'
+          Width = 88.000000000000000000
+          Height = 18.000000000000000000
+          HitTest = False
+          TabOrder = 0
+          IsSelected = True
+          Text = 'Iris Flowers 1'
+        end
+        object ListBoxItem2: TListBoxItem
+          Position.Point = '(0,19)'
+          Width = 93.000000000000000000
+          Height = 19.000000000000000000
+          HitTest = False
+          TabOrder = 1
+          Text = 'Iris Flowers 2'
+        end
+        object ListBoxItem3: TListBoxItem
+          Position.Point = '(0,38)'
+          Width = 93.000000000000000000
+          Height = 19.000000000000000000
+          HitTest = False
+          TabOrder = 2
+          Text = 'Iris Flowers 3'
+        end
+        object ListBoxItem4: TListBoxItem
+          Position.Point = '(0,57)'
+          Width = 93.000000000000000000
+          Height = 19.000000000000000000
+          HitTest = False
+          TabOrder = 3
+          Text = 'Iris Flowers 4'
+        end
+        object ListBoxItem5: TListBoxItem
+          Position.Point = '(0,76)'
+          Width = 93.000000000000000000
+          Height = 19.000000000000000000
+          HitTest = False
+          TabOrder = 4
+          Text = 'Iris Flowers 5'
+        end
+        object ListBoxItem6: TListBoxItem
+          Position.Point = '(0,95)'
+          Width = 93.000000000000000000
+          Height = 19.000000000000000000
+          HitTest = False
+          TabOrder = 5
+          Text = 'Random'
+        end
+      end
+    end
+    object GroupBox2: TGroupBox
+      Position.Point = '(448,8)'
+      Width = 144.000000000000000000
+      Height = 105.000000000000000000
+      TabOrder = 1
+      Text = 'View:'
+      Left = 472
+      Top = 8
+      object CBCentroid: TCheckBox
+        Position.Point = '(8,16)'
+        Width = 97.000000000000000000
+        Height = 17.000000000000000000
+        OnClick = CBCentroidClick
+        TabOrder = 0
+        Text = 'Centroids'
+        Left = 8
+        Top = 58
+      end
+      object CBViewClusters: TCheckBox
+        Position.Point = '(8,78)'
+        Width = 105.000000000000000000
+        Height = 17.000000000000000000
+        TabOrder = 1
+        IsChecked = True
+        Text = 'Cluster bounds'
+        OnChange = CBViewClustersChange
+        Left = 8
+        Top = 38
+      end
+      object CBColorize: TCheckBox
+        Position.Point = '(8,57)'
+        Width = 113.000000000000000000
+        Height = 17.000000000000000000
+        TabOrder = 2
+        IsChecked = True
+        Text = 'Colorize points'
+        OnChange = CBColorizeChange
+        Left = 8
+        Top = 80
+      end
+      object CBCenters: TCheckBox
+        Position.Point = '(8,36)'
+        Width = 75.000000000000000000
+        Height = 17.000000000000000000
+        OnClick = CBCentersClick
+        TabOrder = 3
+        Text = 'Centers'
+        Left = 104
+        Top = 58
+      end
+    end
+    object GroupBox3: TGroupBox
+      Position.Point = '(208,8)'
+      Width = 233.000000000000000000
+      Height = 105.000000000000000000
+      TabOrder = 2
+      Text = 'Clustering:'
+      Left = 224
+      Top = 8
+      object Button4: TButton
+        Position.Point = '(144,56)'
+        Width = 75.000000000000000000
+        Height = 25.000000000000000000
+        OnClick = Button4Click
+        TabOrder = 0
+        Text = 'Options...'
+        Left = 144
+        Top = 24
+      end
+      object LBMethod: TListBox
+        Position.Point = '(8,21)'
+        Width = 121.000000000000000000
+        Height = 49.000000000000000000
+        OnClick = LBMethodClick
+        TabOrder = 1
+        ItemHeight = 13.000000000000000000
+        Left = 8
+        Top = 24
+        object TListBoxItem
+          Position.Point = '(5000,5000)'
+          Width = 119.000000000000000000
+          Height = 13.000000000000000000
+          HitTest = False
+          TabOrder = 0
+          Text = 'K-Means'
+        end
+        object TListBoxItem
+          Position.Point = '(0,13)'
+          Width = 119.000000000000000000
+          Height = 13.000000000000000000
+          HitTest = False
+          TabOrder = 1
+          Text = 'Hierarchical'
+        end
+        object TListBoxItem
+          Position.Point = '(0,26)'
+          Width = 119.000000000000000000
+          Height = 13.000000000000000000
+          HitTest = False
+          TabOrder = 2
+          Text = 'Quality Threshold (QT)'
+        end
+      end
+      object BExecute: TButton
+        Position.Point = '(144,24)'
+        Width = 75.000000000000000000
+        Height = 25.000000000000000000
+        OnClick = BExecuteClick
+        TabOrder = 2
+        Text = 'Execute !'
+        Left = 144
+        Top = 56
+      end
+      object CheckBox1: TCheckBox
+        Position.Point = '(8,80)'
+        Width = 113.000000000000000000
+        Height = 17.000000000000000000
+        TabOrder = 3
+        Text = 'Multi-threading'
+        OnChange = CheckBox1Change
+        Left = 10
+        Top = 78
+      end
+    end
+  end
+  object TeeCommander1: TTeeCommander
+    Align = alTop
+    Position.Point = '(0,121)'
+    Width = 725.000000000000000000
+    Height = 33.000000000000000000
+    ClipChildren = True
+    Panel = Chart1
+    TabOrder = 3
+    Top = 121
+  end
+  object StatusBar1: TStatusBar
+    Position.Point = '(0,453)'
+    Width = 725.000000000000000000
+    Height = 19.000000000000000000
+    TabOrder = 4
+    ShowSizeGrip = True
+    Top = 510
+    object StatusText: TText
+      Align = alLeft
+      Position.Point = '(4,0)'
+      Width = 449.000000000000000000
+      Height = 19.000000000000000000
+      Padding.Rect = '(4,0,0,0)'
+      HorzTextAlign = taLeading
+      WordWrap = False
+    end
+  end
+  object IrisDataSet: TMemo
+    Position.Point = '(304,136)'
+    Width = 169.000000000000000000
+    Height = 233.000000000000000000
+    Visible = False
+    TabOrder = 5
+    Lines.Strings = (
+      '5.1,3.5,1.4,0.2,Iris-setosa'
+      '4.9,3.0,1.4,0.2,Iris-setosa'
+      '4.7,3.2,1.3,0.2,Iris-setosa'
+      '4.6,3.1,1.5,0.2,Iris-setosa'
+      '5.0,3.6,1.4,0.2,Iris-setosa'
+      '5.4,3.9,1.7,0.4,Iris-setosa'
+      '4.6,3.4,1.4,0.3,Iris-setosa'
+      '5.0,3.4,1.5,0.2,Iris-setosa'
+      '4.4,2.9,1.4,0.2,Iris-setosa'
+      '4.9,3.1,1.5,0.1,Iris-setosa'
+      '5.4,3.7,1.5,0.2,Iris-setosa'
+      '4.8,3.4,1.6,0.2,Iris-setosa'
+      '4.8,3.0,1.4,0.1,Iris-setosa'
+      '4.3,3.0,1.1,0.1,Iris-setosa'
+      '5.8,4.0,1.2,0.2,Iris-setosa'
+      '5.7,4.4,1.5,0.4,Iris-setosa'
+      '5.4,3.9,1.3,0.4,Iris-setosa'
+      '5.1,3.5,1.4,0.3,Iris-setosa'
+      '5.7,3.8,1.7,0.3,Iris-setosa'
+      '5.1,3.8,1.5,0.3,Iris-setosa'
+      '5.4,3.4,1.7,0.2,Iris-setosa'
+      '5.1,3.7,1.5,0.4,Iris-setosa'
+      '4.6,3.6,1.0,0.2,Iris-setosa'
+      '5.1,3.3,1.7,0.5,Iris-setosa'
+      '4.8,3.4,1.9,0.2,Iris-setosa'
+      '5.0,3.0,1.6,0.2,Iris-setosa'
+      '5.0,3.4,1.6,0.4,Iris-setosa'
+      '5.2,3.5,1.5,0.2,Iris-setosa'
+      '5.2,3.4,1.4,0.2,Iris-setosa'
+      '4.7,3.2,1.6,0.2,Iris-setosa'
+      '4.8,3.1,1.6,0.2,Iris-setosa'
+      '5.4,3.4,1.5,0.4,Iris-setosa'
+      '5.2,4.1,1.5,0.1,Iris-setosa'
+      '5.5,4.2,1.4,0.2,Iris-setosa'
+      '4.9,3.1,1.5,0.2,Iris-setosa'
+      '5.0,3.2,1.2,0.2,Iris-setosa'
+      '5.5,3.5,1.3,0.2,Iris-setosa'
+      '4.9,3.6,1.4,0.1,Iris-setosa'
+      '4.4,3.0,1.3,0.2,Iris-setosa'
+      '5.1,3.4,1.5,0.2,Iris-setosa'
+      '5.0,3.5,1.3,0.3,Iris-setosa'
+      '4.5,2.3,1.3,0.3,Iris-setosa'
+      '4.4,3.2,1.3,0.2,Iris-setosa'
+      '5.0,3.5,1.6,0.6,Iris-setosa'
+      '5.1,3.8,1.9,0.4,Iris-setosa'
+      '4.8,3.0,1.4,0.3,Iris-setosa'
+      '5.1,3.8,1.6,0.2,Iris-setosa'
+      '4.6,3.2,1.4,0.2,Iris-setosa'
+      '5.3,3.7,1.5,0.2,Iris-setosa'
+      '5.0,3.3,1.4,0.2,Iris-setosa'
+      '7.0,3.2,4.7,1.4,Iris-versicolor'
+      '6.4,3.2,4.5,1.5,Iris-versicolor'
+      '6.9,3.1,4.9,1.5,Iris-versicolor'
+      '5.5,2.3,4.0,1.3,Iris-versicolor'
+      '6.5,2.8,4.6,1.5,Iris-versicolor'
+      '5.7,2.8,4.5,1.3,Iris-versicolor'
+      '6.3,3.3,4.7,1.6,Iris-versicolor'
+      '4.9,2.4,3.3,1.0,Iris-versicolor'
+      '6.6,2.9,4.6,1.3,Iris-versicolor'
+      '5.2,2.7,3.9,1.4,Iris-versicolor'
+      '5.0,2.0,3.5,1.0,Iris-versicolor'
+      '5.9,3.0,4.2,1.5,Iris-versicolor'
+      '6.0,2.2,4.0,1.0,Iris-versicolor'
+      '6.1,2.9,4.7,1.4,Iris-versicolor'
+      '5.6,2.9,3.6,1.3,Iris-versicolor'
+      '6.7,3.1,4.4,1.4,Iris-versicolor'
+      '5.6,3.0,4.5,1.5,Iris-versicolor'
+      '5.8,2.7,4.1,1.0,Iris-versicolor'
+      '6.2,2.2,4.5,1.5,Iris-versicolor'
+      '5.6,2.5,3.9,1.1,Iris-versicolor'
+      '5.9,3.2,4.8,1.8,Iris-versicolor'
+      '6.1,2.8,4.0,1.3,Iris-versicolor'
+      '6.3,2.5,4.9,1.5,Iris-versicolor'
+      '6.1,2.8,4.7,1.2,Iris-versicolor'
+      '6.4,2.9,4.3,1.3,Iris-versicolor'
+      '6.6,3.0,4.4,1.4,Iris-versicolor'
+      '6.8,2.8,4.8,1.4,Iris-versicolor'
+      '6.7,3.0,5.0,1.7,Iris-versicolor'
+      '6.0,2.9,4.5,1.5,Iris-versicolor'
+      '5.7,2.6,3.5,1.0,Iris-versicolor'
+      '5.5,2.4,3.8,1.1,Iris-versicolor'
+      '5.5,2.4,3.7,1.0,Iris-versicolor'
+      '5.8,2.7,3.9,1.2,Iris-versicolor'
+      '6.0,2.7,5.1,1.6,Iris-versicolor'
+      '5.4,3.0,4.5,1.5,Iris-versicolor'
+      '6.0,3.4,4.5,1.6,Iris-versicolor'
+      '6.7,3.1,4.7,1.5,Iris-versicolor'
+      '6.3,2.3,4.4,1.3,Iris-versicolor'
+      '5.6,3.0,4.1,1.3,Iris-versicolor'
+      '5.5,2.5,4.0,1.3,Iris-versicolor'
+      '5.5,2.6,4.4,1.2,Iris-versicolor'
+      '6.1,3.0,4.6,1.4,Iris-versicolor'
+      '5.8,2.6,4.0,1.2,Iris-versicolor'
+      '5.0,2.3,3.3,1.0,Iris-versicolor'
+      '5.6,2.7,4.2,1.3,Iris-versicolor'
+      '5.7,3.0,4.2,1.2,Iris-versicolor'
+      '5.7,2.9,4.2,1.3,Iris-versicolor'
+      '6.2,2.9,4.3,1.3,Iris-versicolor'
+      '5.1,2.5,3.0,1.1,Iris-versicolor'
+      '5.7,2.8,4.1,1.3,Iris-versicolor'
+      '6.3,3.3,6.0,2.5,Iris-virginica'
+      '5.8,2.7,5.1,1.9,Iris-virginica'
+      '7.1,3.0,5.9,2.1,Iris-virginica'
+      '6.3,2.9,5.6,1.8,Iris-virginica'
+      '6.5,3.0,5.8,2.2,Iris-virginica'
+      '7.6,3.0,6.6,2.1,Iris-virginica'
+      '4.9,2.5,4.5,1.7,Iris-virginica'
+      '7.3,2.9,6.3,1.8,Iris-virginica'
+      '6.7,2.5,5.8,1.8,Iris-virginica'
+      '7.2,3.6,6.1,2.5,Iris-virginica'
+      '6.5,3.2,5.1,2.0,Iris-virginica'
+      '6.4,2.7,5.3,1.9,Iris-virginica'
+      '6.8,3.0,5.5,2.1,Iris-virginica'
+      '5.7,2.5,5.0,2.0,Iris-virginica'
+      '5.8,2.8,5.1,2.4,Iris-virginica'
+      '6.4,3.2,5.3,2.3,Iris-virginica'
+      '6.5,3.0,5.5,1.8,Iris-virginica'
+      '7.7,3.8,6.7,2.2,Iris-virginica'
+      '7.7,2.6,6.9,2.3,Iris-virginica'
+      '6.0,2.2,5.0,1.5,Iris-virginica'
+      '6.9,3.2,5.7,2.3,Iris-virginica'
+      '5.6,2.8,4.9,2.0,Iris-virginica'
+      '7.7,2.8,6.7,2.0,Iris-virginica'
+      '6.3,2.7,4.9,1.8,Iris-virginica'
+      '6.7,3.3,5.7,2.1,Iris-virginica'
+      '7.2,3.2,6.0,1.8,Iris-virginica'
+      '6.2,2.8,4.8,1.8,Iris-virginica'
+      '6.1,3.0,4.9,1.8,Iris-virginica'
+      '6.4,2.8,5.6,2.1,Iris-virginica'
+      '7.2,3.0,5.8,1.6,Iris-virginica'
+      '7.4,2.8,6.1,1.9,Iris-virginica'
+      '7.9,3.8,6.4,2.0,Iris-virginica'
+      '6.4,2.8,5.6,2.2,Iris-virginica'
+      '6.3,2.8,5.1,1.5,Iris-virginica'
+      '6.1,2.6,5.6,1.4,Iris-virginica'
+      '7.7,3.0,6.1,2.3,Iris-virginica'
+      '6.3,3.4,5.6,2.4,Iris-virginica'
+      '6.4,3.1,5.5,1.8,Iris-virginica'
+      '6.0,3.0,4.8,1.8,Iris-virginica'
+      '6.9,3.1,5.4,2.1,Iris-virginica'
+      '6.7,3.1,5.6,2.4,Iris-virginica'
+      '6.9,3.1,5.1,2.3,Iris-virginica'
+      '5.8,2.7,5.1,1.9,Iris-virginica'
+      '6.8,3.2,5.9,2.3,Iris-virginica'
+      '6.7,3.3,5.7,2.5,Iris-virginica'
+      '6.7,3.0,5.2,2.3,Iris-virginica'
+      '6.3,2.5,5.0,1.9,Iris-virginica'
+      '6.5,3.0,5.2,2.0,Iris-virginica'
+      '6.2,3.4,5.4,2.3,Iris-virginica'
+      '5.9,3.0,5.1,1.8,Iris-virginica')
+    KeyboardType = vktDefault
+  end
+  object TreeView1: TTreeView
+    Align = alRight
+    Position.Point = '(573,154)'
+    Width = 152.000000000000000000
+    Height = 299.000000000000000000
+    OnClick = TreeView1Click
+    TabOrder = 6
+    OnChange = TreeView1Change
+  end
+end
