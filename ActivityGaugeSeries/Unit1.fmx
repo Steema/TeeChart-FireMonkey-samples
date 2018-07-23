@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Activity Gauge Series'
+  ClientHeight = 355
+  ClientWidth = 572
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Chart1: TChart
+    Foot.Font.StyleExt = {00040000000200000004000000}
+    Legend.Title.Font.StyleExt = {00070000000000000004000000}
+    SubFoot.Font.StyleExt = {00040000000200000004000000}
+    Title.Alignment = taLeftJustify
+    Title.Font.Size = 18.891565322875980000
+    Title.Font.Color = xFF7C7C7C
+    Title.Font.Brush.Color = xFF7C7C7C
+    Title.Text.Strings = (
+      'Activity Gauge Series')
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Align = Client
+    Color = claWhite
+    TabOrder = 0
+    Size.Width = 572.000000000000000000
+    Size.Height = 322.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 13
+  end
+  object TeeCommander1: TTeeCommander
+    Panel = Chart1
+    Align = Top
+    ParentShowHint = False
+    Size.Width = 572.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object CheckBox1: TCheckBox
+      IsChecked = True
+      Position.X = 320.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Text = 'Center Text'
+      OnChange = CheckBox1Change
+    end
+    object Label1: TLabel
+      Position.X = 432.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Back Color'
+      TabOrder = 1
+    end
+    object BBackColor: TComboColorBox
+      Color = claWhite
+      Position.X = 500.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'comboboxstyle'
+      TabOrder = 3
+      OnChange = BBackColorChange
+    end
+  end
+end
