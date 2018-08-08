@@ -3,76 +3,116 @@ inherited MainForm_XLgXhdpiTb: TMainForm_XLgXhdpiTb
   ClientWidth = 800
   DesignerMasterStyle = 2
   inherited DetailPanel: TPanel
-    Size.Width = 550.000000000000000000
+    Size.Width = 799.000000000000000000
     Size.Height = 1255.000000000000000000
     inherited ToolBar1: TToolBar
-      Size.Width = 550.000000000000000000
+      Size.Width = 799.000000000000000000
       Size.Height = 48.000000000000000000
       inherited Label2: TLabel
-        Size.Width = 550.000000000000000000
+        Size.Width = 799.000000000000000000
+        Size.Height = 48.000000000000000000
+      end
+      inherited MasterButton: TSpeedButton
         Size.Height = 48.000000000000000000
       end
     end
   end
   inherited MultiView1: TMultiView
-    Size.Height = 1255.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 50.000000000000000000
+    Visible = False
     inherited ToolBar2: TToolBar
+      Size.Width = 250.000000000000000000
       Size.Height = 48.000000000000000000
       inherited Image1: TImage
         MultiResBitmap.Height = 44
         MultiResBitmap.Width = 190
+        Size.Width = 250.000000000000000000
       end
       inherited Label1: TLabel
         Position.Y = 23.000000000000000000
+        Size.Width = 250.000000000000000000
       end
     end
     inherited ListBoxLines: TListBox
       Position.Y = 89.000000000000000000
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 56.000000000000000000
     end
     inherited ButtonLines: TButton
       Position.Y = 48.000000000000000000
+      Size.Width = 250.000000000000000000
     end
     inherited ButtonBars: TButton
       Position.Y = 145.000000000000000000
+      Size.Width = 250.000000000000000000
     end
     inherited ListBoxBars: TListBox
       Position.Y = 186.000000000000000000
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 55.000000000000000000
     end
     inherited ButtonAreas: TButton
       Position.Y = 241.000000000000000000
+      Size.Width = 250.000000000000000000
     end
     inherited ListBoxAreas: TListBox
       Position.Y = 282.000000000000000000
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 35.000000000000000000
     end
     inherited ButtonPies: TButton
       Position.Y = 317.000000000000000000
+      Size.Width = 250.000000000000000000
     end
     inherited ListBoxPies: TListBox
       Position.Y = 358.000000000000000000
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 60.000000000000000000
     end
     inherited ButtonPoints: TButton
       Position.Y = 418.000000000000000000
+      Size.Width = 250.000000000000000000
     end
     inherited ListBoxPoints: TListBox
       Position.Y = 459.000000000000000000
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 59.000000000000000000
     end
     inherited ButtonGantt: TButton
       Position.Y = 518.000000000000000000
+      Size.Width = 250.000000000000000000
     end
     inherited ListBoxGantt: TListBox
       Position.Y = 559.000000000000000000
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 38.000000000000000000
     end
     inherited ButtonBubbles: TButton
       Position.Y = 597.000000000000000000
+      Size.Width = 250.000000000000000000
     end
     inherited ListBoxBubbles: TListBox
       Position.Y = 638.000000000000000000
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 55.000000000000000000
     end
     inherited ButtonMiscellaneous: TButton
       Position.Y = 693.000000000000000000
+      Size.Width = 250.000000000000000000
     end
     inherited ListBoxMiscellaneous: TListBox
       Position.Y = 734.000000000000000000
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 9.000000000000000000
     end
   end
 end

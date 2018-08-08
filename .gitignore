@@ -1,2 +1,13 @@
 FishFacts/Win32/
 *.exe
+StandardSeriesDemo/__history/
+StandardSeriesDemo/Donuts/__history/MultiDonut.fmx.~1~
+StandardSeriesDemo/Points/__history/
+StandardSeriesDemo/Bubbles/__history/
+StandardSeriesDemo/Donuts/__history/
+StandardSeriesDemo/Gantts/__history/
+StandardSeriesDemo/Miscellaneous/__history/
+*.dcu
+*.local
+*.stat
+*.identcache

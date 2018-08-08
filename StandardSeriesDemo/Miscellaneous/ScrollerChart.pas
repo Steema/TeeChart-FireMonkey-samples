@@ -99,7 +99,7 @@ begin
 
         for t:= 0 to Series1.Count-1 do
         begin
-            dtDateTime := StrToDate('01/01/1970');
+            dtDateTime := EncodeDate(1970,01,01);
             dtDateTime := dtDateTime +  dates[t] / 1000 / SecsPerDay * 100000;
 
 //            tmpVal := dtDateTime;

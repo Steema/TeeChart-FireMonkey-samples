@@ -37,13 +37,13 @@ begin
     Chart1.Gradient.Visible := false;
 
     Chart1[0].Clear;
-    (Chart1[0] as  TGanttSeries).AddGantt( StrToDate('21/05/2012'), StrToDate('29/05/2012') ,0, 'Production' );
-    (Chart1[0] as  TGanttSeries).AddGantt( StrToDate('03/09/2012'), StrToDate('10/11/2012'), 1, 'Marketing');
-    (Chart1[0] as  TGanttSeries).AddGantt( StrToDate('13/03/2012'), StrToDate('31/03/2012'), 2, 'Approve');
-    (Chart1[0] as  TGanttSeries).AddGantt( StrToDate('07/06/2012'), StrToDate('05/07/2012'), 3, 'Prototype' );
-    (Chart1[0] as  TGanttSeries).AddGantt( StrToDate('11/10/2012'), StrToDate('05/11/2012'), 4, 'Evaluation');
-    (Chart1[0] as  TGanttSeries).AddGantt( StrToDate('02/04/2012'), StrToDate('29/04/2012'), 5, 'Design');
-    (Chart1[0] as  TGanttSeries).AddGantt( StrToDate('01/09/2012'), StrToDate('07/11/2012'), 2, 'Testing');
+    (Chart1[0] as  TGanttSeries).AddGantt( EncodeDate(2018,05,21), EncodeDate(2018,05,29) ,0, 'Production' );
+    (Chart1[0] as  TGanttSeries).AddGantt( EncodeDate(2018,09,03), EncodeDate(2018,11,10), 1, 'Marketing');
+    (Chart1[0] as  TGanttSeries).AddGantt( EncodeDate(2018,03,13), EncodeDate(2018,03,31), 2, 'Approve');
+    (Chart1[0] as  TGanttSeries).AddGantt( EncodeDate(2018,06,07), EncodeDate(2018,07,05), 3, 'Prototype' );
+    (Chart1[0] as  TGanttSeries).AddGantt( EncodeDate(2018,10,11), EncodeDate(2018,11,05), 4, 'Evaluation');
+    (Chart1[0] as  TGanttSeries).AddGantt( EncodeDate(2018,04,02), EncodeDate(2018,04,29), 5, 'Design');
+    (Chart1[0] as  TGanttSeries).AddGantt( EncodeDate(2018,09,01), EncodeDate(2018,11,07), 2, 'Testing');
 
     (Chart1[0] as  TGanttSeries).Pointer.Style := psRectangle;
     (Chart1[0] as  TGanttSeries).Pointer.Shadow.Visible := false;

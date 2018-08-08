@@ -20,6 +20,7 @@ object ProjectPlannerForm: TProjectPlannerForm
     Foot.Font.Family = 'Verdana'
     Foot.Font.Color = claBlue
     Foot.Font.Brush.Color = claBlue
+    Foot.Font.StyleExt = {00040000000200000004000000}
     Gradient.Direction = gdBottomTop
     Gradient.EndColor = claWhite
     Gradient.MidColor = claWhite
@@ -28,8 +29,10 @@ object ProjectPlannerForm: TProjectPlannerForm
     LeftWall.Color = x00E0FFFF
     Legend.Font.Family = 'Verdana'
     Legend.Shadow.Transparency = 0
+    Legend.Title.Font.StyleExt = {00070000000000000004000000}
     Legend.Visible = False
     RightWall.Color = x00E0FFFF
+    SubFoot.Font.StyleExt = {00040000000200000004000000}
     Title.Font.Size = 15.750000000000000000
     Title.Font.Color = claGray
     Title.Font.Brush.Color = claGray
@@ -108,6 +111,7 @@ object ProjectPlannerForm: TProjectPlannerForm
     Size.PlatformDefault = False
     ColorPaletteIndex = 10
     object Series0: TGanttSeries
+      HoverElement = [heCurrent]
       Cursor = crDrag
       Marks.Font.Color = claWhite
       Marks.Font.Brush.Color = claWhite

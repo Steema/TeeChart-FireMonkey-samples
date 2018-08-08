@@ -15,7 +15,8 @@ object MainForm: TMainForm
   DesignerMasterStyle = 0
   object DetailPanel: TPanel
     Align = Client
-    Size.Width = 448.000000000000000000
+    Margins.Left = 1.000000000000000000
+    Size.Width = 697.000000000000000000
     Size.Height = 766.000000000000000000
     Size.PlatformDefault = False
     StyleLookup = 'detailstyle'
@@ -23,13 +24,13 @@ object MainForm: TMainForm
     object ToolBar1: TToolBar
       Padding.Left = 13.000000000000000000
       Padding.Right = 15.000000000000000000
-      Size.Width = 448.000000000000000000
+      Size.Width = 697.000000000000000000
       Size.Height = 44.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       object Label2: TLabel
         Align = Contents
-        Size.Width = 448.000000000000000000
+        Size.Width = 697.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = 'toollabel'
@@ -40,7 +41,7 @@ object MainForm: TMainForm
         Align = Left
         Position.X = 13.000000000000000000
         Size.Width = 48.000000000000000000
-        Size.Height = 48.000000000000000000
+        Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = 'detailstoolbuttonbordered'
         Text = 'MasterButton'
@@ -48,7 +49,6 @@ object MainForm: TMainForm
         TouchTargetExpansion.Top = 5.000000000000000000
         TouchTargetExpansion.Right = 5.000000000000000000
         TouchTargetExpansion.Bottom = 5.000000000000000000
-        Visible = False
       end
     end
   end
@@ -58,13 +58,14 @@ object MainForm: TMainForm
     PopoverOptions.StyleLookup = '#FFf9f9f9'
     PopoverOptions.PopupHeight = 300.000000000000000000
     MasterButton = MasterButton
+    NavigationPaneOptions.CollapsedWidth = 1.000000000000000000
     ShadowOptions.Color = claLightskyblue
     Size.Width = 250.000000000000000000
     Size.Height = 766.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     object ToolBar2: TToolBar
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 89.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
@@ -368,7 +369,7 @@ object MainForm: TMainForm
               'SeriesDemo\Resources\TeeChartWhite190x44.png'
           end>
         Align = Top
-        Size.Width = 249.000000000000000000
+        Size.Width = 1.000000000000000000
         Size.Height = 57.000000000000000000
         Size.PlatformDefault = False
       end
@@ -376,7 +377,7 @@ object MainForm: TMainForm
         Align = Bottom
         Cursor = crHandPoint
         Position.Y = 64.000000000000000000
-        Size.Width = 249.000000000000000000
+        Size.Width = 1.000000000000000000
         Size.Height = 25.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = 'toollabel'
@@ -388,7 +389,7 @@ object MainForm: TMainForm
     object ListBoxLines: TListBox
       Align = Top
       Position.Y = 130.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 56.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 4
@@ -397,11 +398,12 @@ object MainForm: TMainForm
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
       OnItemClick = ListBoxLinesItemClick
+      Viewport.Width = 0.000000000000000000
+      Viewport.Height = 52.000000000000000000
       object ListBoxItem1: TListBoxItem
         TextSettings.WordWrap = True
         StyledSettings = [Family, Size, Style, FontColor]
         ItemData.Accessory = aMore
-        Size.Width = 229.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -412,7 +414,6 @@ object MainForm: TMainForm
         Tag = 1
         ItemData.Accessory = aMore
         Position.Y = 50.000000000000000000
-        Size.Width = 229.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
@@ -423,7 +424,7 @@ object MainForm: TMainForm
     object ButtonLines: TButton
       Align = Top
       Position.Y = 89.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 8
@@ -434,7 +435,7 @@ object MainForm: TMainForm
       Tag = 1
       Align = Top
       Position.Y = 186.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 7
@@ -444,7 +445,7 @@ object MainForm: TMainForm
     object ListBoxBars: TListBox
       Align = Top
       Position.Y = 227.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 55.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 3
@@ -453,12 +454,13 @@ object MainForm: TMainForm
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
       OnItemClick = ListBoxLinesItemClick
+      Viewport.Width = 0.000000000000000000
+      Viewport.Height = 51.000000000000000000
       object ListBoxItem3: TListBoxItem
         Tag = 2
         TextSettings.WordWrap = True
         StyledSettings = [Family, Size, Style, FontColor]
         ItemData.Accessory = aMore
-        Size.Width = 229.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -469,7 +471,6 @@ object MainForm: TMainForm
         Tag = 3
         ItemData.Accessory = aMore
         Position.Y = 50.000000000000000000
-        Size.Width = 229.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -480,7 +481,6 @@ object MainForm: TMainForm
         Tag = 4
         ItemData.Accessory = aMore
         Position.Y = 94.000000000000000000
-        Size.Width = 229.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
@@ -492,7 +492,7 @@ object MainForm: TMainForm
       Tag = 2
       Align = Top
       Position.Y = 282.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
@@ -502,7 +502,7 @@ object MainForm: TMainForm
     object ListBoxAreas: TListBox
       Align = Top
       Position.Y = 323.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 35.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
@@ -511,12 +511,13 @@ object MainForm: TMainForm
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
       OnItemClick = ListBoxLinesItemClick
+      Viewport.Width = 0.000000000000000000
+      Viewport.Height = 31.000000000000000000
       object ListBoxItem6: TListBoxItem
         Tag = 5
         TextSettings.WordWrap = True
         StyledSettings = [Family, Size, Style, FontColor]
         ItemData.Accessory = aMore
-        Size.Width = 229.000000000000000000
         Size.Height = 42.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -528,7 +529,7 @@ object MainForm: TMainForm
       Tag = 3
       Align = Top
       Position.Y = 358.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 14
@@ -538,7 +539,7 @@ object MainForm: TMainForm
     object ListBoxPies: TListBox
       Align = Top
       Position.Y = 399.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 60.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 11
@@ -547,12 +548,13 @@ object MainForm: TMainForm
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
       OnItemClick = ListBoxLinesItemClick
+      Viewport.Width = 0.000000000000000000
+      Viewport.Height = 56.000000000000000000
       object ListBoxItem11: TListBoxItem
         Tag = 6
         TextSettings.WordWrap = True
         StyledSettings = [Family, Size, Style, FontColor]
         ItemData.Accessory = aMore
-        Size.Width = 229.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -563,7 +565,6 @@ object MainForm: TMainForm
         Tag = 7
         ItemData.Accessory = aMore
         Position.Y = 50.000000000000000000
-        Size.Width = 229.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 3
@@ -574,7 +575,6 @@ object MainForm: TMainForm
         Tag = 8
         ItemData.Accessory = aMore
         Position.Y = 94.000000000000000000
-        Size.Width = 229.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -585,7 +585,6 @@ object MainForm: TMainForm
         Tag = 9
         ItemData.Accessory = aMore
         Position.Y = 138.000000000000000000
-        Size.Width = 229.000000000000000000
         Size.Height = 44.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
@@ -597,7 +596,7 @@ object MainForm: TMainForm
       Tag = 4
       Align = Top
       Position.Y = 459.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 20
@@ -607,7 +606,7 @@ object MainForm: TMainForm
     object ListBoxPoints: TListBox
       Align = Top
       Position.Y = 500.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 59.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 10
@@ -616,12 +615,13 @@ object MainForm: TMainForm
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
       OnItemClick = ListBoxLinesItemClick
+      Viewport.Width = 0.000000000000000000
+      Viewport.Height = 55.000000000000000000
       object ListBoxItem7: TListBoxItem
         Tag = 10
         TextSettings.WordWrap = True
         StyledSettings = [Family, Size, Style, FontColor]
         ItemData.Accessory = aMore
-        Size.Width = 245.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -633,7 +633,7 @@ object MainForm: TMainForm
       Tag = 5
       Align = Top
       Position.Y = 559.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 23
@@ -643,7 +643,7 @@ object MainForm: TMainForm
     object ListBoxGantt: TListBox
       Align = Top
       Position.Y = 600.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 38.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 9
@@ -652,12 +652,13 @@ object MainForm: TMainForm
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
       OnItemClick = ListBoxLinesItemClick
+      Viewport.Width = 0.000000000000000000
+      Viewport.Height = 34.000000000000000000
       object ListBoxItem8: TListBoxItem
         Tag = 11
         TextSettings.WordWrap = True
         StyledSettings = [Family, Size, Style, FontColor]
         ItemData.Accessory = aMore
-        Size.Width = 229.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -669,7 +670,7 @@ object MainForm: TMainForm
       Tag = 6
       Align = Top
       Position.Y = 638.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 24
@@ -679,7 +680,7 @@ object MainForm: TMainForm
     object ListBoxBubbles: TListBox
       Align = Top
       Position.Y = 679.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 55.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 6
@@ -688,12 +689,13 @@ object MainForm: TMainForm
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
       OnItemClick = ListBoxLinesItemClick
+      Viewport.Width = 0.000000000000000000
+      Viewport.Height = 51.000000000000000000
       object ListBoxItem9: TListBoxItem
         Tag = 12
         TextSettings.WordWrap = True
         StyledSettings = [Family, Size, Style, FontColor]
         ItemData.Accessory = aMore
-        Size.Width = 245.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -705,7 +707,7 @@ object MainForm: TMainForm
       Tag = 7
       Align = Top
       Position.Y = 734.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 41.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 13
@@ -715,7 +717,7 @@ object MainForm: TMainForm
     object ListBoxMiscellaneous: TListBox
       Align = Top
       Position.Y = 775.000000000000000000
-      Size.Width = 249.000000000000000000
+      Size.Width = 1.000000000000000000
       Size.Height = 9.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
@@ -724,12 +726,13 @@ object MainForm: TMainForm
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
       OnItemClick = ListBoxLinesItemClick
+      Viewport.Width = 0.000000000000000000
+      Viewport.Height = 5.000000000000000000
       object ListBoxItem10: TListBoxItem
         Tag = 13
         TextSettings.WordWrap = True
         StyledSettings = [Family, Size, Style, FontColor]
         ItemData.Accessory = aMore
-        Size.Width = 229.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0

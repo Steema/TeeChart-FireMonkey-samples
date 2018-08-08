@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMXTee.Chart,
   FMXTee.URL, FMXTee.Engine, FMXTee.Procs, FMX.Layouts, FMX.StdCtrls,
   FMXTee.Series, FMXTee.Series.Donut, FMX.Colors, FMXTee.Animations.Tools,
-  FMXTee.Animate, FMX.Objects;
+  FMXTee.Animate, FMX.Objects, FMX.Controls.Presentation;
 
 type
   TMultiDonutForm = class(TForm)

@@ -10,7 +10,6 @@ uses
 type
   TCodingLangsForm = class(TForm)
     Chart1: TChart;
-    ChartAnimation1: TTeeAnimationTool;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -30,9 +29,6 @@ begin
   (Chart1[0] as TBubbleCloudSeries).Pen.Color := TAlphaColorRec.Lightgray;
   Chart1.Legend.Alignment := laBottom;
   Chart1.Legend.Shadow.Visible:=False;
-
-  ChartAnimation1.Speed := 25;
-  ChartAnimation1.Play;
 end;
 
 end.

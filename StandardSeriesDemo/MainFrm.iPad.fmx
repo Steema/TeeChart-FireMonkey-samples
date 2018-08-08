@@ -3,22 +3,96 @@ inherited MainForm_iPad: TMainForm_iPad
   ClientWidth = 768
   DesignerMasterStyle = 2
   inherited DetailPanel: TPanel
-    Size.Width = 518.000000000000000000
+    Size.Width = 767.000000000000000000
     Size.Height = 1004.000000000000000000
     inherited ToolBar1: TToolBar
-      Size.Width = 518.000000000000000000
+      Size.Width = 767.000000000000000000
       inherited Label2: TLabel
-        Size.Width = 518.000000000000000000
+        Size.Width = 767.000000000000000000
+      end
+      inherited MasterButton: TSpeedButton
+        Size.Width = 44.000000000000000000
       end
     end
   end
   inherited MultiView1: TMultiView
-    Size.Height = 1004.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 50.000000000000000000
+    Visible = False
     inherited ToolBar2: TToolBar
+      Size.Width = 250.000000000000000000
       inherited Image1: TImage
         MultiResBitmap.Height = 44
         MultiResBitmap.Width = 190
+        Size.Width = 250.000000000000000000
       end
+      inherited Label1: TLabel
+        Size.Width = 250.000000000000000000
+      end
+    end
+    inherited ListBoxLines: TListBox
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 56.000000000000000000
+    end
+    inherited ButtonLines: TButton
+      Size.Width = 250.000000000000000000
+    end
+    inherited ButtonBars: TButton
+      Size.Width = 250.000000000000000000
+    end
+    inherited ListBoxBars: TListBox
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 55.000000000000000000
+    end
+    inherited ButtonAreas: TButton
+      Size.Width = 250.000000000000000000
+    end
+    inherited ListBoxAreas: TListBox
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 35.000000000000000000
+    end
+    inherited ButtonPies: TButton
+      Size.Width = 250.000000000000000000
+    end
+    inherited ListBoxPies: TListBox
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 60.000000000000000000
+    end
+    inherited ButtonPoints: TButton
+      Size.Width = 250.000000000000000000
+    end
+    inherited ListBoxPoints: TListBox
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 59.000000000000000000
+    end
+    inherited ButtonGantt: TButton
+      Size.Width = 250.000000000000000000
+    end
+    inherited ListBoxGantt: TListBox
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 38.000000000000000000
+    end
+    inherited ButtonBubbles: TButton
+      Size.Width = 250.000000000000000000
+    end
+    inherited ListBoxBubbles: TListBox
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 55.000000000000000000
+    end
+    inherited ButtonMiscellaneous: TButton
+      Size.Width = 250.000000000000000000
+    end
+    inherited ListBoxMiscellaneous: TListBox
+      Size.Width = 250.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 9.000000000000000000
     end
   end
 end

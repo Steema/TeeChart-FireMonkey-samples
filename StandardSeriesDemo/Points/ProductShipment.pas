@@ -33,34 +33,35 @@ implementation
 procedure TProductShipmentForm.FormCreate(Sender: TObject);
 var Xarr : Array[1..28] of Double;
 begin
-  Xarr[1]:= StrToDate('01/09/2012');
-  Xarr[2]:= StrToDate('15/09/2012');
-  Xarr[3]:= StrToDate('01/10/2012');
-  Xarr[4]:= StrToDate('15/10/2012');
-  Xarr[5]:= StrToDate('01/11/2012');
-  Xarr[6]:= StrToDate('15/11/2012');
-  Xarr[7]:= StrToDate('01/12/2012');
-  Xarr[8]:= StrToDate('15/12/2012');
-  Xarr[9]:= StrToDate('01/01/2013');
-  Xarr[10]:= StrToDate('15/01/2013');
-  Xarr[11]:= StrToDate('01/02/2013');
-  Xarr[12]:= StrToDate('15/02/2013');
-  Xarr[13]:= StrToDate('01/03/2013');
-  Xarr[14]:= StrToDate('15/03/2013');
-  Xarr[15]:= StrToDate('01/04/2013');
-  Xarr[16]:= StrToDate('15/04/2013');
-  Xarr[17]:= StrToDate('01/05/2013');
-  Xarr[18]:= StrToDate('15/05/2013');
-  Xarr[19]:= StrToDate('01/06/2013');
-  Xarr[20]:= StrToDate('15/06/2013');
-  Xarr[21]:= StrToDate('01/07/2013');
-  Xarr[22]:= StrToDate('15/07/2013');
-  Xarr[23]:= StrToDate('01/08/2013');
-  Xarr[24]:= StrToDate('15/09/2013');
-  Xarr[25]:= StrToDate('01/09/2013');
-  Xarr[26]:= StrToDate('15/09/2013');
-  Xarr[27]:= StrToDate('01/10/2013');
-  Xarr[28]:= StrToDate('15/10/2013');
+
+  Xarr[1]:= EncodeDate(2017,09,01);
+  Xarr[2]:= EncodeDate(2017,09,15);
+  Xarr[3]:= EncodeDate(2017,10,01);
+  Xarr[4]:= EncodeDate(2017,10,15);
+  Xarr[5]:= EncodeDate(2017,11,01);
+  Xarr[6]:= EncodeDate(2017,11,15);
+  Xarr[7]:= EncodeDate(2017,12,01);
+  Xarr[8]:= EncodeDate(2017,12,15);
+  Xarr[9]:= EncodeDate(2018,010,01);
+  Xarr[10]:= EncodeDate(2018,01,15);
+  Xarr[11]:= EncodeDate(2018,02,01);
+  Xarr[12]:= EncodeDate(2018,02,15);
+  Xarr[13]:= EncodeDate(2018,03,01);
+  Xarr[14]:= EncodeDate(2018,03,15);
+  Xarr[15]:= EncodeDate(2018,04,01);
+  Xarr[16]:= EncodeDate(2018,04,15);
+  Xarr[17]:= EncodeDate(2018,05,01);
+  Xarr[18]:= EncodeDate(2018,05,15);
+  Xarr[19]:= EncodeDate(2018,06,01);
+  Xarr[20]:= EncodeDate(2018,06,15);
+  Xarr[21]:= EncodeDate(2018,07,01);
+  Xarr[22]:= EncodeDate(2018,07,15);
+  Xarr[23]:= EncodeDate(2018,08,01);
+  Xarr[24]:= EncodeDate(2018,08,15);
+  Xarr[25]:= EncodeDate(2018,09,01);
+  Xarr[26]:= EncodeDate(2018,09,15);
+  Xarr[27]:= EncodeDate(2018,10,01);
+  Xarr[28]:= EncodeDate(2018,10,15);
 
   with Chart1 do
   begin
