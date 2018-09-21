@@ -9,14 +9,7 @@ Several layouts have been used in order to create DashBoard pages and show diffe
 You can also read an article which has been dedicated to this example project ported to all the the TeeChart versions here :
 http://steema.com/wp/blog/2015/06/18/check-out-the-new-standardseriesdemo-example/
 
-![](https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/StandardSeriesDemo-FM-Framed.gif)
-
-[//]: # [![Multiple Custom Axes](https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image1.png "TeeChart for FireMonkey")](https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image1tmb.png)
-
-[//]: # (![screenshot](https://github.com/Steema/TeeChart-for-FireMonkey-applications-samples/blob/master/StandardSeriesDemo/Screenshots/StandardSeriesDemo1.PNG?raw=true "TeeChart for FireMonkey")
-[//]: # (![screenshot](https://github.com/Steema/TeeChart-for-FireMonkey-applications-samples/blob/master/StandardSeriesDemo/Screenshots/StandardSeriesDemo2.PNG?raw=true "TeeChart for FireMonkey")
-[//]: # (![screenshot](https://github.com/Steema/TeeChart-for-FireMonkey-applications-samples/blob/master/StandardSeriesDemo/Screenshots/StandardSeriesDemo3.PNG?raw=true "TeeChart for FireMonkey")
-[//]: # (![screenshot](https://github.com/Steema/TeeChart-for-FireMonkey-applications-samples/blob/master/StandardSeriesDemo/Screenshots/StandardSeriesDemo4.PNG?raw=true "TeeChart for FireMonkey") 
+![](https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/StandardSeriesDemo-FM-Framed.gif?raw=true "TeeChart for FireMonkey")
 
 ## Sample Requirements
 
