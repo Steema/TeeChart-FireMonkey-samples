@@ -20,8 +20,8 @@ http://steema.com/wp/blog/2015/06/18/check-out-the-new-standardseriesdemo-exampl
 <tr>
 
 <td align="center" valign="center">
-<a href="img src=/Screenshots/image1.png"> 
-<img src="/Screenshots/image1.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/>
+<a href="img src=https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image1.png"> 
+<img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image1.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/>
 </a>
 <br />
 StandardSeries Dashboard.
