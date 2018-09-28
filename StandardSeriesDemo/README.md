@@ -18,44 +18,44 @@ http://steema.com/wp/blog/2015/06/18/check-out-the-new-standardseriesdemo-exampl
 <table width="720" border="1" cellpadding="5">
 
 <tr>
-
+https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image1.png
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image1.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image1.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image1.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 StandardSeries Dashboard.
 </td>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image2.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image2.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image2.png" alt="TeeChart FireMonkey ashboard" style="width:100px;"/></a>
 <br />
 Donut & Line.
 </td>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image3.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image3.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image3.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 BarSeries.
 </td>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image4.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image4.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image4.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 BarSeries Stacked.
 </td>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image5.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image5.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image5.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 Histogram & Calendar.
 </td>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image6.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image6.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image6.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 AreaSeries.
@@ -66,42 +66,42 @@ AreaSeries.
 <tr>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image7.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image7.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image7.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 PieSeries.
 </td>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image8.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image8.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image8.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 DonutSeries.
 </td>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image9.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image9.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image9.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 Donut & Histogram.
 </td>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image10.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image10.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image10.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 LineSeries.
 </td>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image11.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image11.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image11.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 BubbleSeries.
 </td>
 
 <td align="center" valign="center">
-<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image12.png""> 
+<a href="img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image12.png"> 
 <img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/StandardSeriesDemo/Screenshots/image12.png" alt="TeeChart FireMonkey Dashboard" style="width:100px;"/></a>
 <br />
 LineSeries.
