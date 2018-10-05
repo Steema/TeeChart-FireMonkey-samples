@@ -8,10 +8,12 @@ TeeChart VCL/FMX - ActivityGauge Series Demo
 
 TeeChart offers many Gauges series type and indicators to create digital dashboards with visual effects like shadows, lighting, etc.
 
+
 <img align="right" src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/ActivityGaugeSeries/Screenshots/ActivityGaugeSeries.png">
 
 
----
+
+------
 ### Author
 ------
 Josep Lluis Jorge
