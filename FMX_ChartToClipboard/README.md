@@ -8,3 +8,12 @@ This sample just shows how to copy the Chart to Clipboard.
 ## Sample Requirements
 
 You'll need TeeChart VCL/FMX evaluation or registered version to run the example on this repository. Fully functional evaluation version can be obtained at https://www.steema.com/downloads/vcl
+
+
+<img src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/FMX_ChartToClipboard/Screenshots/ChartToClipboard.png" alt="TeeChart FireMonkey Chart to Clipboard"/>
+
+------
+### Author
+------
+Josep Lluis Jorge
+@joseplluisjorge
