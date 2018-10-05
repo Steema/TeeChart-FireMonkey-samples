@@ -10,6 +10,7 @@ TeeChart offers many Gauges series type and indicators to create digital dashboa
 
 <img align="right" src="https://github.com/Steema/TeeChart-FireMonkey-samples/blob/master/ActivityGaugeSeries/Screenshots/ActivityGaugeSeries.png">
 
+
 ---
 ### Author
 ------
