@@ -92,7 +92,7 @@
     <PropertyGroup Condition="'$(Base)'!=''">
         <SanitizedProjectName>TeeChart_Pro_Firemonkey_Demo</SanitizedProjectName>
         <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
-        <DCC_UnitSearchPath>c:\root\teechartvcl\sources9\fmx;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath></DCC_UnitSearchPath>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_MinorVer>1</VerInfo_MinorVer>
         <VerInfo_MajorVer>9</VerInfo_MajorVer>
@@ -190,17 +190,17 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_OSX32)'!=''">
         <BT_BuildType>Debug</BT_BuildType>
-        <Debugger_DebugSourcePath>C:\Root\TeeChartVCL\Sources9\FMX\;$(Debugger_DebugSourcePath)</Debugger_DebugSourcePath>
+        <Debugger_DebugSourcePath>$(Debugger_DebugSourcePath)</Debugger_DebugSourcePath>
         <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true</VerInfo_Keys>
         <DCC_UsePackage>fmxtee916;fmxteeui916;fmxteepro916;$(DCC_UsePackage)</DCC_UsePackage>
-        <DCC_UnitSearchPath>$(Tee)\fmx;$(Tee)\compiled\delphi16.osx32\lib;$(bds)\lib\osx32\debug;$(bds)\lib\osx32\release;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath></DCC_UnitSearchPath>
         <DCC_DebugDCUs>true</DCC_DebugDCUs>
         <Debugger_Launcher>/usr/X11/bin/xterm -e &quot;%debuggee%&quot;</Debugger_Launcher>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
         <VerInfo_Keys>CompanyName=Steema Software;FileDescription=TeeChart Pro for FireMonkey demo;FileVersion=9.1.0.0;InternalName=;LegalCopyright=(c) 2011-2012 by Steema Software. All Rights Reserved.;LegalTrademarks=TeeChart(TM);OriginalFilename=;ProductName=TeeChart Pro;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <DCC_DebugDCUs>true</DCC_DebugDCUs>
-        <DCC_UnitSearchPath>$(tee)\fmx;$(bds)\source\fmx;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath></DCC_UnitSearchPath>
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
@@ -221,12 +221,12 @@
         <VerInfo_MajorVer>1</VerInfo_MajorVer>
         <VerInfo_MinorVer>0</VerInfo_MinorVer>
         <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true</VerInfo_Keys>
-        <DCC_UnitSearchPath>$(bds)\lib\osx32\release;c:\root\teechartvcl\sources9\fmx</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath></DCC_UnitSearchPath>
         <DCC_DebugDCUs>true</DCC_DebugDCUs>
         <Debugger_Launcher>/usr/X11/bin/xterm -e &quot;%debuggee%&quot;</Debugger_Launcher>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-        <DCC_UnitSearchPath>$(tee);$(tee)\fmx;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath></DCC_UnitSearchPath>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
         <VerInfo_Locale>1033</VerInfo_Locale>

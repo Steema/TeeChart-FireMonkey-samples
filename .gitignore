@@ -11,3 +11,4 @@ StandardSeriesDemo/Miscellaneous/__history/
 *.local
 *.stat
 *.identcache
+*.o
