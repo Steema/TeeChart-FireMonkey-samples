@@ -1,0 +1,142 @@
+inherited DemoCandleSeries: TDemoCandleSeries
+  Caption = 'Candle'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  inherited Panel1: TPanel
+    object CheckBox1: TCheckBox
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 128.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Draw 3D'
+      Width = 81.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object ComboBox1: TComboBox
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      ItemIndex = 0
+      Position.X = 224.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 2
+      Width = 100.000000000000000000
+      OnChange = ComboBox1Change
+      object ListBoxItem1: TListBoxItem
+        Height = 18.000000000000000000
+        IsSelected = True
+        Position.X = 5000.000000000000000000
+        Position.Y = 5000.000000000000000000
+        TabOrder = 0
+        Text = 'Candle Stick'
+        Width = 75.000000000000000000
+      end
+      object ListBoxItem2: TListBoxItem
+        Height = 18.000000000000000000
+        Position.Y = 19.000000000000000000
+        TabOrder = 1
+        Text = 'Candle Bar'
+        Width = 75.000000000000000000
+      end
+      object ListBoxItem3: TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 38.000000000000000000
+        TabOrder = 2
+        Text = 'Open-Close'
+        Width = 80.000000000000000000
+      end
+      object ListBoxItem4: TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 57.000000000000000000
+        TabOrder = 3
+        Text = 'Line'
+        Width = 80.000000000000000000
+      end
+    end
+    object CheckBox2: TCheckBox
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 352.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 4
+      Text = 'View 3D'
+      Width = 120.000000000000000000
+      OnChange = CheckBox2Change
+    end
+  end
+  object Chart1: TChart
+    Height = 343.000000000000000000
+    Width = 600.000000000000000000
+    Legend.Visible = False
+    Title.Text.Strings = (
+      'Financial Candle Series')
+    BottomAxis.Grid.Color = claGray
+    BottomAxis.Grid.Width = 0.500000000000000000
+    BottomAxis.Grid.Fill.Color = claGray
+    Chart3DPercent = 7
+    DepthAxis.Grid.Color = claGray
+    DepthAxis.Grid.Fill.Color = claGray
+    DepthTopAxis.Grid.Color = claGray
+    DepthTopAxis.Grid.Fill.Color = claGray
+    LeftAxis.Grid.Color = claGray
+    LeftAxis.Grid.Width = 0.300000011920929000
+    LeftAxis.Grid.Fill.Color = claGray
+    RightAxis.Automatic = False
+    RightAxis.AutomaticMaximum = False
+    RightAxis.AutomaticMinimum = False
+    RightAxis.Grid.Color = claGray
+    RightAxis.Grid.Fill.Color = claGray
+    RightAxis.Grid.Visible = False
+    RightAxis.Maximum = 80.000000000000000000
+    TopAxis.Grid.Color = claGray
+    TopAxis.Grid.Fill.Color = claGray
+    Zoom.Brush.Kind = None
+    Zoom.MouseWheel = pmwNormal
+    Zoom.Pen.Color = claWhite
+    Zoom.Pen.Mode = pmNotXor
+    Zoom.Pen.Fill.Color = claWhite
+    Align = Client
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object Series1: TCandleSeries
+      CloseValues.Name = 'Close'
+      CloseValues.Order = loNone
+      DateValues.Name = 'Date'
+      DateValues.Order = loNone
+      HighValues.Name = 'High'
+      HighValues.Order = loNone
+      LowValues.Name = 'Low'
+      LowValues.Order = loNone
+      OpenValues.Name = 'Open'
+      OpenValues.Order = loNone
+      DownCloseGradient.StartColor = claRed
+      HighLowPen.Color = xAE131313
+      HighLowPen.Width = 2.325581312179565000
+      HighLowPen.EndStyle = esSquare
+      HighLowPen.Fill.Color = xAE131313
+    end
+    object Series2: TVolumeSeries
+      VertAxis = aRightAxis
+      LinePen.Color = xFFF39C35
+      LinePen.Fill.Color = xFFF39C35
+      VolumeValues.Name = 'Y'
+      VolumeValues.Order = loNone
+      XValues.Name = 'X'
+      XValues.Order = loNone
+    end
+    object ChartTool1: TMarksTipTool
+      Format.CustomPosition = True
+      Format.Left = 0
+      Format.TextAlignment = taCenter
+      Format.Top = 0
+      Format.Visible = False
+      HideDelay = 0
+      MouseDelay = 0
+    end
+  end
+end

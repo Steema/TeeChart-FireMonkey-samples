@@ -1,0 +1,52 @@
+inherited FastLineDemoSeries: TFastLineDemoSeries
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Chart1: TChart
+    Height = 343.000000000000000000
+    Width = 600.000000000000000000
+    Legend.Symbol.Squared = True
+    Legend.Visible = False
+    Title.Text.Strings = (
+      'FastLine Series')
+    View3D = False
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Align = Client
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object Series1: TFastLineSeries
+      Marks.Font.Size = 13.662790298461910000
+      Marks.Font.Color = xFFEF9A9A
+      Marks.Font.Brush.Color = xFFEF9A9A
+      Marks.Transparent = True
+      Marks.Symbol.Visible = True
+      LinePen.Color = xFF4466A3
+      LinePen.Fill.Color = xFF4466A3
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series2: TFastLineSeries
+      LinePen.Color = xFFF39C35
+      LinePen.Fill.Color = xFFF39C35
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series3: TFastLineSeries
+      LinePen.Color = xFFF14C14
+      LinePen.Fill.Color = xFFF14C14
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+end

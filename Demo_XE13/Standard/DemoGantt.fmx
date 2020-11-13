@@ -1,0 +1,67 @@
+inherited GanttSeriesDemo: TGanttSeriesDemo
+  Caption = 'BaseForm1'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  inherited Panel1: TPanel
+    object Button1: TButton
+      Height = 22.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Connections...'
+      Width = 97.000000000000000000
+      OnClick = Button1Click
+    end
+    object Label1: TLabel
+      AutoSize = True
+      Height = 16.000000000000000000
+      Position.X = 236.000000000000000000
+      Position.Y = 20.000000000000000000
+      TextSettings.WordWrap = False
+      Width = 0.000000000000000000
+    end
+  end
+  object Chart1: TChart
+    Height = 343.000000000000000000
+    Width = 600.000000000000000000
+    Gradient.EndColor = xFFD4F1DB
+    Gradient.StartColor = xFFF27777
+    Gradient.Visible = True
+    Legend.Visible = False
+    Title.Text.Strings = (
+      'Gantt Series')
+    Chart3DPercent = 7
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Align = Client
+    TabOrder = 1
+    OnMouseMove = Chart1MouseMove
+    ColorPaletteIndex = 13
+    object Series1: TGanttSeries
+      Marks.Visible = True
+      ClickableLine = False
+      Pointer.Brush.Gradient.EndColor = xFF4466A3
+      Pointer.Gradient.EndColor = xFF4466A3
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.VertSize = 14
+      XValues.Name = 'Start'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      Callout.Style = psRightTriangle
+      Callout.Arrow.Visible = False
+      StartValues.Name = 'Start'
+      StartValues.Order = loNone
+      EndValues.Name = 'End'
+      EndValues.Order = loNone
+      NextTask.Name = 'NextTask'
+      NextTask.Order = loNone
+    end
+  end
+end
