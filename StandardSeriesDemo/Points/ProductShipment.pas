@@ -41,26 +41,26 @@ begin
   Xarr[6]:= EncodeDate(2019,11,15);
   Xarr[7]:= EncodeDate(2019,12,01);
   Xarr[8]:= EncodeDate(2019,12,15);
-  Xarr[9]:= EncodeDate(2020,01,01);
-  Xarr[10]:= EncodeDate(2020,01,15);
-  Xarr[11]:= EncodeDate(2020,02,01);
-  Xarr[12]:= EncodeDate(2020,02,15);
-  Xarr[13]:= EncodeDate(2020,03,01);
-  Xarr[14]:= EncodeDate(2020,03,15);
-  Xarr[15]:= EncodeDate(2020,04,01);
-  Xarr[16]:= EncodeDate(2020,04,15);
-  Xarr[17]:= EncodeDate(2020,05,01);
-  Xarr[18]:= EncodeDate(2020,05,15);
-  Xarr[19]:= EncodeDate(2020,06,01);
-  Xarr[20]:= EncodeDate(2020,06,15);
-  Xarr[21]:= EncodeDate(2020,07,01);
-  Xarr[22]:= EncodeDate(2020,07,15);
-  Xarr[23]:= EncodeDate(2020,08,01);
-  Xarr[24]:= EncodeDate(2020,08,15);
-  Xarr[25]:= EncodeDate(2020,09,01);
-  Xarr[26]:= EncodeDate(2020,09,15);
-  Xarr[27]:= EncodeDate(2020,10,01);
-  Xarr[28]:= EncodeDate(2020,10,15);
+  Xarr[9]:= EncodeDate(2021,01,01);
+  Xarr[10]:= EncodeDate(2021,01,15);
+  Xarr[11]:= EncodeDate(2021,02,01);
+  Xarr[12]:= EncodeDate(2021,02,15);
+  Xarr[13]:= EncodeDate(2021,03,01);
+  Xarr[14]:= EncodeDate(2021,03,15);
+  Xarr[15]:= EncodeDate(2021,04,01);
+  Xarr[16]:= EncodeDate(2021,04,15);
+  Xarr[17]:= EncodeDate(2021,05,01);
+  Xarr[18]:= EncodeDate(2021,05,15);
+  Xarr[19]:= EncodeDate(2021,06,01);
+  Xarr[20]:= EncodeDate(2021,06,15);
+  Xarr[21]:= EncodeDate(2021,07,01);
+  Xarr[22]:= EncodeDate(2021,07,15);
+  Xarr[23]:= EncodeDate(2021,08,01);
+  Xarr[24]:= EncodeDate(2021,08,15);
+  Xarr[25]:= EncodeDate(2021,09,01);
+  Xarr[26]:= EncodeDate(2021,09,15);
+  Xarr[27]:= EncodeDate(2021,10,01);
+  Xarr[28]:= EncodeDate(2021,10,15);
 
   with Chart1 do
   begin
